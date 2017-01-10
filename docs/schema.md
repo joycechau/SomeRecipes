@@ -21,6 +21,7 @@
 | id                   | integer        | not null, primary key                                |
 | user_id              | integer        | not null, indexed, foreign key (references users)    |
 | title                | string         | not null                                             |
+| image_url            | string         | default: (some pic)                                  |
 | average_rating       | integer        |                                                      |
 | category             | string         | not null                                             |
 | description          | text           | not null                                             |
