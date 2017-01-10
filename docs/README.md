@@ -75,7 +75,7 @@ SomeRecipes is a web application inspired by AllRecipes built using Ruby on Rail
 
 ### Phase 6: Advanced Styling (1 day)
 
-**Objective**: Improve styling (ie modals) and add category backdrop to home page
+**Objective**: Improve styling and add category backdrop to home page
 * Add homepage background with recipe category modals linked to search results
 * Add review form modal
 
