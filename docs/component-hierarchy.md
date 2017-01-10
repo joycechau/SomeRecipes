@@ -31,6 +31,18 @@
 * RecipeIndex
 	* RecipeIndexItem
 
+#### RecipeDetailContainer
+
+* Header
+* Logo/Home
+* Search Container
+* Search Field
+* Search Button
+* Logout
+* RecipeDetail
+* ReviewsIndex
+* ReviewIndexItem
+
 #### ProfileContainer
 
 * Header
@@ -41,44 +53,8 @@
 	* Logout
 * Background Image
 * Sidebar
-* ProfileSection
-	* profileForm
-
-#### UserRecipeContainer/FavoriteRecipeContainer
-
-* Header
-	* Logo/Home
-	* Search Container
-		* Search Field
-		* Search Button
-	* Logout
-* Background Image
-* Sidebar
-* RecipeIndex
-	* RecipeIndexItem
-
-#### NewRecipeContainer
-
-* Header
-	* Logo/Home
-	* Search Container
-		* Search Field
-		* Search Button
-	* Logout
-* Background Image
-* RecipeForm
-
-#### RecipeDetailContainer
-
-* Header
-	* Logo/Home
-	* Search Container
-		* Search Field
-		* Search Button
-	* Logout
-* RecipeDetail
-	* ReviewsIndex
-		* ReviewIndexItem
+* Selected Sidebar Section
+	* Selected Sidebar Details (either About Me, RecipeIndex & RecipeIndexItem, or Create/Edit Recipe)
 
 #### ReviewContainer
 
@@ -86,11 +62,15 @@
 
 ## Routes
 
-| Path                 | Component   	             |      
-| -------------------- | ------------------------- |
-| /home                | "HomeContainer"           |
-| /signup              | "AuthFormContainer"       |
-| /signin              | "AuthFormContainer"       |
-| /search-results      | "SearchResultsContainer"  |
-| /profile             | "ProfileContainer"        |
-| /new-recipe          | "NewRecipeContainer"      |
+| Path                         | Component   	             |      
+| ---------------------------- | ------------------------- |
+| /home                        | "HomeContainer"           |
+| /signup                      | "AuthFormContainer"       |
+| /signin                      | "AuthFormContainer"       |
+| /search-results              | "SearchResultsContainer"  |
+| /recipe/:id                  | "RecipeDetailContainer"   |
+| /profile                     | "ProfileContainer"        |
+| /profile/my-recipes          | "ProfileContainer"        |
+| /profile/favorites           | "ProfileContainer"        |
+| /profile/new-recipe          | "ProfileContainer"        |
+| /profile/edit-recipe/:id     | "ProfileContainer"        |

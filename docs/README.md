@@ -11,10 +11,9 @@ SomeRecipes is a web application inspired by AllRecipes built using Ruby on Rail
 - [ ] A production README
 - [ ] Hosting on Heroku
 - [ ] New account creation, login, and guest/demo login
-- [ ] Images
+- [ ] Viewing and creating recipes
 - [ ] Favorites/likes
 - [ ] Reviewing recipes
-- [ ] Creating recipes
 - [ ] Searching recipes
 
 ## Design Docs
@@ -49,9 +48,9 @@ SomeRecipes is a web application inspired by AllRecipes built using Ruby on Rail
 
 **Objective**: Users can search for specific results
 
-### Phase 6: Styling (1 day)
+### Phase 6: Advanced Styling (1 day)
 
-**Objective**: Improve styling and add category backdrop to home page
+**Objective**: Improve styling (ie modals) and add category backdrop to home page
 
 ### Bonus Features (TBD)
 - [ ] Infinite scrolling
