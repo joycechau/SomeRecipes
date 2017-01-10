@@ -9,7 +9,8 @@
 
 ### Users
 * ```POST /api/users```
-* ```PATCH /api/users```
+* ```GET /api/users/:id```
+* ```PATCH /api/users/:id```
 
 ### Session
 * ```POST /api/session```
@@ -23,7 +24,11 @@
 * ```PATCH /api/recipes/:id```
 * ```DELETE /api/recipes/:id```
 
+### Favorites
+* ```POST /api/favorites```
+* ```DELETE /api/favorites/:id```
+
 ### Reviews
 * ```POST /api/reviews```
 * ```PATCH /api/reviews/:id```
-* ```DELETE /api/reviews/:id``` 
+* ```DELETE /api/reviews/:id```

@@ -34,14 +34,14 @@
 #### RecipeDetailContainer
 
 * Header
-* Logo/Home
-* Search Container
-* Search Field
-* Search Button
-* Logout
+	* Logo/Home
+	* Search Container
+		* Search Field
+		* Search Button
+	* Logout
 * RecipeDetail
-* ReviewsIndex
-* ReviewIndexItem
+	* ReviewsIndex
+		* ReviewIndexItem
 
 #### ProfileContainer
 
@@ -62,15 +62,15 @@
 
 ## Routes
 
-| Path                         | Component   	             |      
-| ---------------------------- | ------------------------- |
-| /home                        | "HomeContainer"           |
-| /signup                      | "AuthFormContainer"       |
-| /signin                      | "AuthFormContainer"       |
-| /search-results              | "SearchResultsContainer"  |
-| /recipe/:id                  | "RecipeDetailContainer"   |
-| /profile                     | "ProfileContainer"        |
-| /profile/my-recipes          | "ProfileContainer"        |
-| /profile/favorites           | "ProfileContainer"        |
-| /profile/new-recipe          | "ProfileContainer"        |
-| /profile/edit-recipe/:id     | "ProfileContainer"        |
+| Path                                   | Component   	             |      
+| -------------------------------------- | ------------------------- |
+| /home                                  | "HomeContainer"           |
+| /signup                                | "AuthFormContainer"       |
+| /signin                                | "AuthFormContainer"       |
+| /search-results                        | "SearchResultsContainer"  |
+| /recipe/:id                            | "RecipeDetailContainer"   |
+| /profile/:username                     | "ProfileContainer"        |
+| /profile/:username/my-recipes          | "ProfileContainer"        |
+| /profile/:username/favorites           | "ProfileContainer"        |
+| /profile/:username/new-recipe          | "ProfileContainer"        |
+| /profile/:username/edit-recipe/:id     | "ProfileContainer"        |
