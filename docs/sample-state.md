@@ -12,11 +12,11 @@
     profile_url: 'http://profile_pic.png',
     interests: 'desserts, steaks, corgis'
 	},
-  forms: {
-    signUp: {errors: []},
-    logIn: {errors: []},
-    createRecipe: {errors: ["incomplete fields"]},
-    createReview: {errors: ["incomplete fields"]}
+  errors: {
+    signUp: [],
+    logIn: [],
+    createRecipe: ["incomplete fields"],
+    createReview: ["incomplete fields"]
   },
   recipes: {
     1: {

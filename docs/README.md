@@ -38,25 +38,36 @@ SomeRecipes is a web application inspired by AllRecipes built using Ruby on Rail
   * Create temp HeaderContainer
   * Create SessionForm components and session routes
   * Bootstrap currentUser
+* Add HeaderContainer
 
-### Phase 2: Recipes Model, API, and components (3 days)
+### Phase 2: Profile Page (0.5 days)
+**Objective**: Users can view their profile page
+* Create ProfileContainer storing Header, SideBar, and SideBarSection
+
+### Phase 3: Recipes Model, API, and components (2.5 days)
 
 **Objective**: Recipes can be created, read, edited, and destroyed through the API
 * Create recipes model and controller, add appropriate associations
 * Seed database with ~50 recipes and validate that associations work
 * Create Recipe util, actions, and reducer
-* Create RecipeIndexContainer, RecipeIndexItem, RecipeDetailContainer, and RecipeDetail
-* Create Profile Container (add SideBar and SideBarSection)
+* Create RecipeIndexContainer and RecipeIndexItem
+* Create RecipeDetailContainer and RecipeDetail
 * Create RecipeFormContainer and RecipeForm  
 
-### Phase 3: Favorites (1 day)
+### Phase 4: Favorites and Searching (1 day)
 
-**Objective**: Users can add recipes to their favorites list and favorited recipes can be displayed on profile page
-* Create favorites model and controller, add appropriate associations
-* Seed database with ~25 favorites and validate that associations work
-* Add favorites button to RecipeIndexItem and allow users to view favorites on profile page
+**Objective**: Users can add recipes to their favorites list and favorited recipes can be displayed on profile page.  Users can also search for specific results.  
+* Favorites
+  * Create favorites model and controller, add appropriate associations
+  * Seed database with ~25 favorites and validate that associations work
+  * Add favorites button to RecipeIndexItem and allow users to view favorites on profile page
+* Search
+  * Add Home logo to HeaderContainer
+  * Add SearchContainer, SearchBar, and SearchButton to Header
+  * Adjust Util to allow search params
+  * Create SearchResultsContainer
 
-### Phase 4: Reviews Model, API, and components (2 days)
+### Phase 5: Reviews Model, API, and components (2 days)
 
 **Objective**:  Reviews can be created, edited, and destroyed through the API
 * Create reviews model and controller, add appropriate associations
@@ -64,14 +75,6 @@ SomeRecipes is a web application inspired by AllRecipes built using Ruby on Rail
 * Create Review util, actions, and reducer
 * Create ReviewIndexContainer and ReviewIndexItem
 * Create ReviewForm
-
-### Phase 5: Search Results (1 day)
-
-**Objective**: Users can search for specific results
-* Add Home logo to HeaderContainer
-* Add SearchContainer, SearchBar, and SearchButton to Header
-* Adjust Util to allow search params
-* Create SearchResultsContainer
 
 ### Phase 6: Advanced Styling (1 day)
 

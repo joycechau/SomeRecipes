@@ -37,7 +37,7 @@
 | user_id              | integer        | not null, indexed, foreign key (references users)    |
 | recipe_id            | integer        | not null, indexed, foreign key (references recipes)  |
 | rating               | integer        | not null                       					             |
-| review               | text           | not null                      					             |
+| review               |                |                               					             |
 
 ### favorites
 
