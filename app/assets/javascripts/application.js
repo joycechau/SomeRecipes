@@ -14,7 +14,3 @@
 //= require jquery_ujs
 //= require_tree .
 //= require bundle
-
-main {
-  background-image: url("http://il5.picdn.net/shutterstock/videos/15857293/thumb/2.jpg");
-}
