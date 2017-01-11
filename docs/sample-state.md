@@ -13,8 +13,7 @@
     interests: 'desserts, steaks, corgis'
 	},
   errors: {
-    signUp: [],
-    logIn: [],
+    session: [],
     createRecipe: ["incomplete fields"],
     createReview: ["incomplete fields"]
   },
