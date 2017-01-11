@@ -12,6 +12,14 @@ class SessionForm extends React.Component {
     this.loggedInRedirect();
   }
 
+  componentWillReceiveProps(newProps) {
+    if (this.props.errors) {
+      this.props.clearErrors();
+    } else if (newProps.loggedIn) {
+      this.props.router.push("/");
+    }
+  }
+
   loggedInRedirect() {
     if (this.props.loggedIn) {
       this.props.router.push("/");
@@ -27,9 +35,9 @@ class SessionForm extends React.Component {
 
   linkText() {
     if (this.props.formType === 'login') {
-      return <Link to='/signup'>{"Don't have an account? Sign up."}</Link>;
+      return <Link to='/signup'>{"Don't have an account? Sign Up!"}</Link>;
     } else {
-      return <Link to='/login'>{"Already have an account? Log in."}</Link>;
+      return <Link to='/login'>{"Already have an account Log In!"}</Link>;
     }
   }
 

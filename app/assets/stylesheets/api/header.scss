@@ -1,0 +1,17 @@
+.header {
+  display: flex;
+}
+
+.header-logo {
+  display: inline-block;
+  float: left;
+}
+
+.header-signup-link,
+.header-login-link,
+.header-demo-link,
+.header-logout-button {
+  float: left;
+  display: inline-block;
+  padding: 20px;
+}

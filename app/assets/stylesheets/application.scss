@@ -14,10 +14,23 @@
  *= require_self
  */
 
+ @import "base/reset.scss";
+
+ // Core
+ @import "base/colors.scss";
+ @import "base/fonts.scss";
+ @import "base/layout.scss";
+
+ // Grid
+ @import "base/grid.scss";
+
+ // Components
+ @import "api/*";
+
  html {
-   height:100%;
-   width:100%;
-   background-repeat:no-repeat;
+   height: 100%;
+   width: 100%;
+   background-repeat: no-repeat;
    background-size: cover;
-   background-image: url("http://il5.picdn.net/shutterstock/videos/15857293/thumb/2.jpg");
+   background-image: url(home_page_background.jpg);
  }
