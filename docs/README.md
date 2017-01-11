@@ -11,10 +11,10 @@ SomeRecipes is a web application inspired by AllRecipes built using Ruby on Rail
 - [ ] A production README
 - [ ] Hosting on Heroku
 - [ ] New account creation, login, and guest/demo login
+- [ ] Profile Page
 - [ ] Viewing, creating, and editing recipes
-- [ ] Favorites/likes
+- [ ] Favorites and Searching
 - [ ] Reviewing recipes
-- [ ] Searching recipes
 
 ## Design Docs
 
