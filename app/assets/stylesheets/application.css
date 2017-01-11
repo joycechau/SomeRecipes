@@ -13,3 +13,11 @@
  *= require_tree .
  *= require_self
  */
+
+ html {
+   height:100%;
+   width:100%;
+   background-repeat:no-repeat;
+   background-size: cover;
+   background-image: url("http://il5.picdn.net/shutterstock/videos/15857293/thumb/2.jpg");
+ }

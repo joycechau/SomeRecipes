@@ -1,6 +1,6 @@
 # SomeRecipes
 
-[Heroku Link](https://dashboard.heroku.com/apps)
+[Heroku Link](https://somerecipes.herokuapp.com/)
 
 [Trello Link](https://trello.com/b/W50yeIRB/somerecipes)
 
