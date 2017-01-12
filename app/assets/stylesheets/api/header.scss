@@ -1,17 +1,56 @@
+@import "../base/colors.scss";
+
 .header {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $light-peach;
 }
 
 .header-logo {
-  display: inline-block;
+  margin: 20px;
+  display: flex;
+  align-items: center;
   float: left;
+}
+
+.header-logo-text {
+  font-size: 20px;
+  float: left;
+  color: $red-orange;
+  margin-right: 3px;
+}
+
+.header-logo-picture {
+  width: 25px;
+  height: auto
 }
 
 .header-signup-link,
 .header-login-link,
 .header-demo-link,
 .header-logout-button {
+  text-decoration: none;
   float: left;
   display: inline-block;
-  padding: 20px;
+  margin-right: 10px;
+  padding: 15px;
+  color: $red-orange;
+  border-radius: 10px;
+}
+
+.header-signup-link:hover {
+  background-color: $hover-background
+}
+
+.header-login-link:hover {
+  background-color: $hover-background
+}
+
+.header-demo-link:hover {
+  background-color: $hover-background
+}
+
+.header-logout-button:hover {
+  background-color: $hover-background
 }

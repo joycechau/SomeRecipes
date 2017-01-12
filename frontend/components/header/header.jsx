@@ -1,24 +1,42 @@
 import React from 'react';
+import Modal from 'react-modal';
 import { Link, hashHistory } from 'react-router';
 
 class Header extends React.Component {
   constructor(props) {
     super(props);
-    this.handleClick = this.handleClick.bind(this);
+    this.handleDemoButtonClick = this.handleDemoButtonClick.bind(this);
+    this.state = { modalOpen: false };
   }
 
-  handleClick(e) {
+  handleDemoButtonClick(e) {
     e.preventDefault();
     this.props.login({username: "Joyce", password: "password"});
     hashHistory.push('/');
   }
 
+  handleHeaderLogoClick(e) {
+    e.preventDefault();
+    hashHistory.push('/');
+  }
+
+  headerLogo() {
+    return (
+      <div>
+        <button className="header-logo"
+                onClick={this.handleHeaderLogoClick}>
+          <h3 className="header-logo-text">SomeRecipes</h3>
+          <img className="header-logo-picture"
+            src="http://www.clker.com/cliparts/X/O/3/w/l/F/coral-cutlery-hi.png"></img>
+        </button>
+      </div>
+    );
+  }
+
   currentUser() {
     return (
       <div className="header">
-        <h3 clasName="header-logo">
-          Welcome, {this.props.currentUser.username}!
-        </h3>
+        {this.headerLogo()}
         <button onClick={this.props.logout}
                 className="header-logout-button">
                 Log Out</button>
@@ -29,16 +47,22 @@ class Header extends React.Component {
   noCurrentUser() {
     return (
       <div className="header">
-        <Link to="/signup"
-              className="header-signup-link" >
-              Sign Up</Link>
-        <Link to="/login"
-              className="header-login-link"
-              >Log In</Link>
-        <Link to="/"
-              onClick={this.handleClick}
-              className="header-demo-link"
-              >Demo</Link>
+        {this.headerLogo()}
+        <div>
+          <Link to="/signup"
+            className="header-signup-link" >
+            Sign Up</Link>
+          <Link to="/login"
+            className="header-login-link"
+            >Log In</Link>
+          <Link to="/"
+            onClick={this.handleDemoButtonClick}
+            className="header-demo-link"
+            >Demo</Link>
+          <Model
+            isOpen={this.state.modalOpen}>
+          </Model>
+        </div>
       </div>
     );
   }

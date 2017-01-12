@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Modal from 'react-modal';
 import { login, signup, logout } from './actions/session_actions';
 import Root from './components/root';
 import configureStore from './store/store';
@@ -18,5 +19,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   window.store = store;
   const root = document.getElementById('root');
+  Modal.setAppElement(document.body); // Add this line
   ReactDOM.render(<Root store={ store }/>, root);
 });
