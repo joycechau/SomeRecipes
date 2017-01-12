@@ -8,24 +8,6 @@ class SessionForm extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  // componentDidMount() {
-  //   this.loggedInRedirect();
-  // }
-  //
-  // componentWillReceiveProps(newProps) {
-  //   if (this.props.errors) {
-  //     this.props.clearErrors();
-  //   } else if (newProps.loggedIn) {
-  //     this.props.router.push("/");
-  //   }
-  // }
-
-  loggedInRedirect() {
-    if (this.props.loggedIn) {
-      this.props.router.push("/");
-    }
-  }
-
   handleSubmit(e) {
     e.preventDefault();
     const user = Object.assign({}, this.state);
@@ -35,9 +17,9 @@ class SessionForm extends React.Component {
 
   linkText() {
     if (this.props.formType === 'login') {
-      return <Link to='/signup'>{"Don't have an account? Sign Up!"}</Link>;
+      return <Link to='/'>{"Don't have an account? Sign Up!"}</Link>;
     } else {
-      return <Link to='/login'>{"Already have an account Log In!"}</Link>;
+      return <Link to='/'>{"Already have an account Log In!"}</Link>;
     }
   }
 
@@ -60,6 +42,7 @@ class SessionForm extends React.Component {
   }
 
   render() {
+    console.log(this.props);
     const { loggedIn, errors, formType } = this.props;
     const text = formType === 'login' ? 'Log In' : 'Sign Up';
     return (

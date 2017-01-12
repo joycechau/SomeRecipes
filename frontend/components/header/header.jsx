@@ -7,11 +7,12 @@ import { style } from './session_form_modal';
 class Header extends React.Component {
   constructor(props) {
     super(props);
+    this.state = { modalOpen: false, formType: "login" };
     this.handleDemoButtonClick = this.handleDemoButtonClick.bind(this);
-    this.state = { modalOpen: false };
+    this.handleSignUpButtonClick = this.handleSignUpButtonClick.bind(this);
     this.closeModal = this.closeModal.bind(this);
     this.openModal = this.openModal.bind(this);
-    Modal.setAppElement("body");
+
   }
 
   handleDemoButtonClick(e) {
@@ -25,8 +26,13 @@ class Header extends React.Component {
     hashHistory.push('/');
   }
 
+  handleSignUpButtonClick(e) {
+    e.preventDefault();
+    this.setState({ modalOpen: true, formType: "signup" });
+  }
+
   closeModal() {
-    this.setState({ modalOpen: false });
+    this.setState({ modalOpen: false, formType: "login" });
   }
 
   openModal() {
@@ -59,32 +65,28 @@ class Header extends React.Component {
   }
 
   noCurrentUser() {
-    // debugger
     return (
       <div className="header">
         {this.headerLogo()}
         <div>
-          <Link to="/signup"
-                onClick={this.openModal}
-                className="header-signup-link">
-                Sign Up</Link>
-          <Link to="/login"
-                onClick={this.openModal}
-                className="header-login-link"
-                >Log In</Link>
+          <button onClick={this.handleSignUpButtonClick}
+                  className="header-signup-link"
+                  >Sign Up</button>
+          <button onClick={this.openModal}
+                  className="header-login-link"
+                  >Log In</button>
           <Link to="/"
-                onClick={this.handleDemoButtonClick}
-                className="header-demo-link"
-                >Demo</Link>
-
+            onClick={this.handleDemoButtonClick}
+            className="header-demo-link"
+            >Demo</Link>
           <Modal
             isOpen={this.state.modalOpen}
             onRequestClose={this.closeModal}
             contentLabel="Modal"
             style={style}>
             <h2>In the Modal</h2>
-            <SessionFormContainer location={this.props.location}/>
-            <button onclick={this.closeModal}>Close</button>
+            <SessionFormContainer formType={this.state.formType}/>
+            <button onClick={this.closeModal}>Close</button>
           </Modal>
         </div>
       </div>

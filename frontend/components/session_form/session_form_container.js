@@ -5,18 +5,17 @@ import { hashHistory } from 'react-router';
 import SessionForm from './session_form';
 
 const mapStateToProps = ({ currentUser, errors }, ownProps) => {
-  // console.log(ownProps);
+  console.log(ownProps);
   return {
     loggedIn: currentUser ? true : false,
     errors: errors['session'],
-    formType: ownProps.location["pathname"] === '/signup' ? 'signup' : 'login'
+    formType: ownProps.formType
   };
 };
 
 const mapDispatchToProps = (dispatch, ownProps) => {
-  console.log(ownProps);
-  const formType = ownProps.location["pathname"] === '/signup' ? 'signup' : 'login';
-  const action = formType === 'signup' ? signup : login;
+  // console.log(ownProps);
+  const action = ownProps.formType === 'login' ? login : signup;
   return {
     processForm: (user) => dispatch(action(user)),
     clearErrors: () => dispatch(clearErrors())
