@@ -16,14 +16,25 @@ class SessionForm extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     const user = Object.assign({}, this.state);
+    if (this.state.formType === 'signup') {
+      this.props.signup({
+        username: this.state.username,
+        password: this.state.password
+      });
+    } else {
+      this.props.login({
+        username: this.state.username,
+        password: this.state.password
+      });
+    }
     this.props.processForm(user);
     this.setState({ username: "", password: "" });
+    this.props.clearErrors();
   }
 
   toggleFormType(e) {
     e.preventDefault();
-    console.log(this.state);
-    // this.props.clearErrors();
+    this.props.clearErrors();
     if (this.state.formType === 'login') {
       this.setState({ username: "", password: "", formType: "signup" });
     } else {
@@ -35,8 +46,12 @@ class SessionForm extends React.Component {
     if (this.state.formType === 'login') {
       return (
         <div>
-          <h2>{"Don't have an account?"}</h2>
-          <button onClick={this.toggleFormType}>Sign Up</button>
+          <h2 className="session-form-redirect-text">
+            {"Don't have an account?"}
+          </h2>
+          <button onClick={this.toggleFormType}
+                  className="session-form-redirect-button"
+                  >Sign Up</button>
         </div>
       );
     } else {
@@ -46,7 +61,8 @@ class SessionForm extends React.Component {
             {"Already have an account?"}
           </h2>
           <button onClick={this.toggleFormType}
-                  className="session-form-redirect-button">Log In</button>
+                  className="session-form-redirect-button"
+                  >Log In</button>
         </div>
       );
     }

@@ -44,6 +44,8 @@ group :development do
   gem 'pry-rails'
   gem 'annotate'
   gem 'faker'
+  gem 'guard-livereload', '~> 2.5', require: false
+  gem 'rack-livereload'
 end
 
 group :production do

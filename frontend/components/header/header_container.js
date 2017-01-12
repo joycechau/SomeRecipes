@@ -1,5 +1,7 @@
 import { connect } from 'react-redux';
 import { logout, login } from '../../actions/session_actions';
+import { clearErrors } from '../../actions/errors_actions';
+
 import Header from './header';
 
 const mapStateToProps = ({ currentUser }, ownProps) => {
@@ -11,7 +13,8 @@ const mapStateToProps = ({ currentUser }, ownProps) => {
 
 const mapDispatchToProps = (dispatch) => ({
   logout: () => dispatch(logout()),
-  login: (user) => dispatch(login(user))
+  login: (user) => dispatch(login(user)),
+  clearErrors: () => dispatch(clearErrors())
 });
 
 export default connect(

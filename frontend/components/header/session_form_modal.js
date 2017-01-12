@@ -18,9 +18,9 @@ export const style = {
     padding         : '30px',
     zIndex          : 11,
     width           : '250px',
-    height          : '300px',
+    height          : '325px',
     'margin-left'   : '-150px',
-    'margin-top'    : '-150px',
-    'background-image' : 'url(../../../apps/assets/images/session_form.jpg)'
+    'margin-top'    : '-150px'
+    // 'background-image' : 'url(/assets/session_form.jpg)'
   }
 };

@@ -31,6 +31,7 @@ class Header extends React.Component {
   }
 
   closeModal() {
+    this.props.clearErrors();
     this.setState({ modalOpen: false, formType: "login" });
   }
 
@@ -54,8 +55,10 @@ class Header extends React.Component {
   currentUser() {
     return (
       <div className="header">
-        {this.headerLogo()}
-        <li>Welcome, {this.props.currentUser.username}</li>
+        <h1>{this.headerLogo()}</h1>
+        <h2 className="welcome-message">
+          Welcome, {this.props.currentUser.username}!
+        </h2>
         <button onClick={this.props.logout}
                 className="header-logout-button">
                 Log Out</button>

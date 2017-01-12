@@ -8,7 +8,7 @@
 }
 
 .session-form-modal {
-  
+
 }
 
 .session-form {
@@ -35,7 +35,14 @@
 }
 
 .session-form-submit-button {
+  padding: 3px;
+  border-radius: 5px;
   color: $red-orange;
+  margin-bottom: 10px;
+}
+
+.session-form-submit-button:hover {
+  background-color: $hover-background;
 }
 
 .error-message {
@@ -46,13 +53,19 @@
 }
 
 .session-form-redirect-text {
-  margin: 0 auto;
   color: $red-orange;
   text-align: center;
+  margin-bottom: 5px;
 }
 
 .session-form-redirect-button {
   margin: 0 auto;
   color: $red-orange;
-  text-align: center;
+  display: flex;
+  padding: 3px;
+  border-radius: 5px;
+}
+
+.session-form-redirect-button:hover {
+  background-color: $hover-background;
 }

@@ -26,6 +26,12 @@
   height: auto
 }
 
+.welcome-message {
+  text-decoration: none;
+  color: $red-orange;
+  font-size: 18px;
+}
+
 .header-signup-link,
 .header-login-link,
 .header-demo-link,
