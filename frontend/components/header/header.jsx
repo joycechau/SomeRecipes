@@ -10,6 +10,7 @@ class Header extends React.Component {
     this.state = { modalOpen: false, formType: "login" };
     this.handleDemoButtonClick = this.handleDemoButtonClick.bind(this);
     this.handleSignUpButtonClick = this.handleSignUpButtonClick.bind(this);
+    this.handleLogOutButtonClick = this.handleLogOutButtonClick.bind(this);
     this.closeModal = this.closeModal.bind(this);
     this.openModal = this.openModal.bind(this);
   }
@@ -28,6 +29,12 @@ class Header extends React.Component {
   handleSignUpButtonClick(e) {
     e.preventDefault();
     this.setState({ modalOpen: true, formType: "signup" });
+  }
+
+  handleLogOutButtonClick(e) {
+    e.preventDefault();
+    this.props.logout();
+    this.setState({ modalOpen: false, formType: "login" });
   }
 
   closeModal() {
@@ -59,7 +66,7 @@ class Header extends React.Component {
         <h2 className="welcome-message">
           Welcome, {this.props.currentUser.username}!
         </h2>
-        <button onClick={this.props.logout}
+        <button onClick={this.handleLogOutButtonClick}
                 className="header-logout-button">
                 Log Out</button>
       </div>
