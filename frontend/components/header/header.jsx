@@ -12,7 +12,6 @@ class Header extends React.Component {
     this.handleSignUpButtonClick = this.handleSignUpButtonClick.bind(this);
     this.closeModal = this.closeModal.bind(this);
     this.openModal = this.openModal.bind(this);
-
   }
 
   handleDemoButtonClick(e) {
@@ -79,19 +78,23 @@ class Header extends React.Component {
             onClick={this.handleDemoButtonClick}
             className="header-demo-link"
             >Demo</Link>
-          <Modal
-            isOpen={this.state.modalOpen}
-            onRequestClose={this.closeModal}
-            contentLabel="Modal"
-            style={style}>
-            <h2>In the Modal</h2>
-            <SessionFormContainer formType={this.state.formType}/>
-            <button onClick={this.closeModal}>Close</button>
-          </Modal>
+          <div className="session-form-modal">
+            <Modal
+              isOpen={this.state.modalOpen}
+              onRequestClose={this.closeModal}
+              contentLabel="Modal"
+              style={style}>
+              <SessionFormContainer className="session-form-container"
+                formType={this.state.formType}/>
+            </Modal>
+          </div>
         </div>
       </div>
     );
   }
+
+  // <button className="modal-close-button"
+  //   onClick={this.closeModal}>Close</button>
 
   render() {
     if (this.props.currentUser) {

@@ -5,7 +5,6 @@ import { hashHistory } from 'react-router';
 import SessionForm from './session_form';
 
 const mapStateToProps = ({ currentUser, errors }, ownProps) => {
-  console.log(ownProps);
   return {
     loggedIn: currentUser ? true : false,
     errors: errors['session'],
@@ -14,7 +13,6 @@ const mapStateToProps = ({ currentUser, errors }, ownProps) => {
 };
 
 const mapDispatchToProps = (dispatch, ownProps) => {
-  // console.log(ownProps);
   const action = ownProps.formType === 'login' ? login : signup;
   return {
     processForm: (user) => dispatch(action(user)),

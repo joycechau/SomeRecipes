@@ -11,7 +11,7 @@ div, p, form, label, input, {
   background: transparent;
 }
 
-
+button:focus {outline:0;}
 
 ul {
   list-style: none;

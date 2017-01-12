@@ -4,8 +4,13 @@ import { Link } from 'react-router';
 class SessionForm extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { username: "", password: "" };
+    this.state = { username: "",
+                   password: "",
+                   formType: props.formType,
+                   errors: props.errors
+                 };
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.toggleFormType = this.toggleFormType.bind(this);
   }
 
   handleSubmit(e) {
@@ -15,11 +20,35 @@ class SessionForm extends React.Component {
     this.setState({ username: "", password: "" });
   }
 
-  linkText() {
-    if (this.props.formType === 'login') {
-      return <Link to='/'>{"Don't have an account? Sign Up!"}</Link>;
+  toggleFormType(e) {
+    e.preventDefault();
+    console.log(this.state);
+    // this.props.clearErrors();
+    if (this.state.formType === 'login') {
+      this.setState({ username: "", password: "", formType: "signup" });
     } else {
-      return <Link to='/'>{"Already have an account Log In!"}</Link>;
+      this.setState({ username: "", password: "", formType: "login" });
+    }
+  }
+
+  linkText() {
+    if (this.state.formType === 'login') {
+      return (
+        <div>
+          <h2>{"Don't have an account?"}</h2>
+          <button onClick={this.toggleFormType}>Sign Up</button>
+        </div>
+      );
+    } else {
+      return (
+        <div>
+          <h2 className="session-form-redirect-text">
+            {"Already have an account?"}
+          </h2>
+          <button onClick={this.toggleFormType}
+                  className="session-form-redirect-button">Log In</button>
+        </div>
+      );
     }
   }
 
@@ -28,7 +57,9 @@ class SessionForm extends React.Component {
       return (
         <ul>
           {this.props.errors.map((err, idx) => (
-            <li key={idx + err}>{err}</li>
+            <li className="error-message"
+                key={idx + err}>
+                {err}</li>
           ))}
         </ul>
       );
@@ -42,29 +73,30 @@ class SessionForm extends React.Component {
   }
 
   render() {
-    console.log(this.props);
-    const { loggedIn, errors, formType } = this.props;
-    const text = formType === 'login' ? 'Log In' : 'Sign Up';
+    const text = this.state.formType === 'login' ? 'Log In' : 'Sign Up';
     return (
       <div>
-        <form onSubmit={this.handleSubmit}>
-          <h2>{text}</h2>
-          {this.errorText()}
-          <br/>
-          <label>Username:
+        <form onSubmit={this.handleSubmit}
+              className="session-form">
+          <h2 className="session-form-title">{text}</h2>
+          <label className="session-form-label">Username:
             <input type="text"
                    value={this.state.username}
-                   onChange={this.update('username')}/>
+                   onChange={this.update('username')}
+                   className="session-form-input"/>
           </label>
-          <br />
-          <label>Password:
+          <label className="session-form-label">Password:
             <input type="password"
                    value={this.state.password}
-                   onChange={this.update('password')}/>
+                   onChange={this.update('password')}
+                   className="session-form-input"/>
           </label>
-          <input type="submit" value="Submit"></input>
           <br/>
-          {this.linkText()}
+          <input type="submit"
+                 value="Submit"
+                 className="session-form-submit-button"/>
+          <h2>{this.errorText()}</h2>
+          <h2>{this.linkText()}</h2>
         </form>
       </div>
     );

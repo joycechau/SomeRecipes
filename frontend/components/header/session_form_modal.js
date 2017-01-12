@@ -1,6 +1,6 @@
 export const style = {
   overlay : {
-    position        : 'fixed',
+    position        : 'absolute',
     top             : 0,
     left            : 0,
     right           : 0,
@@ -9,13 +9,18 @@ export const style = {
     zIndex          : 10
   },
   content : {
-    position        : 'fixed',
-    top             : '100px',
-    left            : '150px',
+    position        : 'absolute',
+    top             : '50%',
+    left            : '50%',
     right           : '150px',
     bottom          : '100px',
-    border          : '1px solid #ccc',
-    padding         : '20px',
-    zIndex          : 11
+    border          : '2px solid #E52F00',
+    padding         : '30px',
+    zIndex          : 11,
+    width           : '250px',
+    height          : '300px',
+    'margin-left'   : '-150px',
+    'margin-top'    : '-150px',
+    'background-image' : 'url(../../../apps/assets/images/session_form.jpg)'
   }
 };

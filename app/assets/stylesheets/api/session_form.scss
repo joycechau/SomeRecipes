@@ -1,3 +1,58 @@
 // Place all the styles related to the api/sessions controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import "../base/colors.scss";
+
+.modal-close-button {
+  float: right
+}
+
+.session-form-modal {
+  
+}
+
+.session-form {
+  align-items: center;
+}
+
+.session-form-title {
+  font-size: 30px;
+  padding: 10px;
+  text-align: center;
+  color: $red-orange;
+}
+
+.session-form-label {
+  color: $red-orange;
+}
+
+.session-form-input {
+  padding: 5px;
+  border: 1px solid $red-orange;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  width: 235px;
+}
+
+.session-form-submit-button {
+  color: $red-orange;
+}
+
+.error-message {
+  font-size: 10px;
+  font-style: italic;
+  color: red;
+  opacity: 50;
+}
+
+.session-form-redirect-text {
+  margin: 0 auto;
+  color: $red-orange;
+  text-align: center;
+}
+
+.session-form-redirect-button {
+  margin: 0 auto;
+  color: $red-orange;
+  text-align: center;
+}
