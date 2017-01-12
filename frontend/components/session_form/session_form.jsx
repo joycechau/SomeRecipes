@@ -8,17 +8,17 @@ class SessionForm extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  componentDidMount() {
-    this.loggedInRedirect();
-  }
-
-  componentWillReceiveProps(newProps) {
-    if (this.props.errors) {
-      this.props.clearErrors();
-    } else if (newProps.loggedIn) {
-      this.props.router.push("/");
-    }
-  }
+  // componentDidMount() {
+  //   this.loggedInRedirect();
+  // }
+  //
+  // componentWillReceiveProps(newProps) {
+  //   if (this.props.errors) {
+  //     this.props.clearErrors();
+  //   } else if (newProps.loggedIn) {
+  //     this.props.router.push("/");
+  //   }
+  // }
 
   loggedInRedirect() {
     if (this.props.loggedIn) {
