@@ -11,8 +11,8 @@ SomeRecipes is a web application inspired by AllRecipes built using Ruby on Rail
 - [ ] A production README
 - [ ] Hosting on Heroku
 - [ ] New account creation, login, and guest/demo login
+- [ ] Viewing, creating, editing, and deleting recipes
 - [ ] Profile Page
-- [ ] Viewing, creating, and editing recipes
 - [ ] Favorites and Searching
 - [ ] Reviewing recipes
 
@@ -35,16 +35,11 @@ SomeRecipes is a web application inspired by AllRecipes built using Ruby on Rail
 * Setup frontend auth
   * Create Session util, actions, reducer, store
   * Create React router and session components
-  * Create temp HeaderContainer
   * Create SessionForm components and session routes
   * Bootstrap currentUser
 * Add HeaderContainer
 
-### Phase 2: Profile Page (0.5 days)
-**Objective**: Users can view their profile page
-* Create ProfileContainer storing Header, SideBar, and SideBarSection
-
-### Phase 3: Recipes Model, API, and components (2.5 days)
+### Phase 2: Recipes Model, API, and components (2 days)
 
 **Objective**: Recipes can be created, read, edited, and destroyed through the API
 * Create recipes model and controller, add appropriate associations
@@ -53,6 +48,10 @@ SomeRecipes is a web application inspired by AllRecipes built using Ruby on Rail
 * Create RecipeIndexContainer and RecipeIndexItem
 * Create RecipeDetailContainer and RecipeDetail
 * Create RecipeFormContainer and RecipeForm  
+
+### Phase 3: Profile Page (1 day)
+**Objective**: Users can view their profile page
+* Create ProfileContainer storing Header, SideBar, and SideBarSection
 
 ### Phase 4: Favorites and Searching (1 day)
 
