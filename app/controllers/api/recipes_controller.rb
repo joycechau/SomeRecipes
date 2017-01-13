@@ -3,6 +3,14 @@ class Api::RecipesController < ApplicationController
     @recipes = Recipe.all
   end
 
+  def favorite_recipes
+    #join Recipe on Favorites where Favorites.user_id = current_user.id
+  end
+
+  def own_recipes
+    #.where user_id = current_user.id
+  end
+
   def show
     @recipe = Recipe.find(params[:id])
   end

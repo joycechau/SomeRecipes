@@ -1,43 +1,47 @@
-import * as PostApiUtil from '../util/post_api_util';
+import * as APIUtil from '../util/recipe_api_util';
 import { hashHistory } from 'react-router';
 
-export const RECEIVE_ALL_POSTS = "RECEIVE_ALL_POSTS";
-export const RECEIVE_POST = "RECEIVE_POST";
-export const REMOVE_POST = "REMOVE_POST";
+export const RECEIVE_ALL_RECIPES = "RECEIVE_ALL_RECIPES";
+export const RECEIVE_RECIPE = "RECEIVE_RECIPE";
+export const REMOVE_RECIPE = "REMOVE_RECIPE";
 
-export const fetchPosts = () => dispatch => (
-  PostApiUtil.fetchPosts().then(posts => dispatch(receiveAllPosts(posts)))
+export const fetchRecipes = () => dispatch => (
+  APIUtil.fetchRecipes()
+    .then(recipes => dispatch(receiveAllRecipes(recipes)))
 );
 
-export const fetchPost = id => dispatch => (
-  PostApiUtil.fetchPost(id).then(post => dispatch(receivePost(post)))
+export const fetchRecipe = (id) => (dispatch) => (
+  APIUtil.fetchRecipe(id)
+    .then(recipe => dispatch(receiveRecipe(recipe)))
 );
 
-export const createPost = post => dispatch => (
-  PostApiUtil.createPost(post).then(post => dispatch(receivePost(post)))
+export const createRecipe = (data) => (dispatch) => (
+  APIUtil.createRecipe(data)
+    .then(recipe => dispatch(receiveRecipe(recipe)))
 );
 
-export const updatePost = post => dispatch => (
-  PostApiUtil.updatePost(post)
-             .then(post => dispatch(receivePost(post)))
-             .then(hashHistory.push('/'))
+export const updateRecipe = (data) => (dispatch) => (
+  APIUtil.updateRecipe(data)
+    .then(recipe => dispatch(receiveRecipe(recipe)))
+
 );
 
-export const deletePost = post => dispatch => (
-  PostApiUtil.deletePost(post).then(post => dispatch(removePost(post)))
+export const deleteRecipe = (data) => (dispatch) => (
+  APIUtil.deleteRecipe(data)
+    .then(recipe => dispatch(removeRecipe(recipe)))
 );
 
-const receiveAllPosts = posts => ({
-  type: RECEIVE_ALL_POSTS,
-  posts
+const receiveAllRecipes = recipes => ({
+  type: RECEIVE_ALL_RECIPES,
+  recipes
 });
 
-const receivePost = post => ({
-  type: RECEIVE_POST,
-  post
+const receiveRecipe = recipe => ({
+  type: RECEIVE_RECIPE,
+  recipe
 });
 
-const removePost = post => ({
-  type: REMOVE_POST,
-  post
+const removeRecipe = recipe => ({
+  type: REMOVE_RECIPE,
+  recipe
 });

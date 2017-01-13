@@ -36,10 +36,12 @@
 
 .session-form-submit-button {
   padding: 3px;
+  border: 1px solid $red-orange;
   border-radius: 5px;
   color: $red-orange;
   margin: 0 auto;
   display: flex;
+  margin-bottom: 5px
 }
 
 .session-form-submit-button:hover {
@@ -57,7 +59,7 @@
   color: $red-orange;
   text-align: center;
   margin-bottom: 5px;
-  margin-top: 5px
+  margin-top: 15px
 }
 
 .session-form-redirect-button {
@@ -66,6 +68,7 @@
   display: flex;
   padding: 3px;
   border-radius: 5px;
+  border: 1px solid $red-orange;
 }
 
 .session-form-redirect-button:hover {

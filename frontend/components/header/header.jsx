@@ -53,7 +53,7 @@ class Header extends React.Component {
                 onClick={this.handleHeaderLogoClick}>
           <h3 className="header-logo-text">SomeRecipes</h3>
           <img className="header-logo-picture"
-            src="http://res.cloudinary.com/joycechau/image/upload/c_limit,h_60,w_90/v1484299145/i4zsph9f8bv9mwjkquhf.png"></img>
+            src="https://res.cloudinary.com/joycechau/image/upload/v1484299145/logo.png"></img>
         </button>
       </div>
     );
