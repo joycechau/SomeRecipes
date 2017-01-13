@@ -19,6 +19,7 @@
   },
   recipes: {
     1: {
+			id: 1,
       user_id: 1,
       title: 'Cookies',
 			image_url: 'http://cookie.png',
@@ -26,6 +27,7 @@
       description: 'Easy to make chocolate chip cookies'
     },
 		2: {
+			id: 2,
 			user_id: 7,
 			title: 'Chicken Noodle Soup',
 			image_url: 'http://chicken_noodle_soup.png',

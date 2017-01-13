@@ -17,7 +17,8 @@
 
 class Recipe < ApplicationRecord
   validates :title, :category, :description, presence: true
-  validates :ingredients, :directions, presence: true
+  validates :user, :ingredients, :directions, presence: true
+
 
   belongs_to :user
 end
