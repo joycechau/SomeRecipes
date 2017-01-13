@@ -1,4 +1,4 @@
-export const fetchRecipes = () => (
+export const fetchAllRecipes = () => (
   $.ajax({
     method: 'GET',
     url: 'api/recipes'
@@ -32,5 +32,19 @@ export const deleteRecipe = (id) => (
   $.ajax({
     method: 'DELETE',
     url: `api/recipes/${id}`
+  })
+);
+
+export const fetchOwnRecipes = () => (
+  $.ajax({
+    method: 'GET',
+    url: 'api/own_recipes'
+  })
+);
+
+export const fetchFavoriteRecipes = () => (
+  $.ajax({
+    method: 'GET',
+    url: 'api/favorite_recipes'
   })
 );

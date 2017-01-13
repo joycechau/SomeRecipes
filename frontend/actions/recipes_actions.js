@@ -5,8 +5,18 @@ export const RECEIVE_ALL_RECIPES = "RECEIVE_ALL_RECIPES";
 export const RECEIVE_RECIPE = "RECEIVE_RECIPE";
 export const REMOVE_RECIPE = "REMOVE_RECIPE";
 
-export const fetchRecipes = () => dispatch => (
-  APIUtil.fetchRecipes()
+export const fetchAllRecipes = () => dispatch => (
+  APIUtil.fetchAllRecipes()
+    .then(recipes => dispatch(receiveAllRecipes(recipes)))
+);
+
+export const fetchOwnRecipes = () => dispatch => (
+  APIUtil.fetchOwnRecipes()
+    .then(recipes => dispatch(receiveAllRecipes(recipes)))
+);
+
+export const fetchFavoriteRecipes = () => dispatch => (
+  APIUtil.fetchFavoriteRecipes()
     .then(recipes => dispatch(receiveAllRecipes(recipes)))
 );
 
@@ -23,7 +33,6 @@ export const createRecipe = (data) => (dispatch) => (
 export const updateRecipe = (data) => (dispatch) => (
   APIUtil.updateRecipe(data)
     .then(recipe => dispatch(receiveRecipe(recipe)))
-
 );
 
 export const deleteRecipe = (data) => (dispatch) => (
