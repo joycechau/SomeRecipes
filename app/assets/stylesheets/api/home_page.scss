@@ -1,0 +1,80 @@
+@import "../base/colors.scss";
+
+.home-page-container {
+}
+
+.home-splash-container {
+  display: block;
+  height: 300px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(https://res.cloudinary.com/joycechau/image/upload/v1484365696/home_background_2.jpg);
+  margin-bottom: 10px;
+}
+
+.home-splash-text {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  padding: 30px
+
+}
+
+.home-recipe-index-container {
+  margin: 75px;
+  margin-top: 40px;
+}
+
+.home-page-recipe-index-container {
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 30px;
+  margin: 0 auto;
+}
+
+.home-page-recipe-index-container-title {
+  font-size: 25px;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.home-page-recipe-index-item {
+  width: 300px;
+  height: auto;
+  padding: 18px;
+  border: 1px solid $gray;
+  margin: 10px;
+  float: left;
+  border-radius: 2px;
+}
+
+.home-page-recipe-index-item:hover {
+  background-color: #F8F8F8;
+}
+
+.home-page-recipe-index-image {
+  max-height: 250px
+}
+
+.home-page-recipe-index-item-title {
+  font-size: 18px;
+  padding: 5px;
+}
+
+.home-page-recipe-index-item-description {
+  color: $gray;
+  font-size: 14px;
+  padding: 5px;
+  margin: 5px, 0px;
+  bottom-border: 1px solid $gray;
+}
+
+.home-page-recipe-index-item-author {
+  color: $gray;
+  font-size: 12px;
+  padding: 5px
+}

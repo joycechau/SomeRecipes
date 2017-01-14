@@ -1,5 +1,11 @@
 @import "../base/colors.scss";
 
+.header-container {
+  // position: fixed;
+  // width: 100%;
+  // display: block;
+}
+
 .header {
   display: flex;
   justify-content: space-between;

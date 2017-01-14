@@ -1,6 +1,6 @@
 export const style = {
   overlay : {
-    position        : 'absolute',
+    position        : 'fixed',
     top             : 0,
     left            : 0,
     right           : 0,
@@ -9,7 +9,7 @@ export const style = {
     zIndex          : 10
   },
   content : {
-    position        : 'absolute',
+    position        : 'fixed',
     top             : '50%',
     left            : '50%',
     right           : '150px',

@@ -36,20 +36,22 @@
 
 .session-form-submit-button {
   padding: 3px;
-  border: 1px solid $red-orange;
+  background-color: #E5572B;
+  color: white;
   border-radius: 5px;
-  color: $red-orange;
   margin: 0 auto;
   display: flex;
-  margin-bottom: 5px
+  margin-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .session-form-submit-button:hover {
-  background-color: $hover-background;
+  background-color: #CB4E27;
 }
 
 .error-message {
-  font-size: 10px;
+  font-size: 11px;
   font-style: italic;
   color: red;
   opacity: 50;
@@ -64,13 +66,15 @@
 
 .session-form-redirect-button {
   margin: 0 auto;
-  color: $red-orange;
+  color: white;
   display: flex;
   padding: 3px;
   border-radius: 5px;
-  border: 1px solid $red-orange;
+  background-color: #E5572B;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .session-form-redirect-button:hover {
-  background-color: $hover-background;
+  background-color: #CB4E27;
 }

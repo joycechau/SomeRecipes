@@ -61,42 +61,46 @@ class Header extends React.Component {
 
   currentUser() {
     return (
-      <div className="header">
-        <h1>{this.headerLogo()}</h1>
-        <h2 className="welcome-message">
-          Welcome, {this.props.currentUser.username}!
-        </h2>
-        <button onClick={this.handleLogOutButtonClick}
-                className="header-logout-button">
-                Log Out</button>
+      <div className="header-container">
+        <div className="header">
+          <h1>{this.headerLogo()}</h1>
+          <h2 className="welcome-message">
+            Welcome, {this.props.currentUser.username}!
+          </h2>
+          <button onClick={this.handleLogOutButtonClick}
+            className="header-logout-button">
+            Log Out</button>
+        </div>
       </div>
     );
   }
 
   noCurrentUser() {
     return (
-      <div className="header">
-        {this.headerLogo()}
-        <div>
-          <button onClick={this.handleSignUpButtonClick}
-                  className="header-signup-link"
-                  >Sign Up</button>
-          <button onClick={this.openModal}
-                  className="header-login-link"
-                  >Log In</button>
-          <Link to="/"
-            onClick={this.handleDemoButtonClick}
-            className="header-demo-link"
-            >Demo</Link>
-          <div className="session-form-modal">
-            <Modal
-              isOpen={this.state.modalOpen}
-              onRequestClose={this.closeModal}
-              contentLabel="Modal"
-              style={style}>
-              <SessionFormContainer className="session-form-container"
-                formType={this.state.formType}/>
-            </Modal>
+      <div className="header-container">
+        <div className="header">
+          {this.headerLogo()}
+          <div>
+            <button onClick={this.handleSignUpButtonClick}
+              className="header-signup-link"
+              >Sign Up</button>
+            <button onClick={this.openModal}
+              className="header-login-link"
+              >Log In</button>
+            <Link to="/"
+              onClick={this.handleDemoButtonClick}
+              className="header-demo-link"
+              >Demo</Link>
+            <div className="session-form-modal">
+              <Modal
+                isOpen={this.state.modalOpen}
+                onRequestClose={this.closeModal}
+                contentLabel="Modal"
+                style={style}>
+                <SessionFormContainer className="session-form-container"
+                  formType={this.state.formType}/>
+              </Modal>
+            </div>
           </div>
         </div>
       </div>

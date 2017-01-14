@@ -8,18 +8,21 @@ class RecipeIndex extends React.Component {
 
   render() {
     return (
-      <div className="home-page-recipe-index-container">
-        <ul>
-          {
-            this.props.recipes.map(recipe => (
-              <RecipeIndexItem key={recipe.id}
-                               recipe={recipe}
-                               currentUser={this.props.currentUser}/>
+      <section>
+        <h1 className="home-page-recipe-index-container-title">
+          Welcome! Browse our recipes.
+        </h1>
+        <div>
+          {this.props.recipes.map(recipe => (
+            <RecipeIndexItem key={recipe.id}
+              recipe={recipe}
+              currentUser={this.props.currentUser}
+              />
             ))
           }
-        </ul>
+        </div>
         { this.props.children }
-      </div>
+      </section>
     );
   }
 }

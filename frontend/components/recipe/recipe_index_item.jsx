@@ -19,14 +19,15 @@ class RecipeIndexItem extends React.Component {
     return (
       <button className="home-page-recipe-index-item"
               onClick={this.showRecipe}>
-        <img src={recipe.image_url}></img>
+        <img src={recipe.image_url}
+             className="home-page-recipe-index-image"></img>
         <h2 className="home-page-recipe-index-item-title">
           {recipe.title}
         </h2>
-        <h2 className="home-page-recipe-index-item-description">
+        <p className="home-page-recipe-index-item-description">
           {recipe.description}
-        </h2>
-        <h2>
+        </p>
+        <h2 className="home-page-recipe-index-item-author">
           Recipe by { author }
         </h2>
       </button>
