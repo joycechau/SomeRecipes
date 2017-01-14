@@ -1,3 +1,3 @@
-import { values } from 'lodash';
-
-export const selectAllRecipes = ({ recipes }) => values(recipes);
+export const recipesAsArray = ({ recipes }) => {
+  return Object.keys(recipes).map(key => recipes[key]);
+};
