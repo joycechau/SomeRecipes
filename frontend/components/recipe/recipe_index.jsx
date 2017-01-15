@@ -1,5 +1,6 @@
 import React from 'react';
 import RecipeIndexItem from './recipe_index_item';
+import Masonry from 'react-masonry-component';
 
 class RecipeIndex extends React.Component {
   componentDidMount() {
@@ -12,15 +13,19 @@ class RecipeIndex extends React.Component {
         <h1 className="home-page-recipe-index-container-title">
           Welcome! Browse our recipes.
         </h1>
-        <div>
+        <Masonry
+          className="recipe-index-masonry-container"
+        >
           {this.props.recipes.map(recipe => (
-            <RecipeIndexItem key={recipe.id}
+            <RecipeIndexItem
+              key={recipe.id + recipe}
               recipe={recipe}
               currentUser={this.props.currentUser}
               />
             ))
           }
-        </div>
+        </Masonry>
+
         { this.props.children }
       </section>
     );

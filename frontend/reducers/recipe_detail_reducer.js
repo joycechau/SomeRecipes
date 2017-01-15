@@ -4,7 +4,6 @@ import {
 } from '../actions/recipes_actions';
 import merge from 'lodash/merge';
 
-
 const defaultRecipeDetail = {
   user_id: "",
   title: "",
@@ -19,8 +18,7 @@ const RecipeDetailReducer = (state = defaultRecipeDetail, action) => {
   Object.freeze(state);
   switch(action.type) {
     case RECEIVE_RECIPE:
-      let recipe = action.recipe;
-      return merge({}, state, recipe);
+      return action.recipe;
     case REMOVE_RECIPE:
       return {};
     default:

@@ -5,34 +5,49 @@
 
 .home-splash-container {
   display: block;
-  height: 300px;
+  height: 400px;
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(https://res.cloudinary.com/joycechau/image/upload/v1484365696/home_background_2.jpg);
+  background-image: url(http://res.cloudinary.com/joycechau/image/upload/c_crop,w_2048/v1484446401/home-background_4_e08du4.jpg);
   margin-bottom: 10px;
+  background-position: center center;
 }
 
 .home-splash-text {
   color: white;
   font-size: 20px;
   text-align: center;
-  padding: 30px
-
+  padding: 30px;
 }
 
 .home-recipe-index-container {
-  margin: 75px;
   margin-top: 40px;
 }
 
 .home-page-recipe-index-container {
-  border: 1px solid red;
   display: flex;
   justify-content: space-between;
   align-items: stretch;
   padding: 30px;
   margin: 0 auto;
+}
+
+.recipe-index-masonry-container {
+  width: 960px;
+  margin: auto;
+}
+
+@media (min-width: 300px) and (max-width: 1024px) {
+  .recipe-index-masonry-container {
+    width: 650px;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 650px) {
+  .recipe-index-masonry-container {
+    width: 340px;
+  }
 }
 
 .home-page-recipe-index-container-title {

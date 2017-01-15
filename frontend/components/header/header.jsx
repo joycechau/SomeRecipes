@@ -11,6 +11,7 @@ class Header extends React.Component {
     this.handleDemoButtonClick = this.handleDemoButtonClick.bind(this);
     this.handleSignUpButtonClick = this.handleSignUpButtonClick.bind(this);
     this.handleLogOutButtonClick = this.handleLogOutButtonClick.bind(this);
+    this.handleProfileButtonClick = this.handleProfileButtonClick.bind(this);
     this.closeModal = this.closeModal.bind(this);
     this.openModal = this.openModal.bind(this);
   }
@@ -37,6 +38,12 @@ class Header extends React.Component {
     this.setState({ modalOpen: false, formType: "login" });
   }
 
+  handleProfileButtonClick(e) {
+    console.log(this.props);
+    e.preventDefault();
+    hashHistory.push(`/profile/${this.props.currentUser.username}`);
+  }
+
   closeModal() {
     this.props.clearErrors();
     this.setState({ modalOpen: false, formType: "login" });
@@ -59,14 +66,18 @@ class Header extends React.Component {
     );
   }
 
+
+
+
   currentUser() {
     return (
       <div className="header-container">
         <div className="header">
           <h1>{this.headerLogo()}</h1>
-          <h2 className="welcome-message">
-            Welcome, {this.props.currentUser.username}!
-          </h2>
+          <button onClick={this.handleProfileButtonClick}
+                  className="header-profile-button">
+            My Profile
+          </button>
           <button onClick={this.handleLogOutButtonClick}
             className="header-logout-button">
             Log Out</button>
@@ -106,9 +117,6 @@ class Header extends React.Component {
       </div>
     );
   }
-
-  // <button className="modal-close-button"
-  //   onClick={this.closeModal}>Close</button>
 
   render() {
     if (this.props.currentUser) {

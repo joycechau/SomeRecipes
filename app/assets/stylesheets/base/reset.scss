@@ -31,9 +31,7 @@ button, input[type="submit"] {
   cursor: pointer;
 }
 
-/* Clearfix */
-
-.group:after {
+.clearfix:after {
   content: "";
   display: block;
   clear: both;

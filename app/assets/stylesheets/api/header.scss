@@ -1,16 +1,17 @@
 @import "../base/colors.scss";
 
 .header-container {
-  // position: fixed;
   // width: 100%;
   // display: block;
 }
 
 .header {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: white;
+  z-index: 100;
 }
 
 .header-logo {
