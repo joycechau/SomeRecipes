@@ -1,0 +1,75 @@
+@import "../base/colors.scss";
+
+.profile-page-container {
+  // border: 1px solid red;
+}
+
+.profile-background-image {
+  height: 75px;
+  padding: 20px;
+  margin-bottom: 50px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-image: url(http://res.cloudinary.com/joycechau/image/upload/c_crop,h_150,w_1024/v1484511295/2015-03-27-1427496203-1352796-bigstockWoodenspoonandingredientso76325474_jhcbtq.jpg);
+  display: flex;
+  align-items: center;
+}
+
+.profile-welcome-message {
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+}
+
+.profile-sidebar-container {
+  border: 1px solid green;
+  width: 25%
+}
+
+.profile-sidebar-and-main-section {
+  max-width: 1024px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-sidebar {
+  max-width: 300px;
+  height: auto;
+  width: 225px;
+  border: 2px solid $red-orange;
+  border-radius: 2px;
+  float: left;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 10px;
+}
+
+.profile-main-section {
+  width: 75%;
+  float: right;
+  border: 1px solid blue;
+  padding: 20px;
+  margin: 20px;
+  margin-top: 10px;
+}
+
+.profile-sidebar-button {
+  padding: 5px;
+  margin-top: 10px;
+  width: 80%;
+  align-self: center;
+  margin-bottom: 10px;
+  border: 1px solid $red-orange;
+  margin-left: 23px;
+  border-radius: 2px;
+}
+
+.profile-sidebar-button:hover {
+  background-color: $light-peach;
+}
+
+.profile-sidebar-button-text {
+  color: $red-orange;
+}

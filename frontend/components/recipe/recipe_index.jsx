@@ -3,6 +3,9 @@ import RecipeIndexItem from './recipe_index_item';
 import Masonry from 'react-masonry-component';
 
 class RecipeIndex extends React.Component {
+  constructor(props) {
+    super(props);
+  }
   componentWillMount() {
     this.props.fetchAllRecipes();
   }

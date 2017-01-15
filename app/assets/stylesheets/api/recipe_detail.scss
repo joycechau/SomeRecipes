@@ -5,15 +5,15 @@
 
 .recipe-detail-break-section {
   display: block;
-  background-color: $red-orange;
-  height: 15px;
-  margin-bottom: 10px
+  height: 75px;
+  background-image: url(https://res.cloudinary.com/joycechau/image/upload/c_crop,h_125,w_2400/v1484508125/recipe_detail_background.jpg)
 }
 
 .recipe-detail-section {
   padding: 75px;
   max-width: 1024px;
   margin: auto;
+  padding-top: 50px;
 }
 
 .recipe-detail-figure {

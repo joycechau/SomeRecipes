@@ -25,7 +25,8 @@ class RecipeDetail extends React.Component {
 
         </section>
         <section className="recipe-detail-section">
-          <div className="recipe-detail-summary-and-image">
+          <div className="recipe-detail-summary-and-image"
+               className="clearfix">
             <img src={recipe.image_url}
               alt={recipe.title}
               className="recipe-detail-img"

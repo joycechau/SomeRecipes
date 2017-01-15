@@ -3,6 +3,7 @@ import ProfilePage from './profile_page';
 import { fetchProfile } from '../../actions/profile_actions';
 
 const mapStateToProps = state => ({
+  currentUser: state.currentUser,
   profile: state.profile
 });
 
