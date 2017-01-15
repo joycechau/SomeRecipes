@@ -18,7 +18,7 @@ class Header extends React.Component {
 
   handleDemoButtonClick(e) {
     e.preventDefault();
-    this.props.login({username: "Joyce", password: "password"});
+    this.props.login({username: "joyce", password: "password"});
     hashHistory.push('/');
   }
 

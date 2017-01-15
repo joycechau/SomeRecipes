@@ -3,7 +3,7 @@ class CreateRecipes < ActiveRecord::Migration[5.0]
     create_table :recipes do |t|
       t.integer :user_id, null: false
       t.string :title, null: false
-      t.string :image_url
+      t.string :image_url, default: "https://res.cloudinary.com/joycechau/image/upload/v1484519242/default_recipe_detail_pic.gif"
       t.integer :average_rating
       t.string :category, null: false
       t.text :description, null: false

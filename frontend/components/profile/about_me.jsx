@@ -13,14 +13,13 @@ class AboutMe extends React.Component {
   }
 
   render() {
-    console.log(this.props.params);
-    console.log(this.props.profile);
     return (
       <div>
         <div className="about-me-image-and-username">
+          {console.log(this.props)}
           <img className="about-me-image"
-            src={this.props.profile_url}>
-          </img>
+               src={this.props.profile.profile_url}
+               alt={this.props.username}/>
           <h1 className="about-me-username">
             {this.props.profile.username}
           </h1>

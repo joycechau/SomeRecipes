@@ -6,7 +6,7 @@ class CreateUsers < ActiveRecord::Migration[5.0]
       t.string :session_token, null: false
       t.string :fname
       t.string :lname
-      t.string :profile_url
+      t.string :profile_url, default: "https://res.cloudinary.com/joycechau/image/upload/v1484519058/default_profile_pic.jpg"
       t.text :interests
 
       t.timestamps

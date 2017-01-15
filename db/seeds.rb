@@ -7,15 +7,78 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-User.create(username: "Joyce", password: "password");
-User.create(username: "ilovecorgis", password: "password");
-User.create(username: "sfgiants", password: "password");
-User.create(username: "baconlover", password: "password");
-User.create(username: "Peter", password: "password");
+User.create(username: "joyce",
+            password: "password",
+            fname: "Joyce",
+            lname: "Chau",
+            profile_url: "https://res.cloudinary.com/joycechau/image/upload/v1484519058/default_profile_pic.jpg",
+            interests: "Desserts, puzzles, board games, coding, running");
 
+User.create(username: "ilovecorgis",
+            password: "password",
+            fname: "Sally",
+            lname: "Jones",
+            profile_url: "https://res.cloudinary.com/joycechau/image/upload/v1484520322/ilovecorgis_profile_pic.jpg",
+            interests: "cookies, shopping, corgis");
+
+User.create(username: "sfgiants",
+            password: "password",
+            fname: "Kevin",
+            lname: "O'Connor",
+            profile_url: "https://res.cloudinary.com/joycechau/image/upload/v1484520429/sfgiants_profile_pic.jpg",
+            interests: "sports, san francisco, snowboarding");
+
+User.create(username: "baconlover",
+            password: "password",
+            fname: "Joe",
+            lname: "Fulcher",
+            profile_url: "https://res.cloudinary.com/joycechau/image/upload/v1484520486/baconlover_profile_pic.png",
+            interests: "bungee jumping, barbecue, reading");
+
+User.create(username: "peter",
+            password: "password",
+            fname: "Peter",
+            lname: "Yu",
+            profile_url: "https://res.cloudinary.com/joycechau/image/upload/v1484519058/default_profile_pic.jpg",
+            interests: "cooking, crafts, sports, running");
+
+User.create(username: "luckycharms",
+            password: "password",
+            fname: "Ellen",
+            lname: "Baker",
+            profile_url: "https://res.cloudinary.com/joycechau/image/upload/v1484520553/luckycharms_profile_pic.jpg",
+            interests: "cereal, baking, comic books");
+
+User.create(username: "catsarecool",
+            password: "password",
+            fname: "Patricia",
+            lname: "Adams",
+            profile_url: "https://res.cloudinary.com/joycechau/image/upload/v1484520619/catlover_profile_pic.jpg",
+            interests: "small cats, medium cats, big cats, all cats");
+
+User.create(username: "flowergirl",
+            password: "password",
+            fname: "Mary",
+            lname: "Corey",
+            profile_url: "https://res.cloudinary.com/joycechau/image/upload/v1484520777/flowergirl_profile_pic.jpg",
+            interests: "flowers, weddings, cheesecake");
+
+User.create(username: "chefjohn",
+            password: "password",
+            fname: "John",
+            lname: "Rogers",
+            profile_url: "https://res.cloudinary.com/joycechau/image/upload/v1484520931/chefjohn_profile_url.png",
+            interests: "restaurants, fine-dining, dinner parties");
+
+User.create(username: "foodnetwork",
+            password: "password",
+            fname: "Bobby",
+            lname: "Flay",
+            profile_url: "https://res.cloudinary.com/joycechau/image/upload/v1484520981/foodnetwork_profile_pic.jpg",
+            interests: "grilling, barbecue, steaks");
 
 Recipe.create(
-  user_id: (1..5).to_a.sample,
+  user_id: (1..10).to_a.sample,
   title: "Salsa Shrimp Lettuce Wraps",
   category: "Main Dishes",
   description: "Looking for a healthy dinner that is ready in 15 minutes? These Salsa Shrimp Lettuce Wraps can be made so easily and quickly that you won’t have to wonder what’s for dinner.",
@@ -34,7 +97,7 @@ Recipe.create(
 
 
   Recipe.create(
-    user_id: (1..5).to_a.sample,
+    user_id: (1..10).to_a.sample,
     title: "Red Velvet Cupcakes",
     category: "Desserts",
     description: "This mini version of the classic Red Velvet Cake is one of the more popular offerings in bakeries all across the country. Whip up a batch this holiday season or anytime of the year.",
@@ -62,7 +125,7 @@ Recipe.create(
     )
 
 Recipe.create(
-  user_id: (1..5).to_a.sample,
+  user_id: (1..10).to_a.sample,
   title: "Caribbean Grilled Salmon Kabobs",
   category: "Main Dishes",
   description: "Caribbean Grilled Salmon Kabobs will take you straight to the islands with the cajun spices, fresh pineapple, bell peppers and fresh seafood! A perfect healthy grilling recipe for the summer that’s done in 20 minutes!",
@@ -86,7 +149,7 @@ Recipe.create(
 
 
 Recipe.create(
-  user_id: (1..5).to_a.sample,
+  user_id: (1..10).to_a.sample,
   title: "Creamy Italian Pasta",
   category: "Main Dishes",
   description: "This Easy Creamy Italian Pasta is as cozy and familiar as my favorite cardigan. You’ll want to eat it all fall and winter long.",
@@ -105,7 +168,7 @@ Recipe.create(
   )
 
 Recipe.create(
-  user_id: (1..5).to_a.sample,
+  user_id: (1..10).to_a.sample,
   title: "No-Bake Cheesecake",
   category: "Desserts",
   description: "This is an amazing recipe that I just threw together one day. Everyone loves it so much, it doesn't last long. This is good with any kind of canned or fresh fruit.",
@@ -125,7 +188,7 @@ Recipe.create(
 
 
 Recipe.create(
-  user_id: (1..5).to_a.sample,
+  user_id: (1..10).to_a.sample,
   title: "Vanilla Ice Cream",
   category: "Desserts",
   description: "Use this easy recipe to make vanilla ice cream, or add your favorite flavors to it.",
@@ -142,7 +205,7 @@ Recipe.create(
   )
 
 Recipe.create(
-  user_id: (1..5).to_a.sample,
+  user_id: (1..10).to_a.sample,
   title: "Buffalo Chicken Wings",
   category: "Appetizers",
   description: "Let your palate fly away on wings of fire - easy, spicy buffalo wings!",
@@ -159,7 +222,7 @@ Recipe.create(
 
 
 Recipe.create(
-user_id: (1..5).to_a.sample,
+user_id: (1..10).to_a.sample,
 title: "Bread Pudding",
 category: "Desserts",
 description: "My family LOVES bread pudding, and this recipe is one that I have fine tuned to their taste It's great for breakfast or dessert and is delicious with milk poured on top! Enjoy!",
@@ -180,7 +243,7 @@ directions: ["Preheat oven to 350 degrees F (175 degrees C).",
 
 
 Recipe.create(
-      user_id: (1..5).to_a.sample,
+      user_id: (1..10).to_a.sample,
       title: "Curried Coconut Chicken",
       category: "Main Dishes",
       description: "Curried chicken simmered in coconut milk and tomatoes makes for a mouthwatering hint of the tropics! Goes great with rice and vegetables.",
@@ -201,7 +264,7 @@ Recipe.create(
       )
 
 Recipe.create(
-user_id: (1..5).to_a.sample,
+user_id: (1..10).to_a.sample,
 title: "Flan",
 category: "Desserts",
 description: "This is a quick and easy baked flan recipe that is prepared in the blender. It's great served warm or cold and has a creamy texture like custard. Slice the flan and spoon a little of the melted sugar onto the top of the slice.",
@@ -220,7 +283,7 @@ directions: ["Preheat oven to 350 degrees F (175 degrees C).",
 
 
 Recipe.create(
-  user_id: (1..5).to_a.sample,
+  user_id: (1..10).to_a.sample,
   title: "3-Ingredient Crock-Pot Chicken Tacos",
   category: "Main Dishes",
   description: "In just five minutes, these delicious chicken tacos are in the crock-pot and cooking away! Ridiculously easy and sure to become your go-to lifesaver!",
@@ -239,7 +302,7 @@ Recipe.create(
 
 
 Recipe.create(
-user_id: (1..5).to_a.sample,
+user_id: (1..10).to_a.sample,
 title: "Soft Oatmeal Cookies",
 category: "Desserts",
 description: "These oatmeal cookies are very moist with a good flavor. Add a cup of raisins or nuts if you desire.",
@@ -260,7 +323,7 @@ directions: ["In a medium bowl, cream together butter, white sugar, and brown su
 )
 
   Recipe.create(
-  user_id: (1..5).to_a.sample,
+  user_id: (1..10).to_a.sample,
   title: "Classic Meatloaf",
   category: "Main Dishes",
   description: "The secrets to this meatloaf are fresh, very finely diced vegetables that give it moisture and flavor--and a light touch in mixing together the ingredients. This hearty meatloaf is the perfect meal for cool fall and winter evenings, served with mashed potatoes and simple mushroom gravy.",
@@ -281,7 +344,7 @@ directions: ["In a medium bowl, cream together butter, white sugar, and brown su
   )
 
 Recipe.create(
-      user_id: (1..5).to_a.sample,
+      user_id: (1..10).to_a.sample,
       title: "Pan Seared Salmon",
       category: "Main Dishes",
       description: "Simply seasoned with salt and pepper, these salmon fillets are pan seared with capers, and garnished with slices of lemon.",
@@ -298,7 +361,7 @@ Recipe.create(
 )
 
 Recipe.create(
-user_id: (1..5).to_a.sample,
+user_id: (1..10).to_a.sample,
 title: "Old Fashioned Apple Pie",
 category: "Desserts",
 description: "Apple pie ...so American, so delicious. A true classic. Enjoy!",
@@ -316,7 +379,7 @@ directions: ["Preheat oven to 425 degrees F (220 degrees C). Melt the butter in 
 )
 
 Recipe.create(
-      user_id: (1..5).to_a.sample,
+      user_id: (1..10).to_a.sample,
       title: "Chicken Enchiladas",
       category: "Main Dishes",
       description: "Quick and easy creamy chicken enchiladas are sure to be a family favorite!",
@@ -338,7 +401,7 @@ Recipe.create(
 
 
 Recipe.create(
-  user_id: (1..5).to_a.sample,
+  user_id: (1..10).to_a.sample,
   title: "Delicious Brownies",
   category: "Desserts",
   description: "Best brownies I've ever had!",
@@ -360,7 +423,7 @@ Recipe.create(
 
 
 Recipe.create(
-      user_id: (1..5).to_a.sample,
+      user_id: (1..10).to_a.sample,
       title: "Sirloin Steak with Garlic Butter",
       category: "Main Dishes",
       description: "I have never tasted any other steak that came even close to the ones made with this recipe. If you are having steak, don't skimp on flavor to save a few calories. The butter makes this steak melt in your mouth wonderful.",
@@ -378,7 +441,7 @@ Recipe.create(
 
 
 Recipe.create(
-  user_id: (1..5).to_a.sample,
+  user_id: (1..10).to_a.sample,
   title: "Bananas Foster",
   category: "Desserts",
   description: "Bananas sliced in a warm cinnamon and caramel sauce with rum. Serve over ice cream!",
@@ -395,7 +458,7 @@ Recipe.create(
   )
 
 Recipe.create(
-      user_id: (1..5).to_a.sample,
+      user_id: (1..10).to_a.sample,
       title: "Cranberry Spinach Salad",
       category: "Main Dishes",
       description: "Everyone I have made this for RAVES about it! It's different and so easy to make!",
@@ -417,7 +480,7 @@ Recipe.create(
       )
 
 Recipe.create(
-  user_id: (1..5).to_a.sample,
+  user_id: (1..10).to_a.sample,
   title: "Chocolate Chip Cookie",
   category: "Desserts",
   description: "Perfectly baked chocolate chip cookies for everyone to enjoy!",
@@ -434,4 +497,695 @@ Recipe.create(
   directions: ["Preheat oven to 350 degrees F (175 degrees C).",
                "Cream together the butter, white sugar, and brown sugar until smooth. Beat in the eggs one at a time, then stir in the vanilla. Dissolve baking soda in hot water. Add to batter along with salt. Stir in flour, chocolate chips, and nuts. Drop by large spoonfuls onto ungreased pans.",
                "Bake for about 10 minutes in the preheated oven, or until edges are nicely browned."]
+)
+
+
+Recipe.create(
+  user_id: (1..10).to_a.sample,
+  title: "Sloppy Joes",
+  category: "Main Dishes",
+  description: "This is the recipe my mother used for sloppy joes and it always gets compliments!",
+  image_url: "https://res.cloudinary.com/joycechau/image/upload/v1484461024/sloppyjoes.jpg",
+  ingredients: ["1 pound lean ground beef",
+                "1/4 cup chopped onion",
+                "1/4 cup chopped green bell pepper",
+                "1/2 teaspoon garlic powder",
+                "1 teaspoon prepared yellow mustard",
+                "3/4 cup ketchup",
+                "3 teaspoons brown sugar",
+                "salt to taste",
+                "ground black pepper to taste"],
+  directions: ["In a medium skillet over medium heat, brown the ground beef, onion, and green pepper; drain off liquids.",
+               "Stir in the garlic powder, mustard, ketchup, and brown sugar; mix thoroughly. Reduce heat, and simmer for 30 minutes. Season with salt and pepper."]
+)
+
+Recipe.create(
+  user_id: (1..10).to_a.sample,
+  title: "Best Hamburger Ever",
+  category: "Main Dishes",
+  description: "These burgers are the hit of my town. All my friends come over every weekend just for these burgers. With a little bit of basil leaves, and some olive oil, you will drooling all over yourself while you eat these.",
+  image_url: "https://res.cloudinary.com/joycechau/image/upload/v1484461550/burger.jpg",
+  ingredients: ["1 pound ground beef",
+                "2 cloves garlic, minced",
+                "2 tablespoons extra virgin olive oil",
+                "1 1/2 teaspoons salt",
+                "1 teaspoon freshly ground black pepper",
+                "1/2 teaspoon dried basil leaves",
+                "4 hamburger buns, split"],
+  directions: ["Preheat an outdoor grill for high heat. Mix together the ground beef, garlic, olive oil, salt, pepper, and basil. Divide into four balls, and flatten into patties.",
+               "Cook the patties for about 3 to 5 minutes on each side, or to desired doneness. The internal temperature should be at least 160 degrees F (70 degrees C). Remove from grill and place onto hamburger buns. Top with desired toppings and condiments."]
+)
+
+Recipe.create(
+  user_id: (1..10).to_a.sample,
+  title: "Juicy Roasted Chicken",
+  category: "Main Dishes",
+  description: "I never have had a chicken this juicy before; this little trick works and makes the people eating it go silent. It's funny. We nibble on the celery after.",
+  image_url: "https://res.cloudinary.com/joycechau/image/upload/v1484462177/roastedchicken.jpg",
+  ingredients: ["1 (3 pound) whole chicken, giblets removed",
+                "salt and black pepper to taste",
+                "1 tablespoon onion powder, or to taste",
+                "1/2 cup margarine, divided",
+                "1 stalk celery, leaves removed"],
+  directions: ["Preheat oven to 350 degrees F (175 degrees C).",
+              "Place chicken in a roasting pan, and season generously inside and out with salt and pepper. Sprinkle inside and out with onion powder. Place 3 tablespoons margarine in the chicken cavity. Arrange dollops of the remaining margarine around the chicken's exterior. Cut the celery into 3 or 4 pieces, and place in the chicken cavity.",
+              "Bake uncovered 1 hour and 15 minutes in the preheated oven, to a minimum internal temperature of 180 degrees F (82 degrees C). Remove from heat, and baste with melted margarine and drippings. Cover with aluminum foil, and allow to rest about 30 minutes before serving."]
+)
+
+Recipe.create(
+  user_id: (1..10).to_a.sample,
+  title: "Beef Stroganoff",
+  category: "Main Dishes",
+  description: "I have been making this recipe for over 20 years. This can be served over either rice or noodles. A little work but worth the effort.",
+  image_url: "https://res.cloudinary.com/joycechau/image/upload/v1484462875/beefstroganoff.jpg",
+  ingredients: ["1 pound cubed beef stew meat",
+                "1 (10.75 ounce) can condensed golden mushroom soup",
+                "1/2 cup chopped onion",
+                "1 tablespoon Worcestershire sauce",
+                "1/4 cup water",
+                "4 ounces cream cheese"],
+  directions: ["In a slow cooker, combine the meat, soup, onion, Worcestershire sauce and water.",
+                "Cook on Low setting for 8 hours, or on High setting for about 5 hours. Stir in cream cheese just before serving."]
+)
+
+Recipe.create(
+  user_id: (1..10).to_a.sample,
+  title: "Crispy Fried Chicken",
+  category: "Main Dishes",
+  description: "I experimented for many years before developing this recipe. It's bits and pieces of hints I had heard over the years. I have had many compliments on this chicken. Most of this recipe is dependant on your own taste. It's more a matter of preparation and cooking method!",
+  image_url: "https://res.cloudinary.com/joycechau/image/upload/v1484463377/friedchicken.jpg",
+  ingredients: ["1 (4 pound) chicken, cut into pieces",
+                "1 cup buttermilk",
+                "2 cups all-purpose flour for coating",
+                "1 teaspoon paprika",
+                "salt and pepper to taste",
+                "2 quarts vegetable oil for frying"],
+  directions: ["Take your cut up chicken pieces and skin them if you prefer. Put the flour in a large plastic bag (let the amount of chicken you are cooking dictate the amount of flour you use). Season the flour with paprika, salt and pepper to taste (paprika helps to brown the chicken).",
+                "Dip chicken pieces in buttermilk then, a few at a time, put them in the bag with the flour, seal the bag and shake to coat well. Place the coated chicken on a cookie sheet or tray, and cover with a clean dish towel or waxed paper. LET SIT UNTIL THE FLOUR IS OF A PASTE-LIKE CONSISTENCY. THIS IS CRUCIAL!",
+                "Fill a large skillet (cast iron is best) about 1/3 to 1/2 full with vegetable oil. Heat until VERY hot. Put in as many chicken pieces as the skillet can hold. Brown the chicken in HOT oil on both sides. When browned, reduce heat and cover skillet; let cook for 30 minutes (the chicken will be cooked through but not crispy). Remove cover, raise heat again and continue to fry until crispy.",
+                "Drain the fried chicken on paper towels. Depending on how much chicken you have, you may have to fry in a few shifts. Keep the finished chicken in a slightly warm oven while preparing the rest."]
+)
+
+Recipe.create(
+  user_id: (1..10).to_a.sample,
+  title: "Ching Chong Ling Long Chicken Fried Rice",
+  category: "Main Dishes",
+  description: "Chicken, rice, soy sauce and shredded egg stir fried together. This is a very simple recipe. It is easy, but tasty! Note: Never use rice that you have just cooked.",
+  image_url: "https://res.cloudinary.com/joycechau/image/upload/v1484463793/friedrice.jpg",
+  ingredients: ["1 egg",
+                "1 tablespoon water",
+                "1 tablespoon butter",
+                "1 tablespoon vegetable oil",
+                "1 onion, chopped",
+                "2 cups cooked white rice, cold",
+                "2 tablespoons soy sauce",
+                "1 teaspoon ground black pepper",
+                "1 cup cooked, chopped chicken meat"],
+  directions: ["In a small bowl, beat egg with water. Melt butter in a large skillet over medium low heat. Add egg and leave flat for 1 to 2 minutes. Remove from skillet and cut into shreds.",
+                "Heat oil in same skillet; add onion and saute until soft. Then add rice, soy sauce, pepper and chicken. Stir fry together for about 5 minutes, then stir in egg. Serve hot."]
+)
+
+Recipe.create(
+  user_id: (1..10).to_a.sample,
+  title: "Baby Back Ribs",
+  category: "Main Dishes",
+  description: "These are tender and the meat falls right off the bone. Generally, people think of baby back ribs as a meal they would only order when at a restaurant, but they are so easy to make at home. This recipe could not be any more simple.",
+  image_url: "https://res.cloudinary.com/joycechau/image/upload/v1484464053/ribs.jpg",
+  ingredients: ["2 pounds pork baby back ribs",
+                "1 (18 ounce) bottle barbecue sauce"],
+  directions: ["Tear off 4 pieces of aluminum foil big enough to enclose each portion of ribs. Spray each piece of foil with vegetable cooking spray. Brush the ribs liberally with barbeque sauce and place each portion in its own piece of foil. Wrap tightly and refrigerate for at least 8 hours, or overnight.",
+                "Preheat oven to 300 degrees F (150 degrees C).",
+                "Bake ribs wrapped tightly in the foil at 300 degrees F (150 degrees C) for 2 1/2 hours. Remove from foil and add more sauce, if desired."]
+)
+
+Recipe.create(
+  user_id: (1..10).to_a.sample,
+  title: "Macaroni and Cheese",
+  category: "Main Dishes",
+  description: "The cheesiest and easiest recipe I know.",
+  image_url: "https://res.cloudinary.com/joycechau/image/upload/v1484502638/macandcheese.jpg",
+  ingredients: ["1 1/2 cups uncooked elbow macaroni",
+                "1/4 cup butter",
+                "2 tablespoons all-purpose flour",
+                "1 teaspoon mustard powder",
+                "1 teaspoon ground black pepper",
+                "2 cups milk",
+                "8 ounces American cheese, cubed",
+                "8 ounces processed cheese food, cubed",
+                "1/4 cup seasoned dry bread crumbs"],
+  directions: ["Preheat oven to 400 degrees F (205 degrees C). Butter a 1 1/2 quart casserole dish. Bring a saucepan of lightly salted water to a boil. Add macaroni, and cook until not quite done, about 6 minutes. Drain.",
+                "In a separate saucepan, melt the butter over medium heat. Blend in the flour, mustard powder, and pepper until smooth. Slowly stir in the milk, beating out any lumps. Add the American and processed cheeses, and stir constantly until the sauce is thick and smooth.",
+                "Drain noodles, and stir them into the cheese sauce. Transfer the mixture to the prepared casserole dish. Sprinkle bread crumbs over the top.",
+                "Cover the dish, and bake for 20 to 25 minutes, or until sauce is thick and bubbly."]
+)
+
+Recipe.create(
+  user_id: (1..10).to_a.sample,
+  title: "Honey Glazed Ham",
+  category: "Main Dishes",
+  description: "This ham tastes very much like the famous honey baked ham but costs much less, and there's no need to fight the crowds at holiday time. You can even buy the ham presliced to make it easier and more like the original. It is very good.",
+  image_url: "https://res.cloudinary.com/joycechau/image/upload/v1484503104/ham.jpg",
+  ingredients: ["1 (5 pound) ready-to-eat ham",
+                "1/4 cup whole cloves",
+                "1/4 cup dark corn syrup",
+                "2 cups honey 2/3 cup butter"],
+  directions: ["Preheat oven to 325 degrees F (165 degrees C).",
+                "Score ham, and stud with the whole cloves. Place ham in foil lined pan.",
+                "In the top half of a double boiler, heat the corn syrup, honey and butter. Keep glaze warm while baking ham.",
+                "Brush glaze over ham, and bake for 1 hour and 15 minutes in the preheated oven. Baste ham every 10 to 15 minutes with the honey glaze. During the last 4 to 5 minutes of baking, turn on broiler to caramelize the glaze. Remove from oven, and let sit a few minutes before serving."]
+)
+
+Recipe.create(
+  user_id: (1..10).to_a.sample,
+  title: "Buffalo Style Chicken Pizza",
+  category: "Main Dishes",
+  description: "Pizza with a little kick of buffalo wing flavor! Have your pizza and wings together!",
+  image_url: "https://res.cloudinary.com/joycechau/image/upload/v1484503426/pizza.jpg",
+  ingredients: ["3 skinless, boneless chicken breast halves - cooked and cubed",
+                "2 tablespoons butter, melted",
+                "1 (2 ounce) bottle hot sauce",
+                "1 (8 ounce) bottle blue cheese salad dressing",
+                "1 (16 inch) prepared pizza crust",
+                "1 (8 ounce) package shredded mozzarella cheese"],
+  directions: ["Preheat oven to 425 degrees F (220 degrees C).",
+                "In a medium bowl combine the cubed chicken, melted butter and hot sauce. Mix well. Spread whole bottle of salad dressing over crust, then top with chicken mixture and sprinkle with shredded cheese.",
+                "Bake in preheated oven until crust is golden brown and cheese is bubbly, about 5 to 10 minutes. Let set a few minutes before slicing, and serve."]
+)
+
+Recipe.create(
+  user_id: (1..10).to_a.sample,
+  title: "Spinach Quiche",
+  category: "Breakfast",
+  description: "I serve this in the summer for brunch with a side of sausage links and a fresh fruit bowl!",
+  image_url: "https://res.cloudinary.com/joycechau/image/upload/v1484503746/quiche.jpg",
+  ingredients: ["1 tablespoon vegetable oil",
+                "1 onion, chopped",
+                "1 (10 ounce) package frozen chopped spinach, thawed and drained",
+                "5 eggs, beaten",
+                "3 cups shredded Muenster cheese",
+                "1/4 teaspoon salt",
+                "1/8 teaspoon ground black pepper"],
+  directions: ["Preheat oven to 350 degrees F (175 degrees C). Lightly grease a 9 inch pie pan.",
+                "Heat oil in a large skillet over medium-high heat. Add onions and cook, stirring occasionally, until onions are soft. Stir in spinach and continue cooking until excess moisture has evaporated.",
+                "In a large bowl, combine eggs, cheese, salt and pepper. Add spinach mixture and stir to blend. Scoop into prepared pie pan.",
+                "Bake in preheated oven until eggs have set, about 30 minutes. Let cool for 10 minutes before serving."]
+)
+
+Recipe.create(
+  user_id: (1..10).to_a.sample,
+  title: "Fluffy Pancakes",
+  category: "Breakfast",
+  description: "Tall and fluffy. These pancakes are just right. Topped with strawberries and whipped cream, they are impossible to resist.",
+  image_url: "https://res.cloudinary.com/joycechau/image/upload/v1484503969/pancakes.png",
+  ingredients: ["3/4 cup milk",
+                "2 tablespoons white vinegar",
+                "1 cup all-purpose flour",
+                "2 tablespoons white sugar",
+                "1 teaspoon baking powder",
+                "1/2 teaspoon baking soda",
+                "1/2 teaspoon salt",
+                "1 egg",
+                "2 tablespoons butter, melted",
+                "cooking spray"],
+  directions: ["Combine milk with vinegar in a medium bowl and set aside for 5 minutes to sour.",
+                "Combine flour, sugar, baking powder, baking soda, and salt in a large mixing bowl. Whisk egg and butter into \"soured\" milk. Pour the flour mixture into the wet ingredients and whisk until lumps are gone.",
+                "Heat a large skillet over medium heat, and coat with cooking spray. Pour 1/4 cupfuls of batter onto the skillet, and cook until bubbles appear on the surface. Flip with a spatula, and cook until browned on the other side."]
+)
+
+Recipe.create(
+  user_id: (1..10).to_a.sample,
+  title: "Mexican Breakfast Tacos",
+  category: "Breakfast",
+  description: "Quick Easy and Delicious! I've grown to LOVE this breakfast. If you like spicy food, you will love this.",
+  image_url: "https://res.cloudinary.com/joycechau/image/upload/v1484504409/breakfasttacos.jpg",
+  ingredients: ["6 ounces chorizo sausage",
+                "8 (6 inch) corn tortillas",
+                "6 eggs",
+                "1/4 cup milk",
+                "1/2 teaspoon pepper",
+                "1/2 teaspoon salt",
+                "1 cup shredded Monterey Jack cheese",
+                "1 dash hot pepper sauce or to taste",
+                "1/2 cup salsa"],
+  directions: ["Crumble the sausage into a skillet over medium-high heat. Cook and stir until evenly brown. Set aside.",
+                "Heat one skillet over medium heat, and heat another skillet over high heat. The skillet over high heat is for warming tortillas. In a medium bowl, whisk together the eggs, milk, salt and pepper. Spray the medium heat skillet with some cooking spray, and pour in the eggs. Cook and stir until almost firm. Add the sausage, and continue cooking and stirring until firm.",
+                "Meanwhile, warm tortillas for about 45 seconds per side in the other skillet, so they are hot and crispy on the edges, but still pliable.",
+                "Sprinkle a little shredded cheese onto each tortilla while it is still hot. Top with some of the scrambled egg and sausage, then add hot pepper sauce and salsa to your liking."]
+)
+
+Recipe.create(
+  user_id: (1..10).to_a.sample,
+  title: "French Toast",
+  category: "Breakfast",
+  description: "This French toast recipe is different because it uses flour. I have given it to some friends and they've all liked it better than the French toast they usually make!",
+  image_url: "https://res.cloudinary.com/joycechau/image/upload/v1484504659/frenchtoast.jpg",
+  ingredients: ["1/4 cup all-purpose flour",
+                "1 cup milk",
+                "1 pinch salt",
+                "3 eggs",
+                "1/2 teaspoon ground cinnamon",
+                "1 teaspoon vanilla extract",
+                "1 tablespoon white sugar",
+                "12 thick slices bread"],
+  directions: ["Measure flour into a large mixing bowl. Slowly whisk in the milk. Whisk in the salt, eggs, cinnamon, vanilla extract and sugar until smooth.",
+                "Heat a lightly oiled griddle or frying pan over medium heat.",
+                "Soak bread slices in mixture until saturated. Cook bread on each side until golden brown. Serve hot."]
+)
+
+Recipe.create(
+  user_id: (1..10).to_a.sample,
+  title: "Strawberry Oatmeal Breakfast Smoothie",
+  category: "Breakfast",
+  description: "This is a fast vegan smoothie with a deep pink color and a rich, creamy texture. VERY filling, and perfect for people in a rush in the morning. You don't have to give up a good breakfast when it's this fast to make!",
+  image_url: "https://res.cloudinary.com/joycechau/image/upload/v1484504944/smoothie.jpg",
+  ingredients: ["1 cup soy milk",
+                "1/2 cup rolled oats",
+                "1 banana, broken into chunks",
+                "14 frozen strawberries ",
+                "1/2 teaspoon vanilla extract ",
+                "1 1/2 teaspoons white sugar"],
+  directions: ["In a blender, combine soy milk, oats, banana and strawberries. Add vanilla and sugar if desired. Blend until smooth. Pour into glasses and serve."]
+)
+
+Recipe.create(
+  user_id: (1..10).to_a.sample,
+  title: "Banana Bread",
+  category: "Breakfast",
+  description: "My family lives for banana bread, and they all say this recipe is heaven!",
+  image_url: "https://res.cloudinary.com/joycechau/image/upload/v1484505156/bananabread.jpg",
+  ingredients: ["5 very ripe bananas",
+                "4 eggs",
+                "1 cup shortening",
+                "2 1/2 cups white sugar",
+                "1 tablespoon vanilla extract",
+                "3 1/2 cups all-purpose flour",
+                "2 teaspoons baking soda",
+                "1 teaspoon salt"],
+  directions: ["Preheat oven to 300 degrees F (150 degrees C). Grease 2 - 9x5 inch loaf pans. In a medium bowl, mash bananas and stir in the eggs until well blended. Set aside.",
+                "In large bowl, beat shortening and gradually add sugar. Stir in vanilla and banana mixture. Whisk together flour, baking soda, and salt; blend into batter. Add walnuts if desired. Divide between the prepared pans.",
+                "Bake for 1 hour 15 minutes in the preheated oven, or until a toothpick inserted into the center of the loaf comes out clean."]
+)
+
+Recipe.create(
+  user_id: (1..10).to_a.sample,
+  title: "Scrambled Eggs Done Right",
+  category: "Breakfast",
+  description: "The right way to scramble eggs. There is more to just mixing eggs and cooking! This will make a believer out of you.",
+  image_url: "https://res.cloudinary.com/joycechau/image/upload/v1484505421/eggs.jpg",
+  ingredients: ["2 eggs",
+                "1 teaspoon mayonnaise or salad dressing",
+                "1 teaspoon water (optional) ",
+                "1 teaspoon margarine or butter ",
+                "salt and pepper to taste (optional)"],
+  directions: ["In a cup or small bowl, whisk together the eggs, mayonnaise and water using a fork. Melt margarine in a skillet over low heat. Pour in the eggs, and stir constantly as they cook. Remove the eggs to a plate when they are set, but still moist. Do not over cook. Never add salt or pepper until eggs are on plate, but these are also good without."]
+)
+
+Recipe.create(
+  user_id: (1..10).to_a.sample,
+  title: "Classic Waffles",
+  category: "Breakfast",
+  description: "A lovely, crispy waffle perfect for the morning.",
+  image_url: "https://res.cloudinary.com/joycechau/image/upload/v1484505918/waffles.jpg",
+  ingredients: ["2 cups all-purpose flour",
+                "1 teaspoon salt",
+                "4 teaspoons baking powder",
+                "2 tablespoons white sugar",
+                "2 eggs",
+                "1 1/2 cups warm milk",
+                "1/3 cup butter, melted",
+                "1 teaspoon vanilla extract"],
+  directions: ["In a large bowl, mix together flour, salt, baking powder and sugar; set aside. Preheat waffle iron to desired temperature.",
+                "In a separate bowl, beat the eggs. Stir in the milk, butter and vanilla. Pour the milk mixture into the flour mixture; beat until blended.",
+                "Ladle the batter into a preheated waffle iron. Cook the waffles until golden and crisp. Serve immediately."]
+)
+
+Recipe.create(
+  user_id: (1..10).to_a.sample,
+  title: "Breakfast Sausage Casserole",
+  category: "Breakfast",
+  description: "It is so delicious, and everyone enjoys it! When I double the recipe I ",
+  image_url: "https://res.cloudinary.com/joycechau/image/upload/v1484506380/Casserole.jpg",
+  ingredients: ["1 pound ground pork sausage",
+                "1 teaspoon mustard powder",
+                "1/2 teaspoon salt",
+                "4 eggs, beaten",
+                "2 cups milk",
+                "6 slices white bread, toasted and cut into cubes",
+                "8 ounces mild Cheddar cheese, shredded"],
+  directions: ["Crumble sausage into a medium skillet. Cook over medium heat until evenly brown; drain.",
+                "In a medium bowl, mix together mustard powder, salt, eggs and milk. Add the sausage, bread cubes, and cheese, and stir to coat evenly. Pour into a greased 9x13 inch baking dish. Cover, and chill in the refrigerator for 8 hours, or overnight.",
+                "Preheat oven to 350 degrees F (175 degrees C).",
+                "Cover, and bake 45 to 60 minutes. Uncover, and reduce temperature to 325 degrees F (165 degrees C). Bake for an additional 30 minutes, or until set."]
+)
+
+Recipe.create(
+  user_id: (1..10).to_a.sample,
+  title: "Antipasto Kabobs",
+  category: "Appetizers",
+  description: "These do-ahead appetizers are always a hit.",
+  image_url: "https://res.cloudinary.com/joycechau/image/upload/v1484506800/kabobs.jpg",
+  ingredients: ["1 package (9 ounces) refrigerated cheese tortellini",
+                "40 pimiento-stuffed olives",
+                "40 large pitted ripe olives",
+                "3/4 cup Italian salad dressing",
+                "40 thin slices pepperoni",
+                "20 thin slices hard salami, halved",
+                "Fresh parsley sprigs, optional"],
+  directions: ["Cook tortellini according to package directions; drain and rinse in cold water. In a large resealable plastic bag, combine the tortellini, olives and salad dressing. Seal bag and turn to coat; refrigerate for 4 hours or overnight.",
+                "Drain and discard marinade. For each appetizer, thread a stuffed olive, folded pepperoni slice, tortellini, folded salami piece, ripe olive and parsley sprig if desired on a toothpick or short skewer. "]
+)
+
+Recipe.create(
+  user_id: (1..10).to_a.sample,
+  title: "Chocolate Chip Cheese Balls",
+  category: "Appetizers",
+  description: "Your guests are in for a sweet surprise when they try this unusual cheese ball…it tastes just like cookie dough! Rolled in chopped pecans, the chip-studded spread is wonderful on regular or chocolate graham crackers. I especially like it because it can be assembled in a wink. ",
+  image_url: "https://res.cloudinary.com/joycechau/image/upload/v1484507054/chocolateball.jpg",
+  ingredients: ["1 package (8 ounces) cream cheese, softened",
+                "1/2 cup butter, softened",
+                "1/4 teaspoon vanilla extract",
+                "3/4 cup confectioners' sugar",
+                "2 tablespoons brown sugar",
+                "3/4 cup miniature semisweet chocolate chips",
+                "3/4 cup finely chopped pecans",
+                "Graham crackers"],
+  directions: ["Beat cream cheese, butter and vanilla until smooth; beat in sugars just until blended. Stir in chocolate chips. Refrigerate, covered, until firm enough to shape, about 2 hours.",
+                "Place mixture on a large sheet of plastic wrap; shape into a ball. Refrigerate, wrapped, at least 1 hour.",
+                "To serve, roll cheese ball in pecans. Serve with graham crackers. Yield: 16 servings (2 tablespoons each)."]
+)
+
+Recipe.create(
+  user_id: (1..10).to_a.sample,
+  title: "Sweet & Spicy Jalapeno Poppers",
+  category: "Appetizers",
+  description: "There’s no faster way to get a party started than with these bacon-wrapped poppers. Make them ahead and bake just before serving. Even the hot pepper intolerant will love them.",
+  image_url: "https://res.cloudinary.com/joycechau/image/upload/v1484507228/jalapenopoppers.jpg",
+  ingredients: ["6 jalapeno peppers",
+                "4 ounces cream cheese, softened",
+                "2 tablespoons shredded cheddar cheese",
+                "6 bacon strips, halved widthwise",
+                "1/4 cup packed brown sugar",
+                "1 tablespoon chili seasoning mix"],
+  directions: ["Cut jalapenos in half lengthwise and remove seeds; set aside. In a small bowl, beat cheeses until blended. Spoon into pepper halves. Wrap a half-strip of bacon around each pepper half.",
+                "Combine brown sugar and chili seasoning; coat peppers with sugar mixture. Place in a greased 15x10x1-in. baking pan.",
+                "Bake at 350° for 18-20 minutes or until bacon is firm. Yield: 1 dozen."]
+)
+
+Recipe.create(
+  user_id: (1..10).to_a.sample,
+  title: "Appetizer Tortilla Pinwheels",
+  category: "Appetizers",
+  description: "A friend gave me this recipe, and whenever I serve these pretty and delicious appetizers, people ask me for the recipe, too! Besides being attractive and tasty, the pinwheels can be made ahead of time and sliced just before serving, leaving you time for other last-minute party preparations. ",
+  image_url: "https://res.cloudinary.com/joycechau/image/upload/v1484507718/pinwheels.jpg",
+  ingredients: ["1 package (8 ounces) cream cheese, softened",
+                "1 cup shredded cheddar cheese",
+                "1 cup (8 ounces) sour cream",
+                "1 can (4-1/4 ounces) chopped ripe olives",
+                "1 can (4 ounces) chopped green chilies, well drained",
+                "1/2 cup chopped green onions",
+                "Garlic powder to taste",
+                "Seasoned salt to taste",
+                "5 flour tortillas (10 inches)",
+                "Salsa, optional"],
+  directions: ["Beat cream cheese, cheese and sour cream until blended. Stir in olives, green chilies, green onions and seasonings.",
+                "Spread over tortillas; roll up tightly. Wrap each in plastic, twisting ends to seal; refrigerate several hours.",
+                "Unwrap. Cut into 1/2- to 3/4-in. slices, using a serrated knife. If desired, serve with salsa."]
+)
+
+Recipe.create(
+  user_id: (1..10).to_a.sample,
+  title: "BLT Bites",
+  category: "Appetizers",
+  description: "These quick hors d'oeuvres may be mini, but their bacon and tomato flavor is full size. I serve them at parties, brunches and picnics, and they're always a hit...even my kids love them. ",
+  image_url: "https://res.cloudinary.com/joycechau/image/upload/v1484507863/blt.jpg",
+  ingredients: ["16 to 20 cherry tomatoes",
+                "1 pound sliced bacon, cooked and crumbled",
+                "1/2 cup mayonnaise",
+                "1/3 cup chopped green onions",
+                "3 tablespoons grated Parmesan cheese",
+                "2 tablespoons snipped fresh parsley"],
+  directions: ["Cut a thin slice off of each tomato top. Scoop out and discard pulp. Invert the tomatoes on a paper towel to drain.",
+                "In a small bowl, combine the remaining ingredients. Spoon into tomatoes. Refrigerate for several hours. Yield: 16-20 appetizers."]
+)
+
+Recipe.create(
+  user_id: (1..10).to_a.sample,
+  title: "Savory Party Bread",
+  category: "Appetizers",
+  description: "It's impossible to stop nibbling on warm pieces of this cheesy, oniony bread. The sliced loaf fans out for a fun presentation.",
+  image_url: "",
+  ingredients: ["1 unsliced round loaf sourdough bread (1 pound)",
+                "1 pound Monterey Jack cheese",
+                "1/2 cup butter, melted",
+                "1/2 cup chopped green onions",
+                "2 to 3 teaspoons poppy seeds"],
+  directions: ["Preheat oven to 350°. Cut bread widthwise into 1-in. slices to within 1/2 in. of bottom of loaf. Repeat cuts in opposite direction. Cut cheese into 1/4-in. slices; cut slices into small pieces. Place cheese in cuts.",
+                "In a small bowl, mix butter, green onions and poppy seeds; drizzle over bread. Wrap in foil; place on a baking sheet. Bake 15 minutes. Unwrap; bake 10 minutes longer or until cheese is melted."]
+)
+
+Recipe.create(
+  user_id: (1..10).to_a.sample,
+  title: "Cranberry Chili Meatballs ",
+  category: "Appetizers",
+  description: "Using packaged meatballs helps save time in the kitchen and they are just as tasty as homemade. My friends look forward to enjoying these meatballs at our holiday gatherings and there are never any leftovers! ",
+  image_url: "",
+  ingredients: ["1 can (14 ounces) jellied cranberry sauce",
+                "1 bottle (12 ounces) chili sauce",
+                "3/4 cup packed brown sugar",
+                "1/2 teaspoon chili powder",
+                "1/2 teaspoon ground cumin",
+                "/4 teaspoon cayenne pepper",
+                "1 package (32 ounces) frozen fully cooked homestyle meatballs, thawed"],
+  directions: ["In a large saucepan over medium heat, combine the first six ingredients; stir until sugar is dissolved. Add meatballs; cook for 20-25 minutes or until heated through, stirring occasionally."]
+)
+
+Recipe.create(
+  user_id: (1..10).to_a.sample,
+  title: "Cheesesteak Egg Rolls",
+  category: "Appetizers",
+  description: "I tried this recipe at a nearby restaurant and fell in love! The first attempt to make them at home was a success! Such an easy and delicious appetizer.",
+  image_url: "https://res.cloudinary.com/joycechau/image/upload/v1484508242/Cheesesteak.jpg",
+  ingredients: ["1 tablespoon vegetable oil",
+                "1 onion, chopped",
+                "1 (12.5 ounce) package frozen sandwich steak meat",
+                "1 (14 ounce) package egg roll wrappers",
+                "4 slices American cheese, halved",
+                "2 cups oil for frying, or as needed",
+                "1/4 cup ketchup"],
+  directions: ["Heat skillet with the tablespoon oil over medium heat. Add onion; cook and stir until onion is translucent, about 5 minutes. Break frozen steak pieces into skillet; cook and stir until steak is no longer pink, about 10 minutes. Remove from heat and set aside.",
+                "Arrange egg roll wrappers on a flat surface; place a half slice of cheese on each one. Layer an equal amount of steak mixture on top of each cheese slice. Roll up egg rolls according to package directions, and seal edges, wetting with water if necessary.",
+                "Heat 1 inch of oil in a large skillet, or preheat a deep-fryer to 375 degrees F (190 degrees C).",
+                "Fry the rolls in the hot oil until golden brown on all sides, about 5 minutes. Remove; drain on paper towels. Serve warm with ketchup for dipping."]
+)
+
+Recipe.create(
+  user_id: (1..10).to_a.sample,
+  title: "Mexican Shrimp Cocktail",
+  category: "Appetizers",
+  description: "I first tried something similar to this in San Antonio and could never find a recipe that really recaptured what I had there. I experimented and finally came up with this. Anyone who has tried it has begged for the recipe. Try it with tortilla chips!",
+  image_url: "https://res.cloudinary.com/joycechau/image/upload/v1484508439/shrimp.jpg",
+  ingredients: ["2 pounds cooked shrimp, peeled and deveined",
+                "1 tablespoon crushed garlic ",
+                "1/2 cup finely chopped red onion ",
+                "1/4 cup fresh cilantro, chopped ",
+                "1 1/2 cups tomato and clam juice cocktail ",
+                "1/4 cup ketchup ",
+                "1/4 cup fresh lime juice ",
+                "1 teaspoon hot pepper sauce, or to taste ",
+                "1/4 cup prepared horseradish ",
+                "salt to taste ",
+                "1 ripe avocado - peeled, pitted and chopped"],
+  directions: ["Place the shrimp in a large bowl. Stir garlic, red onion, and cilantro. Mix in tomato and clam juice cocktail, ketchup, lime juice, hot pepper sauce, and horseradish. Season with salt. Gently stir in avocado. Cover, and refrigerate 2 to 3 hours. Serve in one large bowl or ladle into individual bowls."]
+)
+
+Recipe.create(
+  user_id: (1..10).to_a.sample,
+  title: "Toasted Garlic Bread",
+  category: "Appetizers",
+  description: "Quick and scrumptious garlic bread that will complement any Italian meal. Melted mozzarella is optional, but delicious!",
+  image_url: "https://res.cloudinary.com/joycechau/image/upload/v1484509049/garlicbread.jpg",
+  ingredients: ["1 (1 pound) loaf Italian bread",
+                "5 tablespoons butter, softened",
+                "2 teaspoons extra virgin olive oil",
+                "3 cloves garlic, crushed",
+                "1 teaspoon dried oregano",
+                "salt and pepper to taste",
+                "1 cup shredded mozzarella cheese"],
+  directions: ["Preheat the broiler.",
+              "Cut the bread into slices 1 to 2 inches thick.",
+              "On a medium baking sheet, arrange the slices evenly and broil 5 minutes, or until slightly brown. Check frequently so they do not burn.",
+              "Remove from broiler. Top with cheese and return to broiler 2 to 3 minutes, until cheese is slightly brown and melted. Serve at once."]
+)
+
+Recipe.create(
+  user_id: (1..10).to_a.sample,
+  title: "Crab Cakes",
+  category: "Appetizers",
+  description: "These are the fastest, easiest crab cakes I have ever made and some of the best I have ever eaten! Serve with coarse mustard on the plate or your favorite mustard sauce.",
+  image_url: "https://res.cloudinary.com/joycechau/image/upload/v1484509485/crabcakes.jpg",
+  ingredients: ["1 egg",
+                "3 tablespoons mayonnaise",
+                "4 teaspoons lemon juice",
+                "1/8 teaspoon red pepper flakes ",
+                "1 teaspoon dried tarragon ",
+                "1 tablespoon minced green onions ",
+                "8 ounces crabmeat ",
+                "1/2 cup crushed buttery round crackers ",
+                "1 tablespoon butter"],
+  directions: ["In a medium bowl, whisk together egg, mayonnaise, lemon juice, red pepper flakes, tarragon, and scallions. Gently stir in crabmeat, being careful not to break up meat. Gradually mix in cracker crumbs, adding until desired consistency is achieved.",
+                "Heat butter in a skillet over medium heat. Form crab mixture into 4 patties. Place patties in skillet, and cook until golden brown, about 5 to 6 minutes on each side."]
+)
+
+Recipe.create(
+  user_id: (1..10).to_a.sample,
+  title: "Au Gratin Potatoes",
+  category: "Sides",
+  description: "These cheesy potatoes are always welcome at our dinner table, and they're so simple to make. A perfect complement to ham, this homey side dish also goes well with pork, chicken and other entrees.",
+  image_url: "https://res.cloudinary.com/joycechau/image/upload/v1484509951/augratin.jpg",
+  ingredients: ["3 tablespoons butter",
+                "3 tablespoons all-purpose flour",
+                "1-1/2 teaspoons salt",
+                "1/8 teaspoon pepper",
+                "2 cups 2% milk",
+                "1 cup (4 ounces) shredded cheddar cheese",
+                "5 cups thinly sliced peeled potatoes (about 6 medium)",
+                "1/2 cup chopped onion"],
+  directions: ["Preheat oven to 350°. In a large saucepan, melt butter over low heat. Stir in flour, salt and pepper until smooth. Gradually add milk. Bring to a boil; cook and stir 2 minutes or until thickened. Remove from heat; stir in cheese until melted. Add potatoes and onion.",
+                "Transfer to a greased 2-qt. baking dish. Cover and bake 1 hour. Uncover; bake 30-40 minutes or until the potatoes are tender."]
+)
+
+Recipe.create(
+  user_id: (1..10).to_a.sample,
+  title: "Garlic Mashed Potatoes ",
+  category: "Sides",
+  description: "These creamy garlic mashed potatoes are so good, you can serve them plain—no butter or gravy is needed. This is the only way we prepare mashed potatoes. ",
+  image_url: "https://res.cloudinary.com/joycechau/image/upload/v1484510095/mashed.jpg",
+  ingredients: ["8 medium potatoes, quartered",
+              "3 garlic cloves, peeled",
+              "2 tablespoons butter",
+              "1/2 cup fat-free milk, warmed",
+              "1/2 teaspoon salt",
+              "1/4 cup grated Parmesan cheese"],
+  directions: ["Place potatoes and garlic in a large saucepan; cover with water. Bring to a boil. Reduce heat; cover and simmer for 15-20 minutes or until potatoes are very tender.",
+              "Drain well. Add the butter, milk and salt; mash. Stir in cheese."]
+)
+
+Recipe.create(
+  user_id: (1..10).to_a.sample,
+  title: "Cheesy Cheddar Broccoli Casserole",
+  category: "Sides",
+  description: "Everybody who has tried this side dish absolutely raves about it.",
+  image_url: "https://res.cloudinary.com/joycechau/image/upload/v1484510329/Broccolicheese.jpg",
+  ingredients: ["1 can (10-3/4 ounces) condensed cream of mushroom soup, undiluted",
+              "1 cup (8 ounces) sour cream",
+              "1-1/2 cups shredded sharp cheddar cheese, divided",
+              "1 can (6 ounces) french-fried onions, divided",
+              "2 packages (16 ounces each) frozen broccoli florets, thawed"],
+  directions: ["Preheat oven to 325°. In a large saucepan, combine soup, sour cream, 1 cup cheese and 1-1/4 cups onions; heat through over medium heat, stirring until blended, 4-5 minutes. Stir in broccoli. Transfer to a greased 2-qt. baking dish.",
+              "Bake, uncovered, until bubbly, 25-30 minutes. Sprinkle with the remaining cheese and onions. Bake until cheese is melted, 10-15 minutes."]
+)
+
+Recipe.create(
+  user_id: (1..10).to_a.sample,
+  title: "Roasted Asparagus",
+  category: "Sides",
+  description: "This is especially wonderful when locally grown asparagus is in season and so easy for celebrations because you can serve it hot or cold. ",
+  image_url: "https://res.cloudinary.com/joycechau/image/upload/v1484510498/asparagus.jpg",
+  ingredients: ["1-1/2 pounds fresh asparagus, trimmed",
+              "1-1/2 cups grape tomatoes, halved",
+              "3 tablespoons pine nuts",
+              "3 tablespoons olive oil, divided",
+              "2 garlic cloves, minced",
+              "1 teaspoon kosher salt",
+              "1/2 teaspoon pepper",
+              "1 tablespoon lemon juice",
+              "1/3 cup grated Parmesan cheese",
+              "1 teaspoon grated lemon peel"],
+  directions: ["Preheat oven to 400°. Place the asparagus, tomatoes and pine nuts on a foil-lined 15x10x1-in. baking pan. Mix 2 tablespoons oil, garlic, salt and pepper; add to asparagus and toss to coat.",
+              "Bake 15-20 minutes or just until asparagus is tender. Drizzle with remaining oil and the lemon juice; sprinkle with cheese and lemon peel. Toss to combine."]
+)
+
+Recipe.create(
+  user_id: (1..10).to_a.sample,
+  title: "Grilled Mushrooms",
+  category: "Sides",
+  description: "Mushrooms cooked over hot coals always taste good, but this easy recipe makes the mushrooms taste fantastic.",
+  image_url: "https://res.cloudinary.com/joycechau/image/upload/v1484511067/mushrooms.jpg",
+  ingredients: ["1/2 pound medium fresh mushrooms",
+              "1/4 cup butter, melted",
+              "1/2 teaspoon dill weed",
+              "1/2 teaspoon garlic salt"],
+  directions: ["Thread mushrooms on four metal or soaked wooden skewers. Combine butter, dill and garlic salt; brush over mushrooms.",
+              "Grill over medium-high heat for 10-15 minutes or until tender, basting and turning every 5 minutes. "]
+)
+
+Recipe.create(
+  user_id: (1..10).to_a.sample,
+  title: "Three-Bean Baked Beans",
+  category: "Sides",
+  description: "With ground beef and bacon mixed in, these satisfying beans are a big hit at backyard barbecues and church picnics. I'm always asked to bring my special beans. ",
+  image_url: "https://res.cloudinary.com/joycechau/image/upload/v1484511316/bakedbeans.jpg",
+  ingredients: ["1/2 pound ground beef",
+              "5 bacon strips, diced",
+              "1/2 cup chopped onion",
+              "1/3 cup packed brown sugar",
+              "1/4 cup sugar",
+              "1/4 cup ketchup",
+              "1/4 cup barbecue sauce",
+              "2 tablespoons molasses",
+              "2 tablespoons prepared mustard",
+              "/2 teaspoon chili powder",
+              "1/2 teaspoon salt",
+              "2 cans (16 ounces each) pork and beans, undrained",
+              "1 can (16 ounces) butter beans, rinsed and drained",
+              "1 can (16 ounces) kidney beans, rinsed and drained"],
+  directions: ["Preheat oven to 350°. In a large skillet, cook and crumble beef with bacon and onion over medium heat until no longer pink; drain.",
+              "Stir in sugars, ketchup, barbecue sauce, molasses, mustard, chili powder and salt until blended. Stir in beans. Transfer to a greased 2-1/2-qt. baking dish. Bake, covered, until beans reach desired thickness, about 1 hour."]
+)
+
+Recipe.create(
+  user_id: (1..10).to_a.sample,
+  title: "Glazed Carrot Coins",
+  category: "Sides",
+  description: "These glossy carrots, flavored with orange juice, cinnamon and ginger, are pretty enough for a special meal. ",
+  image_url: "https://res.cloudinary.com/joycechau/image/upload/v1484511480/carrots.jpg",
+  ingredients: ["2 tablespoons butter",
+              "2 tablespoons brown sugar",
+              "2 tablespoons orange juice",
+              "1/4 teaspoon salt",
+              "1/4 teaspoon ground ginger",
+              "1/8 teaspoon ground cinnamon",
+              "6 medium carrots, cut into 1/2-inch slices"],
+  directions: ["In a small saucepan, melt butter over medium heat. Stir in the brown sugar, orange juice, salt, ginger and cinnamon. Add the carrots; cover and cook for 20-25 minutes or until tender, stirring occasionally. "]
+)
+
+Recipe.create(
+  user_id: (1..10).to_a.sample,
+  title: "Sweet Potato Fries",
+  category: "Sides",
+  description: "A local restaurant got me hooked on sweet potato fries. I started making them at home with different seasonings to match the taste. I'm thrilled with the results! ",
+  image_url: "https://res.cloudinary.com/joycechau/image/upload/v1484511840/sweetpotato.jpg",
+  ingredients: ["3 tablespoons olive oil",
+              "1 tablespoon minced fresh rosemary",
+              "1 garlic clove, minced",
+              "1 teaspoon cornstarch",
+              "3/4 teaspoon salt",
+              "1/8 teaspoon pepper",
+              "3 large sweet potatoes, peeled and cut into 1/4-inch julienned strips (about 2-1/4 pounds)"],
+  directions: ["Preheat oven to 425°. In a large resealable plastic bag, combine the first six ingredients. Add sweet potatoes; shake to coat.",
+              "arrange in a single layer on two 15x10x1-in. baking pans coated with cooking spray. Bake, uncovered, 30-35 minutes or until tender and lightly browned, turning occasionally."]
+)
+
+Recipe.create(
+  user_id: (1..10).to_a.sample,
+  title: "Creamed Corn",
+  category: "Sides",
+  description: "Five ingredients are all you'll need for my popular dinner accompaniment. It's wonderful no matter what the occasion is. Try it on a barbecue buffet or holiday menu.",
+  image_url: "https://res.cloudinary.com/joycechau/image/upload/v1484511972/corn.jpg",
+  ingredients: ["2 packages (one 16 ounces, one 10 ounces) frozen corn",
+              "1 package (8 ounces) cream cheese, softened and cubed",
+              "1/4 cup butter, cubed",
+              "1 tablespoon sugar",
+              "1/2 teaspoon salt"],
+  directions: ["In a 3-qt. slow cooker coated with cooking spray, combine all ingredients. Cover and cook on low for 3 to 3-1/2 hours or until cheese is melted and corn is tender. Stir just before serving. "]
 )
