@@ -1,16 +1,15 @@
 import { connect } from 'react-redux';
-import ProfilePage from './profile_page';
-import { fetchProfile } from '../../actions/profile_actions';
+import AboutMe from './about_me';
 
 const mapStateToProps = state => ({
   profile: state.profile
 });
 
 const mapDispatchToProps = dispatch => ({
-  fetchProfile: (username) => dispatch(fetchProfile(username))
+
 });
 
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(ProfilePage);
+)(AboutMe);

@@ -4,7 +4,7 @@
     id: 1,
     username: 'joyce'
   },
-	profileDetail: {
+	profile: {
 		id: 1,
     username: 'joyce',
     fname: 'Joyce',

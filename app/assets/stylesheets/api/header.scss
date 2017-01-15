@@ -39,6 +39,7 @@
   font-size: 18px;
 }
 
+.header-profile-button,
 .header-signup-link,
 .header-login-link,
 .header-demo-link,
@@ -53,18 +54,10 @@
   font-size: 20px;
 }
 
-.header-signup-link:hover {
-  background-color: $hover-background
-}
-
-.header-login-link:hover {
-  background-color: $hover-background
-}
-
-.header-demo-link:hover {
-  background-color: $hover-background
-}
-
-.header-logout-button:hover {
+.header-signup-link:hover,
+.header-login-link:hover,
+.header-demo-link:hover,
+.header-logout-button:hover,
+.header-profile-button:hover {
   background-color: $hover-background
 }

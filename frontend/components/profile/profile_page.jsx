@@ -1,13 +1,17 @@
 import React from 'react';
 
 class ProfilePage extends React.Component {
+  componentWillMount() {
+    this.props.fetchProfile(this.props.params.username);
+  }
+
   render() {
 
     return (
       <div className="profile-page-container">
-        {console.log(this.props.children)};
-        <h1> Profile Page </h1>
-        { this.props.children }
+        <div>Backgroudd image</div>
+        <div>sideBar</div>
+        <div className="">{ this.props.children }</div>
       </div>
     );
   }

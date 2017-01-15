@@ -7,16 +7,22 @@ class Api::UsersController < ApplicationController
     else
       render json: @user.errors.full_messages, status: 422
     end
+  end
 
-    def show
-      @user = User.find(params[:id])
-    end
+  def show
+    @user = User.find(params[:id])
+    render "api/users/current_user"
+  end
 
-    def update
-      @user = User.find(params[:id])
-      @user.update
-      render :show
-    end
+  def profile
+    @user = User.find_by(username: params[:username])
+    render "api/users/profile"
+  end
+
+  def update
+    @user = User.find(params[:id])
+    @user.update
+    render :show
   end
 
   private

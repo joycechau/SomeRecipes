@@ -36,10 +36,10 @@ class Header extends React.Component {
     e.preventDefault();
     this.props.logout();
     this.setState({ modalOpen: false, formType: "login" });
+    hashHistory.push('/');
   }
 
   handleProfileButtonClick(e) {
-    console.log(this.props);
     e.preventDefault();
     hashHistory.push(`/profile/${this.props.currentUser.username}`);
   }
@@ -66,21 +66,20 @@ class Header extends React.Component {
     );
   }
 
-
-
-
   currentUser() {
     return (
       <div className="header-container">
         <div className="header">
           <h1>{this.headerLogo()}</h1>
-          <button onClick={this.handleProfileButtonClick}
-                  className="header-profile-button">
-            My Profile
-          </button>
-          <button onClick={this.handleLogOutButtonClick}
-            className="header-logout-button">
-            Log Out</button>
+          <div>
+            <button onClick={this.handleProfileButtonClick}
+              className="header-profile-button">
+              My Profile
+            </button>
+            <button onClick={this.handleLogOutButtonClick}
+              className="header-logout-button">
+              Log Out</button>
+          </div>
         </div>
       </div>
     );

@@ -5,7 +5,6 @@ import {
   Router,
   Route,
   IndexRoute,
-  IndexRedirect,
   hashHistory
 } from 'react-router';
 import App from './app';
@@ -13,6 +12,10 @@ import RecipeIndexContainer from './recipe/recipe_index_container';
 import RecipeDetailContainer from './recipe/recipe_detail_container';
 import HomeContainer from './home/home_container.js';
 import ProfileContainer from './profile/profile_container.js';
+import AboutMeContainer from './profile/about_me_container.js';
+import MyRecipesContainer from './profile/my_recipes_container.js';
+import FavoriteRecipesContainer from './profile/favorite_recipes_container.js';
+import RecipeFormContainer from './recipe/recipe_form_container.js';
 import { useScroll } from 'react-router-scroll';
 
 const Root = ({ store }) => {
@@ -26,18 +29,16 @@ const Root = ({ store }) => {
   return (
     <Provider store={ store }>
       <Router history={ hashHistory }
-              render={ applyRouterMiddleware(useScroll()) }>
-        <Route path="/" component={ App }>
-          <IndexRedirect to="/home" />
-          <Route path="/home" component={ HomeContainer } />
-          <Route path="recipes/:recipeId" component={ RecipeDetailContainer }/>
-          <Route path="profile" component={ ProfileContainer }>
-            <Route path=":username" component={ ProfileContainer }>
-              <Route path="my-recipes" component={ ProfileContainer }/>
-              <Route path="favorites" component={ ProfileContainer }/>
-              <Route path="new-recipe" component={ ProfileContainer }/>
-              <Route path="edit-recipe/:id" component={ ProfileContainer }/>
-            </Route>
+              render={ applyRouterMiddleware(useScroll()) } >
+        <Route path="/" component={ App } >
+          <IndexRoute component={ HomeContainer } />
+          <Route path="recipes/:recipeId" component={ RecipeDetailContainer } />
+          <Route path="profile" component={ ProfileContainer } >
+            <Route path=":username" component={ AboutMeContainer } />
+            <Route path="my-recipes" component={ MyRecipesContainer } />
+            <Route path="favorites" component={ FavoriteRecipesContainer } />
+            <Route path="new-recipe" component={ RecipeFormContainer } />
+            <Route path="edit-recipe/:id" component={ RecipeFormContainer } />
           </Route>
         </Route>
       </Router>
