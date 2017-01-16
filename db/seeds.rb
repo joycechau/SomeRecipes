@@ -74,7 +74,7 @@ User.create(username: "foodnetwork",
             password: "password",
             fname: "Bobby",
             lname: "Flay",
-            profile_url: "https://res.cloudinary.com/joycechau/image/upload/v1484520981/foodnetwork_profile_pic.jpg",
+            profile_url: "https://res.cloudinary.com/joycechau/image/upload/v1484532335/foodnetwork_profile_pic.png",
             interests: "grilling, barbecue, steaks");
 
 Recipe.create(

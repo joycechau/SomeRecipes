@@ -4,6 +4,7 @@ import { Link, hashHistory } from 'react-router';
 class RecipeDetail extends React.Component {
   constructor(props) {
     super(props);
+    this.handleClick = this.handleClick.bind(this);
   }
 
   componentWillMount() {
@@ -16,9 +17,15 @@ class RecipeDetail extends React.Component {
     }
   }
 
+  handleClick(e) {
+    e.preventDefault;
+    hashHistory.push(`/profile/${this.props.recipe.user.username}`);
+  }
+
   render() {
     const { recipe, router } = this.props;
     const author = recipe.user ? recipe.user.username: "";
+    const author_picture = recipe.user ? recipe.user.profile_url: "";
     return (
       <section className="recipe-detail-container">
         <section className="recipe-detail-break-section">
@@ -38,7 +45,12 @@ class RecipeDetail extends React.Component {
               <p className="recipe-detail-description">
                 {recipe.description}
               </p>
-              <h2 className="recipe-detail-author">Recipe by { author }</h2>
+              <button className="recipe-detail-author-button"
+                      onClick={this.handleClick}>
+                <img src={author_picture}
+                     className="recipe-detail-author-button-image"/>
+                Recipe by { author }
+              </button>
             </div>
           </div>
           <div className="recipe-detail-ingredients-section">

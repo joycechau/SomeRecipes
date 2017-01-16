@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import AboutMe from './about_me';
+import ProfileForm from './about_me';
 import { fetchProfile } from '../../actions/profile_actions';
 
 const mapStateToProps = state => ({
@@ -14,4 +14,4 @@ const mapDispatchToProps = dispatch => ({
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(AboutMe);
+)(ProfileForm);

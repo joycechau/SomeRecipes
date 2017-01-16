@@ -64,10 +64,25 @@
   padding: 10px;
 }
 
-.recipe-detail-author {
+.recipe-detail-author-button {
   margin-top: 10px;
   padding: 10px;
   font-size: 14px;
+  display: flex;
+  justify-content: space-between;;
+  align-items: center;
+}
+
+.recipe-detail-author-button:hover {
+  background-color: $hover-background;
+  border-radius: 5px;
+}
+
+.recipe-detail-author-button-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
 }
 
 .recipe-detail-ingredients {

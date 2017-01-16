@@ -49,8 +49,8 @@
 .profile-main-section {
   width: 75%;
   float: right;
-  border: 1px solid blue;
-  padding: 20px;
+  border: 2px solid $dark-gray;
+  padding: 30px;
   margin: 20px;
   margin-top: 10px;
 }
@@ -72,4 +72,46 @@
 
 .profile-sidebar-button-text {
   color: $red-orange;
+}
+
+.about-me-main-section {
+  // border: 1px solid red;
+  display: flex;
+}
+
+.about-me-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-bottom: 1px solid $dark-gray;
+}
+
+.about-me-image-and-username {
+  // border: 1px solid red;
+  padding: 10px;
+  // border: 1px solid green;
+  float: right;
+}
+
+.about-me-image {
+  width: 300px;
+  height: auto;
+  // padding: 20px;
+}
+
+.about-me-username {
+  margin: auto;
+}
+
+.about-me-summary {
+  // border: 1px solid blue;
+  width: 50%;
+}
+
+.about-me-fname,
+.about-me-lname,
+.about-me-interests {
+  padding: 15px;
+  // border: 1px solid green;
 }

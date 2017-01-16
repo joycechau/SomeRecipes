@@ -20,7 +20,9 @@ class ProfilePage extends React.Component {
                className="clearfix">
             <SideBarContainer />
           </div>
-          <div className="profile-main-section">{ this.props.children }</div>
+          <div className="profile-main-section">
+            { this.props.children }
+          </div>
         </div>
       </div>
     );
