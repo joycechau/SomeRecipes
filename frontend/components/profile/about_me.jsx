@@ -1,5 +1,6 @@
 import React from 'react';
 import RecipeIndexItem from '../recipe/recipe_index_item';
+import ProfileFormContainer from './profile_form_container';
 import Masonry from 'react-masonry-component';
 import Modal from 'react-modal';
 import { style } from './profile_form_modal';
@@ -7,14 +8,8 @@ import { style } from './profile_form_modal';
 class AboutMe extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      modalOpen: false,
-      fname: this.props.profile.fname,
-      lname: this.props.profile.lname,
-      interests: this.props.profile.interests,
-    };
+    this.state = { modalOpen: false };
     this.handleProfileUpdateButtonClick = this.handleProfileUpdateButtonClick.bind(this);
-    this.handleProfileFormClick = this.handleProfileFormClick.bind(this);
     this.closeModal = this.closeModal.bind(this);
     this.openModal = this.openModal.bind(this);
   }
@@ -34,13 +29,9 @@ class AboutMe extends React.Component {
     this.setState({ modalOpen: true });
   }
 
-  handleProfileFormClick(e) {
-    e.preventDefault;
-    this.props.fetchProfile();
-  }
-
   closeModal() {
     this.setState({ modalOpen: false });
+
   }
 
   openModal() {
@@ -90,7 +81,7 @@ class AboutMe extends React.Component {
           onRequestClose={this.closeModal}
           contentLabel="Modal"
           style={style}>
-          {this.updateProfileForm()}
+          <ProfileFormContainer />
         </Modal>
       </div>
     );

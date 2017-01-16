@@ -4,8 +4,11 @@ import { Link } from 'react-router';
 class ProfileForm extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { username: "",
-                   password: "",
+    this.state = {
+                   id: this.props.profile.id,
+                   fname: this.props.profile.fname,
+                   lname: this.props.profile.lname,
+                   interests: this.props.profile.interests
                  };
     this.handleSubmit = this.handleSubmit.bind(this);
   }
@@ -13,19 +16,12 @@ class ProfileForm extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     const user = Object.assign({}, this.state);
-    if (this.state.formType === 'signup') {
-      this.props.signup({
-        username: this.state.username,
-        password: this.state.password
-      });
-    } else {
-      this.props.login({
-        username: this.state.username,
-        password: this.state.password
-      });
-    }
-    this.setState({ username: "", password: "" });
-    this.props.clearErrors();
+    this.props.updateProfile({user: {
+      id: this.state.id,
+      fname: this.state.fname,
+      lname: this.state.lname,
+      interests: this.state.interests
+    }});
   }
 
   update(field) {
@@ -35,23 +31,36 @@ class ProfileForm extends React.Component {
   }
 
   render() {
-    const text = this.state.formType === 'login' ? 'Log In' : 'Sign Up';
     return (
       <div>
-        <form onSubmit={this.handleProfileFormClick}>
+        <form onSubmit={this.handleSubmit}>
+          <h2>Update Profile</h2>
           <label> First Name
-            <input value={this.props.profile.fname}></input>
+            <input type="text"
+                   value={this.state.fname}
+                   onChange={this.update('fname')}
+                   className="profile-form-input-fname"/>
           </label>
           <label> Last Name
-            <input value={this.props.profile.lname}></input>
+            <input type="text"
+                   value={this.state.lname}
+                   onChange={this.update('lname')}
+                   className="profile-form-input-lname"/>
           </label>
           <label> Interests
-            <input value={this.props.profile.interests}></input>
+            <input type="text"
+                   value={this.state.interests}
+                   onChange={this.update('interests')}
+                   className="profile-form-input-interests"/>
           </label>
+          <input type="submit"
+                 value="Submit"
+                 />
         </form>
       </div>
     );
   }
 }
+
 
 export default ProfileForm;

@@ -3,7 +3,7 @@ class Api::UsersController < ApplicationController
     @user = User.new(user_params)
     if @user.save
       login(@user)
-      render :show
+      render 'api/users/current_user'
     else
       render json: @user.errors.full_messages, status: 422
     end
@@ -20,9 +20,9 @@ class Api::UsersController < ApplicationController
   end
 
   def update
-    @user = User.find(params[:id])
-    @user.update
-    render :show
+    @user = User.find_by(id: params[:user][:id])
+    @user.update(user_params)
+    render "api/users/profile"
   end
 
   private

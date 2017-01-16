@@ -6,6 +6,11 @@ export const fetchProfile = (username) => (dispatch) => (
     .then(profile => dispatch(receiveProfile(profile)))
 );
 
+export const updateProfile = (user) => (dispatch) => (
+  APIUtil.updateProfile(user)
+    .then(profile => dispatch(receiveProfile(profile)))
+);
+
 export const receiveProfile = (profile) => ({
   type: RECEIVE_PROFILE,
   profile
