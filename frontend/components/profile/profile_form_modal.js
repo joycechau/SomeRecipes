@@ -14,13 +14,13 @@ export const style = {
     left            : '50%',
     right           : '150px',
     bottom          : '100px',
-    border          : '2px solid #E52F00',
+    border          : '2px solid black',
     padding         : '30px',
     zIndex          : 11,
-    width           : '250px',
-    height          : '350px',
+    width           : '350px',
+    height          : '400px',
     'margin-left'   : '-150px',
-    'margin-top'    : '-150px'
-    // 'background-image' : 'url(/assets/session_form.jpg)'
+    'margin-top'    : '-150px',
+    'background-color': 'light-gray'
   }
 };

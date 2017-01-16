@@ -31,7 +31,6 @@ class AboutMe extends React.Component {
 
   closeModal() {
     this.setState({ modalOpen: false });
-
   }
 
   openModal() {
@@ -76,13 +75,15 @@ class AboutMe extends React.Component {
                 onClick={this.handleProfileUpdateButtonClick}>
           Update Profile
         </button>
-        <Modal
-          isOpen={this.state.modalOpen}
-          onRequestClose={this.closeModal}
-          contentLabel="Modal"
-          style={style}>
-          <ProfileFormContainer />
-        </Modal>
+        <div>
+          <Modal
+            isOpen={this.state.modalOpen}
+            onRequestClose={this.closeModal}
+            contentLabel="Modal"
+            style={style}>
+            <ProfileFormContainer />
+          </Modal>
+        </div>
       </div>
     );
   }

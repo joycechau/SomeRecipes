@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router';
+import { hashHistory } from 'react-router';
 
 class ProfileForm extends React.Component {
   constructor(props) {
@@ -33,28 +34,30 @@ class ProfileForm extends React.Component {
   render() {
     return (
       <div>
-        <form onSubmit={this.handleSubmit}>
-          <h2>Update Profile</h2>
-          <label> First Name
+        <form className="profile-form" onSubmit={this.handleSubmit}>
+          <h2 className="profile-form-title">Update Profile</h2>
+          <label className="profile-form-label"> First Name
             <input type="text"
                    value={this.state.fname}
                    onChange={this.update('fname')}
                    className="profile-form-input-fname"/>
           </label>
-          <label> Last Name
+          <label className="profile-form-label"> Last Name
             <input type="text"
                    value={this.state.lname}
                    onChange={this.update('lname')}
                    className="profile-form-input-lname"/>
           </label>
-          <label> Interests
-            <input type="text"
+          <label className="profile-form-label"> Interests
+            <textarea 
                    value={this.state.interests}
                    onChange={this.update('interests')}
-                   className="profile-form-input-interests"/>
+                   className="profile-form-input-interests">
+            </textarea>
           </label>
           <input type="submit"
                  value="Submit"
+                 className="profile-form-submit-button"
                  />
         </form>
       </div>
