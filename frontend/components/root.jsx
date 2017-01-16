@@ -35,10 +35,10 @@ const Root = ({ store }) => {
           <Route path="recipes/:recipeId" component={ RecipeDetailContainer } />
           <Route path="profile" component={ ProfileContainer } >
             <Route path=":username" component={ AboutMeContainer } />
-            <Route path="my-recipes" component={ MyRecipesContainer } />
-            <Route path="favorites" component={ FavoriteRecipesContainer } />
-            <Route path="new-recipe" component={ RecipeFormContainer } />
-            <Route path="edit-recipe/:id" component={ RecipeFormContainer } />
+            <Route path=":username/my-recipes" component={ MyRecipesContainer } />
+            <Route path=":username/favorites" component={ FavoriteRecipesContainer } />
+            <Route path=":username/new-recipe" component={ RecipeFormContainer } />
+            <Route path=":username/edit-recipe/:id" component={ RecipeFormContainer } />
           </Route>
         </Route>
       </Router>

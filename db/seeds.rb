@@ -111,17 +111,10 @@ Recipe.create(
                   "4 eggs",
                   "1/2 cup milk",
                   "1 ounce bottle red food coloring",
-                  "2 teaspoons vanilla extract",
-                  "Vanilla Cream Cheese Frosting:",
-                  "1 (8 ounce) package cream cheese, softened",
-                  "1/4 cup butter, softened",
-                  "2 tablespoons sour cream",
-                  "2 teaspoons vanilla extract",
-                  "1 (16 ounce) box confectioners' sugar"],
+                  "2 teaspoons vanilla extract"],
     directions: ["Preheat oven to 350 degrees F. Mix flour, cocoa powder, baking soda and salt in medium bowl. Set aside.",
                  "Beat butter and sugar in large bowl with electric mixer on medium speed 5 minutes or until light and fluffy. Beat in eggs, one at a time. Mix in sour cream, milk, food color and vanilla. Gradually beat in flour mixture on low speed until just blended. Do not overbeat. Spoon batter into 30 paper-lined muffin cups, filling each cup 2/3 full.",
-                 "Bake 20 minutes or until toothpick inserted into cupcake comes out clean. Cool in pans on wire rack 5 minutes. Remove from pans; cool completely. Frost with Vanilla Cream Cheese Frosting.",
-                 "Vanilla Cream Cheese Frosting: Beat cream cheese, softened, butter, sour cream and McCormick(R) Pure Vanilla Extract in large bowl until light and fluffy. Gradually beat in confectioners' sugar until smooth."]
+                 "Bake 20 minutes or until toothpick inserted into cupcake comes out clean. Cool in pans on wire rack 5 minutes. Remove from pans; cool completely. Frost with Vanilla Cream Cheese Frosting."]
     )
 
 Recipe.create(
@@ -588,7 +581,7 @@ Recipe.create(
 
 Recipe.create(
   user_id: (1..10).to_a.sample,
-  title: "Ching Chong Ling Long Chicken Fried Rice",
+  title: "Chicken Fried Rice",
   category: "Main Dishes",
   description: "Chicken, rice, soy sauce and shredded egg stir fried together. This is a very simple recipe. It is easy, but tasty! Note: Never use rice that you have just cooked.",
   image_url: "https://res.cloudinary.com/joycechau/image/upload/v1484463793/friedrice.jpg",

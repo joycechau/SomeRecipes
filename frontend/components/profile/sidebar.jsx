@@ -1,4 +1,5 @@
 import React from 'react';
+import { hashHistory } from 'react-router';
 
 class SideBar extends React.Component {
   constructor(props) {

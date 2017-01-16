@@ -1,12 +1,13 @@
 @import "../base/colors.scss";
 
 .recipe-detail-container {
+  // background-color: blue;
 }
 
 .recipe-detail-break-section {
   display: block;
-  height: 75px;
-  background-image: url(https://res.cloudinary.com/joycechau/image/upload/c_crop,h_125,w_2400/v1484508125/recipe_detail_background.jpg)
+  height: 100px;
+  background-image: url(https://res.cloudinary.com/joycechau/image/upload/c_crop,h_150,w_2400,x_526,y_1780/v1484551597/recipe_detail_background_1.jpg)
 }
 
 .recipe-detail-section {
