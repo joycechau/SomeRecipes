@@ -17,7 +17,7 @@ class RecipeIndex extends React.Component {
           Welcome! Browse our recipes.
         </h1>
         <Masonry
-          className="recipe-index-masonry-container"
+          className="home-page-recipe-index-masonry-container"
         >
           {this.props.recipes.map(recipe => (
             <RecipeIndexItem

@@ -6,8 +6,6 @@ export const fetchProfile = (username) => (
 );
 
 export const updateProfile = ( user ) => {
-  console.log(user);
-  console.log(user['id']);
   return $.ajax({
     method: "PATCH",
     url: `api/users/${user.id}`,

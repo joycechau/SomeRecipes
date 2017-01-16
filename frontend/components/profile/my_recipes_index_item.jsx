@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, hashHistory } from 'react-router';
 
-class RecipeIndexItem extends React.Component {
+class MyRecipesIndexItem extends React.Component {
   constructor(props) {
     super(props);
     this.showRecipe = this.showRecipe.bind(this);
@@ -15,19 +15,19 @@ class RecipeIndexItem extends React.Component {
 
   render() {
     const { recipe, router, currentUser } = this.props;
-    const author = recipe.user ? recipe.user.username: "";  
+    const author = recipe.user ? recipe.user.username: "";
     return (
-      <button className="home-page-recipe-index-item"
+      <button className="profile-page-recipe-index-item"
               onClick={this.showRecipe}>
         <img src={recipe.image_url}
-             className="home-page-recipe-index-image"></img>
-        <h2 className="home-page-recipe-index-item-title">
+             className="profile-page-recipe-index-image"></img>
+           <h2 className="profile-page-recipe-index-item-title">
           {recipe.title}
         </h2>
-        <p className="home-page-recipe-index-item-description">
+        <p className="profile-page-recipe-item-description">
           {recipe.description}
         </p>
-        <h2 className="home-page-recipe-index-item-author">
+        <h2 className="profile-page-recipe-item-author">
           Recipe by { author }
         </h2>
       </button>
@@ -35,4 +35,4 @@ class RecipeIndexItem extends React.Component {
   }
 }
 
-export default RecipeIndexItem;
+export default MyRecipesIndexItem;

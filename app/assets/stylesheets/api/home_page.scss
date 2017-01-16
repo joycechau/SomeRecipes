@@ -33,19 +33,19 @@
   margin: 0 auto;
 }
 
-.recipe-index-masonry-container {
+.home-page-recipe-index-masonry-container {
   width: 960px;
   margin: auto;
 }
 
 @media (min-width: 300px) and (max-width: 1024px) {
-  .recipe-index-masonry-container {
+  .home-page-recipe-index-masonry-container {
     width: 650px;
   }
 }
 
 @media (min-width: 300px) and (max-width: 650px) {
-  .recipe-index-masonry-container {
+  .home-page-recipe-index-masonry-container {
     width: 340px;
   }
 }

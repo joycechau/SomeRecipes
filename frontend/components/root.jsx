@@ -13,7 +13,7 @@ import RecipeDetailContainer from './recipe/recipe_detail_container';
 import HomeContainer from './home/home_container.js';
 import ProfileContainer from './profile/profile_container.js';
 import AboutMeContainer from './profile/about_me_container.js';
-import MyRecipesContainer from './profile/my_recipes_container.js';
+import MyRecipesContainer from './profile/my_recipes_index_container.js';
 import FavoriteRecipesContainer from './profile/favorite_recipes_container.js';
 import RecipeFormContainer from './recipe/recipe_form_container.js';
 import { useScroll } from 'react-router-scroll';

@@ -1,8 +1,9 @@
 import { connect } from 'react-redux';
-import MyRecipes from './my_recipes';
+import MyRecipesIndex from './my_recipes_index';
 
 const mapStateToProps = state => ({
-
+  currentUser: state.currentUser,
+  recipes: Object.keys(state.currentUser.recipes).map(id => state.currentUser.recipes[id])
 });
 
 const mapDispatchToProps = dispatch => ({
@@ -12,4 +13,4 @@ const mapDispatchToProps = dispatch => ({
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(MyRecipes);
+)(MyRecipesIndex);
