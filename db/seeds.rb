@@ -926,7 +926,7 @@ Recipe.create(
   title: "Savory Party Bread",
   category: "Appetizers",
   description: "It's impossible to stop nibbling on warm pieces of this cheesy, oniony bread. The sliced loaf fans out for a fun presentation.",
-  image_url: "",
+  image_url: "https://res.cloudinary.com/joycechau/image/upload/v1484602840/savory_party_bread.jpg",
   ingredients: ["1 unsliced round loaf sourdough bread (1 pound)",
                 "1 pound Monterey Jack cheese",
                 "1/2 cup butter, melted",
@@ -938,7 +938,7 @@ Recipe.create(
 
 Recipe.create(
   user_id: (1..10).to_a.sample,
-  title: "Cranberry Chili Meatballs ",
+  title: "Cranberry Chili Meatballs",
   category: "Appetizers",
   description: "Using packaged meatballs helps save time in the kitchen and they are just as tasty as homemade. My friends look forward to enjoying these meatballs at our holiday gatherings and there are never any leftovers! ",
   image_url: "",

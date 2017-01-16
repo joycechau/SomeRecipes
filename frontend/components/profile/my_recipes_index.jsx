@@ -7,10 +7,14 @@ class MyRecipesIndex extends React.Component {
     super(props);
   }
 
+  componentWillMount() {
+    this.props.fetchProfile(this.props.params.username);
+  }
+
   render() {
     return (
       <div>
-        <h1>My Recipes</h1>
+        <h1 className="profile-page-my-recipes-title">My Recipes</h1>
         <Masonry
           className="profile-page-recipe-index-masonry-container"
         >

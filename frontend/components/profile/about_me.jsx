@@ -81,7 +81,7 @@ class AboutMe extends React.Component {
             onRequestClose={this.closeModal}
             contentLabel="Modal"
             style={style}>
-            <ProfileFormContainer />
+            <ProfileFormContainer closeModal={this.closeModal}/>
           </Modal>
         </div>
       </div>

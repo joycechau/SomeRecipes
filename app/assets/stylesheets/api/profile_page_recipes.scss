@@ -1,7 +1,16 @@
 @import "../base/colors.scss";
 
+.profile-page-my-recipes-title {
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 5px;
+  border-bottom: 1px solid $dark-gray;
+}
+
 .profile-page-recipe-index-masonry-container {
-  width: 768px;
+  width: 640px;
   margin: auto;
 }
 
@@ -11,7 +20,7 @@
   }
 }
 
-@media (min-width: 300px) and (max-width: 650px) {
+@media (min-width: 300px) and (max-width: 700px) {
   .profile-page-recipe-index-masonry-container {
     width: 340px;
   }

@@ -23,6 +23,7 @@ class ProfileForm extends React.Component {
       lname: this.state.lname,
       interests: this.state.interests
     }});
+    this.props.closeModal();
   }
 
   update(field) {
@@ -49,7 +50,7 @@ class ProfileForm extends React.Component {
                    className="profile-form-input-lname"/>
           </label>
           <label className="profile-form-label"> Interests
-            <textarea 
+            <textarea
                    value={this.state.interests}
                    onChange={this.update('interests')}
                    className="profile-form-input-interests">

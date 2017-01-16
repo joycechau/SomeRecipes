@@ -1,13 +1,16 @@
 import { connect } from 'react-redux';
 import MyRecipesIndex from './my_recipes_index';
+import { fetchProfile } from '../../actions/profile_actions';
 
-const mapStateToProps = state => ({
-  currentUser: state.currentUser,
-  recipes: Object.keys(state.currentUser.recipes).map(id => state.currentUser.recipes[id])
-});
+const mapStateToProps = state => {
+  return {
+    currentUser: state.currentUser,
+    recipes: Object.keys(state.profile.recipes).map(id => state.profile.recipes[id])
+  };
+};
 
 const mapDispatchToProps = dispatch => ({
-
+  fetchProfile: (username) => dispatch(fetchProfile(username))
 });
 
 export default connect(

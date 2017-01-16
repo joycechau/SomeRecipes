@@ -45,7 +45,7 @@ class SideBar extends React.Component {
           <h2 className="profile-sidebar-button-text">
             My Recipes
           </h2>
-        </button>
+        </button> 
         <br />
         <button onClick={this.handleFavoriteRecipesClick}
                 className="profile-sidebar-button">

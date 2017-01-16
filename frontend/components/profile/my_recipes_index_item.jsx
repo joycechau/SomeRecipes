@@ -15,7 +15,7 @@ class MyRecipesIndexItem extends React.Component {
 
   render() {
     const { recipe, router, currentUser } = this.props;
-    const author = recipe.user ? recipe.user.username: "";
+    const author = currentUser ? currentUser.username: "";
     return (
       <button className="profile-page-recipe-index-item"
               onClick={this.showRecipe}>
