@@ -26,43 +26,6 @@
   }
 }
 
-.profile-page-recipe-index-item {
-  width: 300px;
-  height: auto;
-  padding: 18px;
-  border: 1px solid $gray;
-  margin: 10px;
-  float: left;
-  border-radius: 2px;
-}
-
-.profile-page-recipe-index-item:hover {
-  background-color: #F8F8F8;
-}
-
-.profile-page-recipe-index-image {
-  max-height: 250px;
-}
-
-.profile-page-recipe-index-item-title {
-  font-size: 18px;
-  padding: 5px;
-}
-
-.profile-page-recipe-item-description {
-  color: $gray;
-  font-size: 14px;
-  padding: 5px;
-  margin: 5px, 0px;
-  bottom-border: 1px solid $gray;
-}
-
-.profile-page-recipe-item-author {
-  color: $gray;
-  font-size: 12px;
-  padding: 5px
-}
-
 .about-me-other-user-recipes {
   padding-left: 14px;
 }

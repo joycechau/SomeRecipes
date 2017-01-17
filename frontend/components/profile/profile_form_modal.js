@@ -18,7 +18,7 @@ export const style = {
     padding         : '30px',
     zIndex          : 11,
     width           : '350px',
-    height          : '400px',
+    height          : '375px',
     'margin-left'   : '-150px',
     'margin-top'    : '-150px',
     'background-color': 'light-gray'

@@ -107,6 +107,7 @@ class AboutMe extends React.Component {
                 recipe={recipe}
                 currentUser={this.props.currentUser}
                 author={this.props.profile.username}
+                authorImage={this.props.profile.profile_url}
               />
             ))}
           </Masonry>

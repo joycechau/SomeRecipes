@@ -1,0 +1,47 @@
+@import "../base/colors.scss";
+
+.recipe-index-item {
+  width: 300px;
+  height: auto;
+  padding: 18px;
+  border: 1px solid $gray;
+  margin: 10px;
+  float: left;
+  border-radius: 2px;
+}
+
+.recipe-index-item:hover {
+  background-color: #F8F8F8;
+}
+
+.recipe-index-item-image {
+  max-height: 250px
+}
+
+.recipe-index-item-title {
+  font-size: 18px;
+  padding: 5px;
+}
+
+.recipe-index-item-description {
+  color: $gray;
+  font-size: 14px;
+  padding: 5px;
+  margin: 5px, 0px;
+  bottom-border: 1px solid $gray;
+}
+
+.recipe-index-item-author {
+  color: $gray;
+  font-size: 12px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.recipe-index-item-author-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}

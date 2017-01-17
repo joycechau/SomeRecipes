@@ -17,18 +17,22 @@ class RecipeIndexItem extends React.Component {
     const { recipe, router, currentUser } = this.props;
     const author = recipe.user ? recipe.user.username: "";
     return (
-      <button className="home-page-recipe-index-item"
+      <button className="recipe-index-item"
               onClick={this.showRecipe}>
         <img src={recipe.image_url}
-             className="home-page-recipe-index-image"></img>
-        <h2 className="home-page-recipe-index-item-title">
+             className="recipe-index-item-image"></img>
+        <h2 className="recipe-index-item-title">
           {recipe.title}
         </h2>
-        <p className="home-page-recipe-index-item-description">
+        <p className="recipe-index-item-description">
           {recipe.description}
         </p>
-        <h2 className="home-page-recipe-index-item-author">
-          Recipe by { author }
+        <h2 className="recipe-index-item-author">
+          <img src={recipe.user.profile_url}
+               className="recipe-index-item-author-image"/>
+          <h2 className="recipe-index-item-author-username">
+            Recipe by { author }
+          </h2>
         </h2>
       </button>
     );

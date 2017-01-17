@@ -23,6 +23,7 @@ class MyRecipesIndex extends React.Component {
               key={recipe.id + recipe}
               recipe={recipe}
               currentUser={this.props.currentUser}
+              profile={this.props.profile}
               />
             ))
           }
