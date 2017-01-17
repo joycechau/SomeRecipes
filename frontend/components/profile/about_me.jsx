@@ -1,6 +1,7 @@
 import React from 'react';
 import OtherRecipesIndexItem from './other_recipes_index_item';
 import ProfileFormContainer from './profile_form_container';
+import ProfileImageUploadButtonContainer from './profile_image_upload_button_container';
 import Masonry from 'react-masonry-component';
 import Modal from 'react-modal';
 import { style } from './profile_form_modal';
@@ -10,6 +11,7 @@ class AboutMe extends React.Component {
     super(props);
     this.state = { modalOpen: false };
     this.handleProfileUpdateButtonClick = this.handleProfileUpdateButtonClick.bind(this);
+    this.handleProfileUpdateImageClick = this.handleProfileUpdateImageClick.bind(this);
     this.closeModal = this.closeModal.bind(this);
     this.openModal = this.openModal.bind(this);
   }
@@ -27,6 +29,11 @@ class AboutMe extends React.Component {
   handleProfileUpdateButtonClick(e) {
     e.preventDefault();
     this.setState({ modalOpen: true });
+  }
+
+  handleProfileUpdateImageClick(e) {
+    e.preventDefault();
+    alert("Testing from AboutMe class");
   }
 
   closeModal() {
@@ -71,6 +78,7 @@ class AboutMe extends React.Component {
           About Me
         </h1>
         {this.mainSection()}
+        <ProfileImageUploadButtonContainer />
         <button className="about-me-update-profile-button"
                 onClick={this.handleProfileUpdateButtonClick}>
           Update Profile

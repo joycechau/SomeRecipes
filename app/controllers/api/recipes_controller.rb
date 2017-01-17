@@ -53,5 +53,4 @@ class Api::RecipesController < ApplicationController
       directions: []
     )
   end
-
 end

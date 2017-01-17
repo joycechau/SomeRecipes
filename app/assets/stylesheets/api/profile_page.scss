@@ -104,11 +104,17 @@
 
 .about-me-username {
   margin: auto;
+  float: left;
 }
 
 .about-me-summary {
   // border: 1px solid blue;
   width: 50%;
+}
+
+.about-me-update-profile-image-button {
+  float: right;
+  margin-right: 10px;
 }
 
 .about-me-fname,
@@ -118,7 +124,9 @@
   // border: 1px solid green;
 }
 
-.about-me-update-profile-button {
+
+.about-me-update-profile-button,
+.about-me-update-profile-image-button {
   margin-left: 10px;
   padding: 5px;
   padding-left: 7px;
@@ -128,6 +136,10 @@
   color: white;
 }
 
-.about-me-update-profile-button:hover {
+.about-me-update-profile-button:hover,
+.about-me-update-profile-image-button:hover {
   background-color: #CB4E27;
+}
+
+.upload-form {
 }
