@@ -11,7 +11,7 @@ User.create(username: "joyce",
             password: "password",
             fname: "Joyce",
             lname: "Chau",
-            profile_url: "https://res.cloudinary.com/joycechau/image/upload/v1484519058/default_profile_pic.jpg",
+            profile_url: "https://res.cloudinary.com/joycechau/image/upload/v1484679293/joyce_profile_pic.jpg",
             interests: "Desserts, puzzles, board games, coding, running");
 
 User.create(username: "ilovecorgis",
@@ -19,7 +19,7 @@ User.create(username: "ilovecorgis",
             fname: "Sally",
             lname: "Jones",
             profile_url: "https://res.cloudinary.com/joycechau/image/upload/v1484520322/ilovecorgis_profile_pic.jpg",
-            interests: "cookies, shopping, corgis");
+            interests: "corgis, cookies, shopping, more corgis");
 
 User.create(username: "sfgiants",
             password: "password",
@@ -35,12 +35,12 @@ User.create(username: "baconlover",
             profile_url: "https://res.cloudinary.com/joycechau/image/upload/v1484520486/baconlover_profile_pic.png",
             interests: "bungee jumping, barbecue, reading");
 
-User.create(username: "peter",
+User.create(username: "goldenstatewarriors",
             password: "password",
-            fname: "Peter",
-            lname: "Yu",
-            profile_url: "https://res.cloudinary.com/joycechau/image/upload/v1484519058/default_profile_pic.jpg",
-            interests: "cooking, crafts, sports, running");
+            fname: "Steph",
+            lname: "Curry",
+            profile_url: "https://res.cloudinary.com/joycechau/image/upload/v1484680025/goldenstatewarriors_profile_pic.png",
+            interests: "basketball, Ayesha, sports, fine dining, charity");
 
 User.create(username: "luckycharms",
             password: "password",
