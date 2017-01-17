@@ -59,9 +59,3 @@ const Root = ({ store }) => {
 };
 
 export default Root;
-
-// /profile/:username	"ProfileContainer"
-// /profile/:username/my-recipes	"ProfileContainer"
-// /profile/:username/favorites	"ProfileContainer"
-// /profile/:username/new-recipe	"ProfileContainer"
-// /profile/:username/edit-recipe/:id	"ProfileContainer"

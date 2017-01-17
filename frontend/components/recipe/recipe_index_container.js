@@ -3,11 +3,7 @@ import RecipeIndex from './recipe_index';
 import {
   fetchAllRecipes,
   fetchOwnRecipes,
-  fetchFavoriteRecipes,
-  fetchRecipe,
-  createRecipe,
-  updateRecipe,
-  deleteRecipe
+  fetchFavoriteRecipes
 } from '../../actions/recipes_actions';
 
 const mapStateToProps = state => ({
@@ -18,11 +14,7 @@ const mapStateToProps = state => ({
 const mapDispatchToProps = dispatch => ({
   fetchAllRecipes: () => dispatch(fetchAllRecipes()),
   fetchOwnRecipes: () => dispatch(fetchOwnRecipes()),
-  fetchFavoriteRecipes: () => dispatch(fetchFavoriteRecipes()),
-  fetchRecipe: (id) => dispatch(fetchRecipe(id)),
-  createRecipe: (recipe) => dispatch(createRecipe(recipe)),
-  updateRecipe: (recipe) => dispatch(updateRecipe()),
-  deleteRecipe: (id) => dispatch(deleteRecipe(id))
+  fetchFavoriteRecipes: () => dispatch(fetchFavoriteRecipes())
 });
 
 export default connect(

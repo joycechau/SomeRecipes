@@ -1,13 +1,18 @@
 import { connect } from 'react-redux';
-import NewRecipeForm from './new_recipe_form';
 import { createRecipe } from '../../actions/recipes_actions';
+import { clearErrors } from '../../actions/errors_actions';
+import NewRecipeForm from './new_recipe_form';
 
-const mapStateToProps = state => ({
-});
+const mapStateToProps = state => {
+  return {
+    errors: state.errors['recipe'],
+  };
+};
 
 const mapDispatchToProps = dispatch => {
   return {
-    createRecipe: (recipe) => dispatch(createRecipe(recipe))
+    createRecipe: (recipe) => dispatch(createRecipe(recipe)),
+    clearErrors: () => dispatch(clearErrors())
   };
 };
 

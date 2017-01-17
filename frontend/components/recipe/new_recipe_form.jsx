@@ -19,20 +19,9 @@ class NewRecipeForm extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     console.log(this.state);
-    // const user = Object.assign({}, this.state);
-    // if (this.state.formType === 'signup') {
-    //   this.props.signup({
-    //     username: this.state.username,
-    //     password: this.state.password
-    //   });
-    // } else {
-    //   this.props.login({
-    //     username: this.state.username,
-    //     password: this.state.password
-    //   });
-    // }
-    // this.setState({ username: "", password: "" });
-    // this.props.clearErrors();
+    const recipe = Object.assign({}, this.state);
+    this.props.createRecipe(recipe);
+    this.props.clearErrors();
   }
 
   update(field) {
@@ -76,28 +65,12 @@ class NewRecipeForm extends React.Component {
                       selected="true">
                       --Select Category --
               </option>
-              <option value="Appetizers"
-                      onChange={this.update('category')}>
-                      Appetizers
-              </option>
-              <option value="Main Dishes"
-                      onChange={this.update('category')}>
-                      Main Dishes
-              </option>
-              <option value="Desserts"
-                      onChange={this.update('category')}>
-                      Desserts</option>
-              <option value="Breakfast"
-                      onChange={this.update('category')}>
-                      Breakfast
-              </option>
-              <option value="Sides"
-                      onChange={this.update('category')}>
-                      Sides
-              </option>
-              <option value="Other"
-                      onChange={this.update('category')}>
-                      Other
+              <option value="Appetizers">Appetizers</option>
+              <option value="Main Dishes">Main Dishes</option>
+              <option value="Desserts">Desserts</option>
+              <option value="Breakfast">Breakfast</option>
+              <option value="Sides">Sides</option>
+              <option value="Other">Other
               </option>
             </select>
           </label>

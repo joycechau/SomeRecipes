@@ -1,4 +1,5 @@
 import * as APIUtil from '../util/recipe_api_util';
+import { receiveErrorsRecipe } from './errors_actions';
 import { hashHistory } from 'react-router';
 
 export const RECEIVE_ALL_RECIPES = "RECEIVE_ALL_RECIPES";
@@ -28,11 +29,13 @@ export const fetchRecipe = (id) => (dispatch) => (
 export const createRecipe = (data) => (dispatch) => (
   APIUtil.createRecipe(data)
     .then(recipe => dispatch(receiveRecipe(recipe)))
+    .fail(errors => dispatch(receiveErrorsRecipe(errors.responseJSON)))
 );
 
 export const updateRecipe = (data) => (dispatch) => (
   APIUtil.updateRecipe(data)
     .then(recipe => dispatch(receiveRecipe(recipe)))
+    .fail(errors => dispatch(receiveErrorsRecipe(errors.responseJSON)))
 );
 
 export const deleteRecipe = (data) => (dispatch) => (

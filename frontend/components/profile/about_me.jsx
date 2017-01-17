@@ -1,5 +1,5 @@
 import React from 'react';
-import RecipeIndexItem from '../recipe/recipe_index_item';
+import OtherRecipesIndexItem from './other_recipes_index_item';
 import ProfileFormContainer from './profile_form_container';
 import Masonry from 'react-masonry-component';
 import Modal from 'react-modal';
@@ -102,10 +102,11 @@ class AboutMe extends React.Component {
           </h2>
           <Masonry className="recipe-index-masonry-container">
             {this.props.profile.recipes.map(recipe => (
-              <RecipeIndexItem
+              <OtherRecipesIndexItem
                 key={recipe.id}
                 recipe={recipe}
                 currentUser={this.props.currentUser}
+                author={this.props.profile.username}
               />
             ))}
           </Masonry>
