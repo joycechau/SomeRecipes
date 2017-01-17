@@ -1,5 +1,6 @@
 import {
   RECEIVE_RECIPE,
+  CLEAR_RECIPE,
   REMOVE_RECIPE
 } from '../actions/recipes_actions';
 import merge from 'lodash/merge';

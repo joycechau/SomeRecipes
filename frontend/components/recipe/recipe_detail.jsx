@@ -11,6 +11,10 @@ class RecipeDetail extends React.Component {
     this.props.fetchRecipe(this.props.params.recipeId);
   }
 
+  componentWillUnmount() {
+    this.props.clearAllRecipes();
+  }
+
   componentWillReceiveProps(nextProps) {
     if (this.props.params.recipeId !== nextProps.params.recipeId) {
       this.props.fetchRecipe(nextProps.params.recipeId);

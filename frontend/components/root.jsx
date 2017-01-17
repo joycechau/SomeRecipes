@@ -8,8 +8,8 @@ import {
   hashHistory
 } from 'react-router';
 import App from './app';
-import RecipeIndexContainer from './recipe/recipe_index_container';
-import RecipeDetailContainer from './recipe/recipe_detail_container';
+import RecipeIndexContainer from './recipe/recipe_index_container.js';
+import RecipeDetailContainer from './recipe/recipe_detail_container.js';
 import HomeContainer from './home/home_container.js';
 import ProfileContainer from './profile/profile_container.js';
 import AboutMeContainer from './profile/about_me_container.js';
