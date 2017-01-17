@@ -1,4 +1,4 @@
-var React = require("react");
+import React from 'react';
 
 class ProfileImageUploadButton extends React.Component {
   constructor(props) {

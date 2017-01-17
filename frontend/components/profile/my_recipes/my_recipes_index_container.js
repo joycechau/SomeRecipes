@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 import MyRecipesIndex from './my_recipes_index';
-import { fetchProfile } from '../../actions/profile_actions';
-import { fetchOwnRecipes } from '../../actions/recipes_actions';
+import { fetchProfile } from '../../../actions/profile_actions';
+import { fetchOwnRecipes } from '../../../actions/recipes_actions';
 
 const mapStateToProps = state => {
   return {

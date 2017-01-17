@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
-import { createRecipe } from '../../actions/recipes_actions';
-import { clearErrors } from '../../actions/errors_actions';
+import { createRecipe } from '../../../actions/recipes_actions';
+import { clearErrors } from '../../../actions/errors_actions';
 import NewRecipeForm from './new_recipe_form';
 
 const mapStateToProps = state => {

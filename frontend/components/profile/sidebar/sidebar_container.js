@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
-import ProfileForm from './profile_form';
-import { updateProfile } from '../../actions/profile_actions';
+import SideBar from './sidebar';
+import { fetchProfile } from '../../../actions/profile_actions';
 
 const mapStateToProps = state => ({
   currentUser: state.currentUser,
@@ -8,10 +8,10 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  updateProfile: (user) => dispatch(updateProfile(user))
+  // fetchProfile: (username) => dispatch(fetchProfile(username))
 });
 
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(ProfileForm);
+)(SideBar);

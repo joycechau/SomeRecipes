@@ -1,5 +1,5 @@
 import React from 'react';
-import SideBarContainer from './sidebar_container';
+import SideBarContainer from './sidebar/sidebar_container';
 
 class ProfilePage extends React.Component {
   componentWillMount() {
