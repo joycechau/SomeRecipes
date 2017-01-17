@@ -1,0 +1,102 @@
+@import "../base/colors.scss";
+@import "../base/fonts.scss";
+
+.recipe-form-container {
+}
+
+.recipe-form-header {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-bottom: 1px solid $dark-gray;
+}
+
+.recipe-form {
+
+}
+
+.recipe-form-label,
+.recipe-form-label-category {
+  display: block;
+  padding: 10px;
+  font-weight: bold;
+  display: flex;
+}
+
+.recipe-form-label-category {
+  align-items: center;
+}
+
+.recipe-form-label-description {
+  padding: 10px;
+}
+
+.recipe-form-input-title {
+  border: 1px solid $dark-gray;
+  padding: 5px;
+  margin-left: 62px;
+  background-color: #F8F8F8;
+  font-size: 14px;
+  width: 250px;
+}
+
+.recipe-form-input-image_url {
+  border: 1px solid $dark-gray;
+  padding: 5px;
+  margin-left: 10px;
+  background-color: #F8F8F8;
+  font-size: 14px;
+  width: 511px;
+}
+
+.recipe-form-select {
+  margin-left: 25px;
+}
+
+.recipe-form-disabed-option {
+
+}
+
+.recipe-form-option {
+
+}
+
+.recipe-form-input-description,
+.recipe-form-input-ingredients,
+.recipe-form-input-directions {
+  margin-top: 5px;
+  border: 1px solid $dark-gray;
+  padding: 10px;
+  width: 500px;
+  height: 125px;
+  font-size: 14px;
+  font-family: $muli;
+  background-color: #F8F8F8;
+  margin-left: 10px;
+  font-size: 14px;
+}
+
+.recipe-form-input-description {
+  width: 500px;
+  height: 50px;
+}
+
+.recipe-form-input-directions {
+  margin-left: 19px;
+}
+
+.recipe-form-submit-button {
+  padding: 7px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #E5572B;
+  color: white;
+  border-radius: 3px;
+  align-self: center;
+  margin: auto;
+}
+
+.recipe-form-submit-button:hover {
+  background-color: #CB4E27;
+}
