@@ -97,7 +97,7 @@ Recipe.create(
 
 
   Recipe.create(
-    user_id: (1..10).to_a.sample,
+    user_id: 1,
     title: "Red Velvet Cupcakes",
     category: "Desserts",
     description: "This mini version of the classic Red Velvet Cake is one of the more popular offerings in bakeries all across the country. Whip up a batch this holiday season or anytime of the year.",
@@ -513,7 +513,7 @@ Recipe.create(
 )
 
 Recipe.create(
-  user_id: (1..10).to_a.sample,
+  user_id: 1,
   title: "Best Hamburger Ever",
   category: "Main Dishes",
   description: "These burgers are the hit of my town. All my friends come over every weekend just for these burgers. With a little bit of basil leaves, and some olive oil, you will drooling all over yourself while you eat these.",
@@ -685,7 +685,7 @@ Recipe.create(
 )
 
 Recipe.create(
-  user_id: (1..10).to_a.sample,
+  user_id: 1,
   title: "Fluffy Pancakes",
   category: "Breakfast",
   description: "Tall and fluffy. These pancakes are just right. Topped with strawberries and whipped cream, they are impossible to resist.",
@@ -922,7 +922,7 @@ Recipe.create(
 )
 
 Recipe.create(
-  user_id: (1..10).to_a.sample,
+  user_id: 1,
   title: "Savory Party Bread",
   category: "Appetizers",
   description: "It's impossible to stop nibbling on warm pieces of this cheesy, oniony bread. The sliced loaf fans out for a fun presentation.",
@@ -941,7 +941,7 @@ Recipe.create(
   title: "Cranberry Chili Meatballs",
   category: "Appetizers",
   description: "Using packaged meatballs helps save time in the kitchen and they are just as tasty as homemade. My friends look forward to enjoying these meatballs at our holiday gatherings and there are never any leftovers! ",
-  image_url: "",
+  image_url: "https://res.cloudinary.com/joycechau/image/upload/v1484602984/cranberry_chili_meatballs.jpg",
   ingredients: ["1 can (14 ounces) jellied cranberry sauce",
                 "1 bottle (12 ounces) chili sauce",
                 "3/4 cup packed brown sugar",
@@ -1113,7 +1113,7 @@ Recipe.create(
 )
 
 Recipe.create(
-  user_id: (1..10).to_a.sample,
+  user_id: 1,
   title: "Three-Bean Baked Beans",
   category: "Sides",
   description: "With ground beef and bacon mixed in, these satisfying beans are a big hit at backyard barbecues and church picnics. I'm always asked to bring my special beans. ",

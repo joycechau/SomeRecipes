@@ -15,13 +15,21 @@ import ProfileContainer from './profile/profile_container.js';
 import AboutMeContainer from './profile/about_me_container.js';
 import MyRecipesContainer from './profile/my_recipes_index_container.js';
 import FavoriteRecipesContainer from './profile/favorite_recipes_container.js';
-import RecipeFormContainer from './recipe/recipe_form_container.js';
+import NewRecipeFormContainer from './recipe/new_recipe_form_container.js';
+import EditRecipeFormContainer from './recipe/edit_recipe_form_container.js';
 import { useScroll } from 'react-router-scroll';
 
 const Root = ({ store }) => {
   const _redirectIfLoggedIn = (nextState, replace) => {
     const currentUser = store.getState().currentUser;
     if (currentUser) {
+      replace('/');
+    }
+  };
+
+  const _redirectIfNotLoggedIn = (nextState, replace) => {
+    const currentUser = store.getState().currentUser;
+    if (!currentUser) {
       replace('/');
     }
   };
@@ -34,13 +42,15 @@ const Root = ({ store }) => {
           <IndexRoute component={ HomeContainer } />
           <Route path="recipes/:recipeId" component={ RecipeDetailContainer } />
           <Route path="profile" component={ ProfileContainer } >
-            <Route path=":username" component={ AboutMeContainer } />
+            <Route path=":username"
+                   component={ AboutMeContainer }
+                   onEnter={ _redirectIfNotLoggedIn}/>
             <Route path=":username/my-recipes"
                    component={ MyRecipesContainer }
                    />
             <Route path=":username/favorites" component={ FavoriteRecipesContainer } />
-            <Route path=":username/new-recipe" component={ RecipeFormContainer } />
-            <Route path=":username/edit-recipe/:id" component={ RecipeFormContainer } />
+            <Route path=":username/new-recipe" component={ NewRecipeFormContainer } />
+            <Route path=":username/edit-recipe/:id" component={ EditRecipeFormContainer } />
           </Route>
         </Route>
       </Router>

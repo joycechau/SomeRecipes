@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, hashHistory } from 'react-router';
 
-class RecipeForm extends React.Component {
+class EditRecipeForm extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -9,10 +9,11 @@ class RecipeForm extends React.Component {
   render() {
     return (
       <div>
-        <h1>Recipe Form</h1>
+        <h1>Edit Recipe Form</h1>
+        {this.props.params.id}
       </div>
     );
   }
 }
 
-export default RecipeForm;
+export default EditRecipeForm;

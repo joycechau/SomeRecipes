@@ -7,7 +7,8 @@ const defaultProfile = {
   fname: "",
   lname: "",
   profile_url: "",
-  interests: ""
+  interests: "",
+  recipes: []
 };
 
 const ProfileReducer = (state = defaultProfile, action) => {

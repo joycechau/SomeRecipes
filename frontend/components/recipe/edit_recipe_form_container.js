@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import RecipeForm from './recipe_form';
+import EditRecipeForm from './edit_recipe_form';
 // import { fetchRecipe } from '../../actions/recipes_actions';
 
 const mapStateToProps = state => ({
@@ -13,4 +13,4 @@ const mapDispatchToProps = dispatch => ({
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(RecipeForm);
+)(EditRecipeForm);
