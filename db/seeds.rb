@@ -12,7 +12,7 @@ User.create(username: "joyce",
             fname: "Joyce",
             lname: "Chau",
             profile_url: "https://res.cloudinary.com/joycechau/image/upload/v1484679293/joyce_profile_pic.jpg",
-            interests: "Desserts, puzzles, board games, coding, running");
+            interests: "Desserts, puzzles, board games, coding, running, cooking");
 
 User.create(username: "ilovecorgis",
             password: "password",
