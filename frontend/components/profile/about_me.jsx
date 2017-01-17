@@ -100,7 +100,7 @@ class AboutMe extends React.Component {
           <h2 className="about-me-other-user-recipes-title">
             {this.props.profile.username +"'s"} Recipes
           </h2>
-          <Masonry className="recipe-index-masonry-container">
+          <Masonry className="about-me-other-user-recipes-index-masonry-container">
             {this.props.profile.recipes.map(recipe => (
               <OtherRecipesIndexItem
                 key={recipe.id}
