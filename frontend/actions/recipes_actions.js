@@ -5,6 +5,7 @@ import { hashHistory } from 'react-router';
 export const RECEIVE_ALL_RECIPES = "RECEIVE_ALL_RECIPES";
 export const RECEIVE_RECIPE = "RECEIVE_RECIPE";
 export const REMOVE_RECIPE = "REMOVE_RECIPE";
+export const CLEAR_ALL_RECIPES = "CLEAR_ALL_RECIPES";
 
 export const fetchAllRecipes = () => dispatch => (
   APIUtil.fetchAllRecipes()
@@ -56,4 +57,8 @@ const receiveRecipe = recipe => ({
 const removeRecipe = recipe => ({
   type: REMOVE_RECIPE,
   recipe
+});
+
+export const clearAllRecipes = () => ({
+  type: CLEAR_ALL_RECIPES
 });

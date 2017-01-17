@@ -4,11 +4,14 @@ class Api::RecipesController < ApplicationController
   end
 
   def favorite_recipes
+    #@recipes.Recipe.where(user_id: current_user.id)
+      #             .join(association_name: )
     #join Recipe on Favorites where Favorites.user_id = current_user.id
   end
 
   def own_recipes
-    #.where user_id = current_user.id
+    @recipes = Recipe.where(user_id: current_user.id)
+    render :index
   end
 
   def show

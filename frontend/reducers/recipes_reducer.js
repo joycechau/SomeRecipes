@@ -1,5 +1,6 @@
 import {
   RECEIVE_ALL_RECIPES,
+  CLEAR_ALL_RECIPES,
   RECEIVE_RECIPE,
   REMOVE_RECIPE
 } from '../actions/recipes_actions';
@@ -11,6 +12,8 @@ const RecipesReducer = (state = {}, action) => {
   switch(action.type) {
     case RECEIVE_ALL_RECIPES:
       return action.recipes;
+    case CLEAR_ALL_RECIPES:
+      return {};
     case RECEIVE_RECIPE:
       let recipeId = action.recipe.id;
       newState[recipeId] = action.recipe;

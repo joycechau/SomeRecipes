@@ -9,6 +9,7 @@ class MyRecipesIndex extends React.Component {
 
   componentWillMount() {
     this.props.fetchProfile(this.props.params.username);
+    this.props.fetchOwnRecipes();
   }
 
   render() {

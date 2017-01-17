@@ -6,8 +6,13 @@ class RecipeIndex extends React.Component {
   constructor(props) {
     super(props);
   }
+
   componentWillMount() {
     this.props.fetchAllRecipes();
+  }
+
+  componentWillUnmount() {
+    this.props.clearAllRecipes();
   }
 
   render() {
