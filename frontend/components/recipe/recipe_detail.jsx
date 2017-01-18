@@ -4,7 +4,10 @@ import { Link, hashHistory } from 'react-router';
 class RecipeDetail extends React.Component {
   constructor(props) {
     super(props);
-    this.handleClick = this.handleClick.bind(this);
+    this.handleProfileClick = this.handleProfileClick.bind(this);
+    this.handleEditClick = this.handleEditClick.bind(this);
+    this.handleDeleteClick = this.handleDeleteClick.bind(this);
+    this.handleFavoriteClick = this.handleFavoriteClick.bind(this);
   }
 
   componentWillMount() {
@@ -21,9 +24,64 @@ class RecipeDetail extends React.Component {
     }
   }
 
-  handleClick(e) {
+  handleProfileClick(e) {
     e.preventDefault;
     hashHistory.push(`/profile/${this.props.recipe.user.username}`);
+  }
+
+  handleEditClick(e) {
+    e.preventDefault();
+    const username = this.props.currentUser.username;
+    const recipeId = this.props.params.recipeId;
+    hashHistory.push(`/profile/${username}/edit-recipe/${recipeId}`);
+  }
+
+  handleDeleteClick(e) {
+    e.preventDefault();
+    const username = this.props.currentUser.username;
+    this.props.deleteRecipe(this.props.params.recipeId);
+    hashHistory.push(`/profile/${username}/my-recipes`);
+  }
+
+  handleFavoriteClick(e) {
+    e.preventDefault();
+    alert("Favorite button clicked!");
+  }
+
+  editAndDeleteButtons() {
+    const { currentUser, recipe } = this.props;
+    const currentUserUsername = currentUser ? currentUser.username: "";
+    const recipeUserUsername = recipe.user ? recipe.user.username: "";
+    if (currentUserUsername === recipeUserUsername ) {
+      return (
+        <div className="edit-and-delete-buttons-div">
+          <button onClick={this.handleEditClick}
+            className="edit-recipe-button">
+            Update Recipe
+          </button>
+          <button onClick={this.handleDeleteClick}
+            className="delete-recipe-button">
+            Delete Recipe
+          </button>
+        </div>
+      );
+    }
+  }
+
+  favoriteButton() {
+    const { currentUser, recipe } = this.props;
+    const currentUserUsername = currentUser ? currentUser.username: "";
+    const recipeUserUsername = recipe.user ? recipe.user.username: "";
+    if (currentUserUsername !== recipeUserUsername ) {
+      return (
+        <div className="favorite-recipe-button-div">
+          <button onClick={this.handleFavoriteClick}
+                  className="favorite-recipe-button">
+                  Favorite Button
+          </button>
+        </div>
+      );
+    }
   }
 
   render() {
@@ -43,6 +101,7 @@ class RecipeDetail extends React.Component {
               className="recipe-detail-img"
               />
             <div className="recipe-detail-summary">
+
               <h2 className="recipe-detail-title">
                 {recipe.title}
               </h2>
@@ -50,7 +109,7 @@ class RecipeDetail extends React.Component {
                 {recipe.description}
               </p>
               <button className="recipe-detail-author-button"
-                      onClick={this.handleClick}>
+                      onClick={this.handleProfileClick}>
                 <img src={author_picture}
                      className="recipe-detail-author-button-image"/>
                 Recipe by { author }
@@ -88,6 +147,11 @@ class RecipeDetail extends React.Component {
                 ))
               }
             </ul>
+          </div>
+          <br />
+          <div className="recipe-detail-buttons">
+            {this.editAndDeleteButtons()}
+            {this.favoriteButton()}
           </div>
         </section>
       </section>

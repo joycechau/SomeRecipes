@@ -119,3 +119,34 @@
   float: left;
   width: 100%;
 }
+
+.recipe-detail-buttons {
+}
+
+.edit-and-delete-buttons-div,
+.favorite-recipe-button-div {
+
+}
+
+.edit-recipe-button,
+.delete-recipe-button,
+.favorite-recipe-button {
+  margin-top: 20px;
+  margin-left: 40px;
+  padding: 5px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 3px;
+  background-color: #E5572B;
+  color: white;
+}
+
+.delete-recipe-button {
+  margin-left: 15px;
+}
+
+.edit-recipe-button:hover,
+.delete-recipe-button:hover,
+.favorite-recipe-button:hover {
+  background-color: #CB4E27;
+}

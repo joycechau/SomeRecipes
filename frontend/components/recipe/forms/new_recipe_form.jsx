@@ -22,7 +22,7 @@ class NewRecipeForm extends React.Component {
     const recipe = Object.assign({}, this.state);
     this.props.createRecipe(recipe)
       .then(newRecipe => {
-        this.props.router.push(`recipes/${newRecipe.id}`);
+        this.props.router.push(`recipes/${newRecipe.recipe.id}`);
       });
     this.props.clearErrors();
   }

@@ -18,7 +18,8 @@
 class Recipe < ApplicationRecord
   validates :title, :category, :description, presence: true
   validates :user, :ingredients, :directions, presence: true
-
-
+  validates :title, length: { maximum: 100 }
+  validates :description, length: { maximum: 400 }
+  validates :ingredients, :directions, length: { maximum: 2000 }
   belongs_to :user
 end

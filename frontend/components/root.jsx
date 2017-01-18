@@ -67,7 +67,7 @@ const Root = ({ store }) => {
                    />
             <Route path=":username/favorites" component={ FavoriteRecipesContainer } />
             <Route path=":username/new-recipe" component={ NewRecipeFormContainer } />
-            <Route path=":username/edit-recipe/:id" component={ EditRecipeFormContainer } />
+            <Route path=":username/edit-recipe/:recipeId" component={ EditRecipeFormContainer } />
           </Route>
         </Route>
       </Router>
