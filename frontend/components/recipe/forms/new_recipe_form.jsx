@@ -20,10 +20,11 @@ class NewRecipeForm extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     const recipe = Object.assign({}, this.state);
-    console.log(this.state);
-    this.props.createRecipe(recipe);
+    this.props.createRecipe(recipe)
+      .then(newRecipe => {
+        this.props.router.push(`recipes/${newRecipe.id}`);
+      });
     this.props.clearErrors();
-
   }
 
   update(field) {
@@ -140,7 +141,7 @@ class NewRecipeForm extends React.Component {
               value="Submit"
               className="recipe-form-submit-button"/>
           </label>
-          <h2>{this.errorText()}</h2>
+          <h2 className="recipe-form-errors">{this.errorText()}</h2>
         </form>
       </div>
     );

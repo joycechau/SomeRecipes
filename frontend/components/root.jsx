@@ -7,6 +7,7 @@ import {
   IndexRoute,
   hashHistory
 } from 'react-router';
+import http from "http";
 import App from './app';
 import RecipeIndexContainer from './recipe/recipe_index_container.js';
 import RecipeDetailContainer from './recipe/recipe_detail_container.js';
@@ -35,6 +36,10 @@ const Root = ({ store }) => {
       replace('/');
     }
   };
+
+  setInterval(function() {
+      http.get("https://somerecipes.herokuapp.com");
+  }, 300000);
 
   const populateMyRecipes = () => {
     fetchOwnRecipes();
