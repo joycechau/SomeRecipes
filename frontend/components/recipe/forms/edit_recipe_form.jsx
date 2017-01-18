@@ -20,8 +20,21 @@ class EditRecipeForm extends React.Component {
   }
 
   componentWillMount() {
-    debugger
     this.props.fetchRecipe(parseInt(this.props.params.recipeId));
+  }
+
+  componentWillReceiveProps(newProps) {
+    this.setState({
+      id: newProps.recipe.id,
+      title: newProps.recipe.title,
+      category: newProps.recipe.category,
+      description: newProps.recipe.description,
+      ingredients: newProps.recipe.ingredients.join("\n"),
+      directions: newProps.recipe.directions.join("\n"),
+      image_url: newProps.recipe.image_url,
+      errors: newProps.errors,
+      image_errors: ""
+    });
   }
 
   handleSubmit(e) {
@@ -57,25 +70,6 @@ class EditRecipeForm extends React.Component {
       }
     );
     this.setState({ image_errors: "" });
-  }
-
-  selectedOption() {
-    switch(this.state.category) {
-      case "Appetizers":
-        return "Appetizers";
-      case "Main Dishes":
-        return "Main Dishes";
-      case "Desserts":
-        return "Desserts";
-      case "Breakast":
-        return "Breakast";
-      case "Sides":
-        return "Sides";
-      case "Other":
-        return "Other";
-      default:
-        return;
-    }
   }
 
   errorText() {

@@ -95,7 +95,6 @@ Recipe.create(
                "Separate the lettuce leaves and fill with some of the shrimp. Top with green onion."]
   )
 
-
   Recipe.create(
     user_id: 1,
     title: "Red Velvet Cupcakes",
@@ -1182,3 +1181,14 @@ Recipe.create(
               "1/2 teaspoon salt"],
   directions: ["In a 3-qt. slow cooker coated with cooking spray, combine all ingredients. Cover and cook on low for 3 to 3-1/2 hours or until cheese is melted and corn is tender. Stir just before serving. "]
 )
+
+Favorite.create(user_id: 1, recipe_id: 1)
+Favorite.create(user_id: 1, recipe_id: 3)
+Favorite.create(user_id: 1, recipe_id: 4)
+Favorite.create(user_id: 1, recipe_id: 5)
+Favorite.create(user_id: 1, recipe_id: 10)
+Favorite.create(user_id: 2, recipe_id: 1)
+Favorite.create(user_id: 2, recipe_id: 2)
+Favorite.create(user_id: 2, recipe_id: 12)
+Favorite.create(user_id: 2, recipe_id: 13)
+Favorite.create(user_id: 2, recipe_id: 14)

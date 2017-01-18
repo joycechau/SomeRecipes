@@ -1,5 +1,6 @@
 json.extract! user, :id, :username, :fname, :lname,
-  :profile_url, :interests, :recipes
+  :profile_url, :interests, :recipes,
+  :favorites, :favorite_recipes
 
 # json.recipes do
 #   json.array! user.recipes do |recipe|
