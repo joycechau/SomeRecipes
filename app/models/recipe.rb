@@ -5,7 +5,7 @@
 #  id             :integer          not null, primary key
 #  user_id        :integer          not null
 #  title          :string           not null
-#  image_url      :string
+#  image_url      :string           default("https://res.cloudinary.com/joycechau/image/upload/v1484519242/default_recipe_detail_pic.gif")
 #  average_rating :integer
 #  category       :string           not null
 #  description    :text             not null
@@ -22,4 +22,9 @@ class Recipe < ApplicationRecord
   validates :description, length: { maximum: 400 }
   validates :ingredients, :directions, length: { maximum: 2000 }
   belongs_to :user
+  has_many :favorites
+  has_many :favorite_users,
+            through: :favorites,
+            source: :user
+            
 end

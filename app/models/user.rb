@@ -8,7 +8,7 @@
 #  session_token   :string           not null
 #  fname           :string
 #  lname           :string
-#  profile_url     :string
+#  profile_url     :string           default("https://res.cloudinary.com/joycechau/image/upload/v1484519058/default_profile_pic.jpg")
 #  interests       :text
 #  created_at      :datetime         not null
 #  updated_at      :datetime         not null
@@ -22,6 +22,10 @@ class User < ApplicationRecord
   after_initialize :ensure_session_token
 
   has_many :recipes
+  has_many :favorites
+  has_many :favorite_recipes,
+            through: :favorites,
+            source: :recipe
 
   def self.find_by_credentials(username, password)
     @user = User.find_by(username: username)
