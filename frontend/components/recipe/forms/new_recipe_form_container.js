@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 import { createRecipe } from '../../../actions/recipes_actions';
 import { clearErrors } from '../../../actions/errors_actions';
-import NewRecipeForm from './new_recipe_form';
+import NewRecipeForm from './new_recipe_form.jsx';
 
 const mapStateToProps = state => {
   return {

@@ -11,17 +11,27 @@ class AboutMe extends React.Component {
     super(props);
     this.state = { modalOpen: false };
     this.handleProfileUpdateButtonClick = this.handleProfileUpdateButtonClick.bind(this);
-    this.handleProfileUpdateImageClick = this.handleProfileUpdateImageClick.bind(this);
     this.closeModal = this.closeModal.bind(this);
     this.openModal = this.openModal.bind(this);
   }
 
   componentWillMount() {
+    // this.props.clearProfile();
+    // debugger
     this.props.fetchProfile(this.props.params.username);
   }
 
+  componentWillUnmount() {
+    this.props.clearProfile();
+    // debugger
+  }
+
+
+
   componentWillReceiveProps(nextProps) {
     if (this.props.params.username !== nextProps.params.username) {
+      // this.props.clearProfile();
+      // debugger
       this.props.fetchProfile(nextProps.params.username);
     }
   }
@@ -29,11 +39,6 @@ class AboutMe extends React.Component {
   handleProfileUpdateButtonClick(e) {
     e.preventDefault();
     this.setState({ modalOpen: true });
-  }
-
-  handleProfileUpdateImageClick(e) {
-    e.preventDefault();
-    alert("Testing from AboutMe class");
   }
 
   closeModal() {

@@ -29,7 +29,7 @@ class ProfileImageUploadButton extends React.Component {
       <div className="upload-form">
         <button onClick={this.upload}
                 className="about-me-update-profile-image-button">
-          Upload Image
+          Update Picture
         </button>
       </div>
     );

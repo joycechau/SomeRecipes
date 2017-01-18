@@ -1,4 +1,7 @@
-import { RECEIVE_PROFILE } from '../actions/profile_actions';
+import {
+  RECEIVE_PROFILE,
+  CLEAR_PROFILE
+ } from '../actions/profile_actions';
 import merge from 'lodash/merge';
 
 const defaultProfile = {
@@ -16,6 +19,8 @@ const ProfileReducer = (state = defaultProfile, action) => {
   switch(action.type) {
     case RECEIVE_PROFILE:
       return action.profile;
+    case CLEAR_PROFILE:
+      return defaultProfile;
     default:
       return state;
   }

@@ -13,7 +13,6 @@
 }
 
 .recipe-form {
-
 }
 
 .recipe-form-label,
@@ -51,15 +50,17 @@
 }
 
 .recipe-form-select {
+  border: 1px solid $dark-gray;
+  font-size: 12px;
+  font-family: $muli;
   margin-left: 25px;
+  color: $dark-gray;
 }
 
 .recipe-form-disabed-option {
-
 }
 
 .recipe-form-option {
-
 }
 
 .recipe-form-input-description,
@@ -86,6 +87,24 @@
   margin-left: 19px;
 }
 
+.recipe-form-label-add-image-button {
+  padding: 10px;
+}
+
+.recipe-form-label-description-image-button {
+  margin-left: 10px;
+}
+
+.recipe-form-label-description-image-button {
+  padding: 3px;
+  padding-left: 6px;
+  padding-right: 6px;
+  background-color: #E5572B;
+  color: white;
+  border-radius: 3px;
+  font-size: 15px;
+}
+
 .recipe-form-submit-button {
   padding: 7px;
   padding-left: 10px;
@@ -97,6 +116,7 @@
   margin: auto;
 }
 
-.recipe-form-submit-button:hover {
+.recipe-form-submit-button:hover,
+.recipe-form-label-description-image-button:hover {
   background-color: #CB4E27;
 }

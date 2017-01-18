@@ -19,6 +19,7 @@ import NewRecipeFormContainer from './recipe/forms/new_recipe_form_container.js'
 import EditRecipeFormContainer from './recipe/forms/edit_recipe_form_container.js';
 import { useScroll } from 'react-router-scroll';
 import { fetchOwnRecipes } from '../actions/recipes_actions.js';
+import { fetchProfile } from '../actions/profile_actions.js';
 
 const Root = ({ store }) => {
   const _redirectIfLoggedIn = (nextState, replace) => {
@@ -39,6 +40,10 @@ const Root = ({ store }) => {
     fetchOwnRecipes();
   };
 
+  const populateProfile = () => {
+    fetchProfile();
+  };
+
   return (
     <Provider store={ store }>
       <Router history={ hashHistory }
@@ -49,7 +54,8 @@ const Root = ({ store }) => {
           <Route path="profile" component={ ProfileContainer } >
             <Route path=":username"
                    component={ AboutMeContainer }
-                   onEnter={ _redirectIfNotLoggedIn}/>
+                   onEnter={ _redirectIfNotLoggedIn }
+                   />
             <Route path=":username/my-recipes"
                    component={ MyRecipesContainer }
                    onEnter={ populateMyRecipes }

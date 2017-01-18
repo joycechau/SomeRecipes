@@ -21,6 +21,8 @@ class Api::RecipesController < ApplicationController
   def create
     @recipe = Recipe.new(recipe_params)
     @recipe.user_id = current_user.id
+    @recipe.ingredients = params[:recipe][:ingredients].split("\n")
+    @recipe.directions = params[:recipe][:directions].split("\n")
     if @recipe.save
       render :show
     else
@@ -30,6 +32,9 @@ class Api::RecipesController < ApplicationController
 
   def update
     @recipe = current_user.recipes.find(params[:id])
+    @recipe.user_id = current_user.id
+    @recipe.ingredients = params[:recipe][:ingredients].split("\n")
+    @recipe.directions = params[:recipe][:directions].split("\n")
     if @recipe.update(recipe_params)
       render :show
     else
@@ -51,9 +56,7 @@ class Api::RecipesController < ApplicationController
       :title,
       :image_url,
       :category,
-      :description,
-      ingredients: [],
-      directions: []
+      :description
     )
   end
 end

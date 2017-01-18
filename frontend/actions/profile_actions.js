@@ -1,5 +1,6 @@
 import * as APIUtil from '../util/profile_api_util';
 export const RECEIVE_PROFILE = 'RECEIVE_PROFILE';
+export const CLEAR_PROFILE = 'CLEAR_PROFILE';
 
 export const fetchProfile = (username) => (dispatch) => (
   APIUtil.fetchProfile(username)
@@ -14,4 +15,8 @@ export const updateProfile = (user) => (dispatch) => (
 export const receiveProfile = (profile) => ({
   type: RECEIVE_PROFILE,
   profile
+});
+
+export const clearProfile = () => ({
+  type: CLEAR_PROFILE
 });

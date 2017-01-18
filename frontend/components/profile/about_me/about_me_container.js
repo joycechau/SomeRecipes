@@ -1,6 +1,9 @@
 import { connect } from 'react-redux';
 import AboutMe from './about_me';
-import { fetchProfile } from '../../../actions/profile_actions';
+import {
+  fetchProfile,
+  clearProfile
+ } from '../../../actions/profile_actions';
 
 const mapStateToProps = state => {
   return {
@@ -11,7 +14,8 @@ const mapStateToProps = state => {
 };
 
 const mapDispatchToProps = dispatch => ({
-  fetchProfile: (username) => dispatch(fetchProfile(username))
+  fetchProfile: (username) => dispatch(fetchProfile(username)),
+  clearProfile: () => dispatch(clearProfile())
 });
 
 export default connect(

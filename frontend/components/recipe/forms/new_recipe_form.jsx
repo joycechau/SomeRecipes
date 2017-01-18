@@ -5,6 +5,7 @@ class NewRecipeForm extends React.Component {
   constructor(props) {
     super(props);
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleCloudinary = this.handleCloudinary.bind(this);
     this.state = {
       title: "",
       category: "",
@@ -18,16 +19,30 @@ class NewRecipeForm extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    console.log(this.state);
     const recipe = Object.assign({}, this.state);
+    console.log(this.state);
     this.props.createRecipe(recipe);
     this.props.clearErrors();
+
   }
 
   update(field) {
     return (e) => this.setState({
       [field]: e.target.value
     });
+  }
+
+  handleCloudinary(e) {
+    e.preventDefault();
+    const that = this;
+    cloudinary.openUploadWidget(
+      window.CLOUDINARY_OPTIONS,
+      function (error, image) {
+        if (error === null) {
+          that.setState({ image_url: image[0].secure_url });
+        }
+      }
+    );
   }
 
   errorText() {
@@ -98,9 +113,9 @@ class NewRecipeForm extends React.Component {
             </h2>
             <textarea
                    value={this.state.ingredients}
-                   onChange={this.update('ingredients')}
                    placeholder="Put each ingredient on its own line."
-                   className="recipe-form-input-ingredients">
+                   className="recipe-form-input-ingredients"
+                   onChange={this.update('ingredients')}>
             </textarea>
           </label>
           <label className="recipe-form-label">
@@ -109,19 +124,16 @@ class NewRecipeForm extends React.Component {
             </h2>
             <textarea
                    value={this.state.directions}
-                   onChange={this.update('directions')}
                    className="recipe-form-input-directions"
-                   placeholder="Put each step on its own line.">
+                   placeholder="Put each step on its own line."
+                   onChange={this.update('directions')}>
             </textarea>
           </label>
           <label className="recipe-form-label">
-            <h2 className="recipe-form-label-description">
-              Image URL
-            </h2>
-            <input type="text"
-              value={this.state.image_url}
-              onChange={this.update('image_url')}
-              className="recipe-form-input-image_url"/>
+            <button className="recipe-form-label-description-image-button"
+                    onClick={this.handleCloudinary}>
+                    Add Image
+            </button>
           </label>
           <label className="recipe-form-label">
             <input type="submit"
