@@ -23,8 +23,8 @@ User.create(username: "ilovecorgis",
 
 User.create(username: "sfgiants",
             password: "password",
-            fname: "Kevin",
-            lname: "O'Connor",
+            fname: "Buster",
+            lname: "Posey",
             profile_url: "https://res.cloudinary.com/joycechau/image/upload/v1484520429/sfgiants_profile_pic.jpg",
             interests: "sports, san francisco, snowboarding");
 
@@ -59,7 +59,7 @@ User.create(username: "catsarecool",
 User.create(username: "flowergirl",
             password: "password",
             fname: "Mary",
-            lname: "Corey",
+            lname: "Smith",
             profile_url: "https://res.cloudinary.com/joycechau/image/upload/v1484520777/flowergirl_profile_pic.jpg",
             interests: "flowers, weddings, cheesecake");
 
@@ -78,7 +78,7 @@ User.create(username: "foodnetwork",
             interests: "grilling, barbecue, steaks");
 
 Recipe.create(
-  user_id: (1..10).to_a.sample,
+  user_id: 9,
   title: "Salsa Shrimp Lettuce Wraps",
   category: "Main Dishes",
   description: "Looking for a healthy dinner that is ready in 15 minutes? These Salsa Shrimp Lettuce Wraps can be made so easily and quickly that you won’t have to wonder what’s for dinner.",
@@ -118,7 +118,7 @@ Recipe.create(
     )
 
 Recipe.create(
-  user_id: (1..10).to_a.sample,
+  user_id: 5,
   title: "Caribbean Grilled Salmon Kabobs",
   category: "Main Dishes",
   description: "Caribbean Grilled Salmon Kabobs will take you straight to the islands with the cajun spices, fresh pineapple, bell peppers and fresh seafood! A perfect healthy grilling recipe for the summer that’s done in 20 minutes!",
@@ -142,7 +142,7 @@ Recipe.create(
 
 
 Recipe.create(
-  user_id: (1..10).to_a.sample,
+  user_id: 2,
   title: "Creamy Italian Pasta",
   category: "Main Dishes",
   description: "This Easy Creamy Italian Pasta is as cozy and familiar as my favorite cardigan. You’ll want to eat it all fall and winter long.",
@@ -161,7 +161,7 @@ Recipe.create(
   )
 
 Recipe.create(
-  user_id: (1..10).to_a.sample,
+  user_id: 4,
   title: "No-Bake Cheesecake",
   category: "Desserts",
   description: "This is an amazing recipe that I just threw together one day. Everyone loves it so much, it doesn't last long. This is good with any kind of canned or fresh fruit.",
@@ -181,7 +181,7 @@ Recipe.create(
 
 
 Recipe.create(
-  user_id: (1..10).to_a.sample,
+  user_id: 3,
   title: "Vanilla Ice Cream",
   category: "Desserts",
   description: "Use this easy recipe to make vanilla ice cream, or add your favorite flavors to it.",
@@ -198,7 +198,7 @@ Recipe.create(
   )
 
 Recipe.create(
-  user_id: (1..10).to_a.sample,
+  user_id: 10,
   title: "Buffalo Chicken Wings",
   category: "Appetizers",
   description: "Let your palate fly away on wings of fire - easy, spicy buffalo wings!",
@@ -215,7 +215,7 @@ Recipe.create(
 
 
 Recipe.create(
-user_id: (1..10).to_a.sample,
+user_id: 6,
 title: "Bread Pudding",
 category: "Desserts",
 description: "My family LOVES bread pudding, and this recipe is one that I have fine tuned to their taste It's great for breakfast or dessert and is delicious with milk poured on top! Enjoy!",
@@ -236,7 +236,7 @@ directions: ["Preheat oven to 350 degrees F (175 degrees C).",
 
 
 Recipe.create(
-      user_id: (1..10).to_a.sample,
+      user_id: 1,
       title: "Curried Coconut Chicken",
       category: "Main Dishes",
       description: "Curried chicken simmered in coconut milk and tomatoes makes for a mouthwatering hint of the tropics! Goes great with rice and vegetables.",
@@ -257,7 +257,7 @@ Recipe.create(
       )
 
 Recipe.create(
-user_id: (1..10).to_a.sample,
+user_id: 8,
 title: "Flan",
 category: "Desserts",
 description: "This is a quick and easy baked flan recipe that is prepared in the blender. It's great served warm or cold and has a creamy texture like custard. Slice the flan and spoon a little of the melted sugar onto the top of the slice.",
@@ -276,7 +276,7 @@ directions: ["Preheat oven to 350 degrees F (175 degrees C).",
 
 
 Recipe.create(
-  user_id: (1..10).to_a.sample,
+  user_id: 2,
   title: "3-Ingredient Crock-Pot Chicken Tacos",
   category: "Main Dishes",
   description: "In just five minutes, these delicious chicken tacos are in the crock-pot and cooking away! Ridiculously easy and sure to become your go-to lifesaver!",
@@ -295,7 +295,7 @@ Recipe.create(
 
 
 Recipe.create(
-user_id: (1..10).to_a.sample,
+user_id: 4,
 title: "Soft Oatmeal Cookies",
 category: "Desserts",
 description: "These oatmeal cookies are very moist with a good flavor. Add a cup of raisins or nuts if you desire.",
@@ -316,7 +316,7 @@ directions: ["In a medium bowl, cream together butter, white sugar, and brown su
 )
 
   Recipe.create(
-  user_id: (1..10).to_a.sample,
+  user_id: 7,
   title: "Classic Meatloaf",
   category: "Main Dishes",
   description: "The secrets to this meatloaf are fresh, very finely diced vegetables that give it moisture and flavor--and a light touch in mixing together the ingredients. This hearty meatloaf is the perfect meal for cool fall and winter evenings, served with mashed potatoes and simple mushroom gravy.",
@@ -337,7 +337,7 @@ directions: ["In a medium bowl, cream together butter, white sugar, and brown su
   )
 
 Recipe.create(
-      user_id: (1..10).to_a.sample,
+      user_id: 10,
       title: "Pan Seared Salmon",
       category: "Main Dishes",
       description: "Simply seasoned with salt and pepper, these salmon fillets are pan seared with capers, and garnished with slices of lemon.",
@@ -354,7 +354,7 @@ Recipe.create(
 )
 
 Recipe.create(
-user_id: (1..10).to_a.sample,
+user_id: 3,
 title: "Old Fashioned Apple Pie",
 category: "Desserts",
 description: "Apple pie ...so American, so delicious. A true classic. Enjoy!",
@@ -372,7 +372,7 @@ directions: ["Preheat oven to 425 degrees F (220 degrees C). Melt the butter in 
 )
 
 Recipe.create(
-      user_id: (1..10).to_a.sample,
+      user_id: 9,
       title: "Chicken Enchiladas",
       category: "Main Dishes",
       description: "Quick and easy creamy chicken enchiladas are sure to be a family favorite!",
@@ -394,7 +394,7 @@ Recipe.create(
 
 
 Recipe.create(
-  user_id: (1..10).to_a.sample,
+  user_id: 5,
   title: "Delicious Brownies",
   category: "Desserts",
   description: "Best brownies I've ever had!",
@@ -416,7 +416,7 @@ Recipe.create(
 
 
 Recipe.create(
-      user_id: (1..10).to_a.sample,
+      user_id: 6,
       title: "Sirloin Steak with Garlic Butter",
       category: "Main Dishes",
       description: "I have never tasted any other steak that came even close to the ones made with this recipe. If you are having steak, don't skimp on flavor to save a few calories. The butter makes this steak melt in your mouth wonderful.",
@@ -434,7 +434,7 @@ Recipe.create(
 
 
 Recipe.create(
-  user_id: (1..10).to_a.sample,
+  user_id: 2,
   title: "Bananas Foster",
   category: "Desserts",
   description: "Bananas sliced in a warm cinnamon and caramel sauce with rum. Serve over ice cream!",
@@ -451,7 +451,7 @@ Recipe.create(
   )
 
 Recipe.create(
-      user_id: (1..10).to_a.sample,
+      user_id: 8,
       title: "Cranberry Spinach Salad",
       category: "Main Dishes",
       description: "Everyone I have made this for RAVES about it! It's different and so easy to make!",
@@ -473,7 +473,7 @@ Recipe.create(
       )
 
 Recipe.create(
-  user_id: (1..10).to_a.sample,
+  user_id: 1,
   title: "Chocolate Chip Cookie",
   category: "Desserts",
   description: "Perfectly baked chocolate chip cookies for everyone to enjoy!",
@@ -494,7 +494,7 @@ Recipe.create(
 
 
 Recipe.create(
-  user_id: (1..10).to_a.sample,
+  user_id: 3,
   title: "Sloppy Joes",
   category: "Main Dishes",
   description: "This is the recipe my mother used for sloppy joes and it always gets compliments!",
@@ -513,7 +513,7 @@ Recipe.create(
 )
 
 Recipe.create(
-  user_id: 1,
+  user_id: 9,
   title: "Best Hamburger Ever",
   category: "Main Dishes",
   description: "These burgers are the hit of my town. All my friends come over every weekend just for these burgers. With a little bit of basil leaves, and some olive oil, you will drooling all over yourself while you eat these.",
@@ -530,7 +530,7 @@ Recipe.create(
 )
 
 Recipe.create(
-  user_id: (1..10).to_a.sample,
+  user_id: 1,
   title: "Juicy Roasted Chicken",
   category: "Main Dishes",
   description: "I never have had a chicken this juicy before; this little trick works and makes the people eating it go silent. It's funny. We nibble on the celery after.",
@@ -546,7 +546,7 @@ Recipe.create(
 )
 
 Recipe.create(
-  user_id: (1..10).to_a.sample,
+  user_id: 4,
   title: "Beef Stroganoff",
   category: "Main Dishes",
   description: "I have been making this recipe for over 20 years. This can be served over either rice or noodles. A little work but worth the effort.",
@@ -562,7 +562,7 @@ Recipe.create(
 )
 
 Recipe.create(
-  user_id: (1..10).to_a.sample,
+  user_id: 6,
   title: "Crispy Fried Chicken",
   category: "Main Dishes",
   description: "I experimented for many years before developing this recipe. It's bits and pieces of hints I had heard over the years. I have had many compliments on this chicken. Most of this recipe is dependant on your own taste. It's more a matter of preparation and cooking method!",
@@ -580,7 +580,7 @@ Recipe.create(
 )
 
 Recipe.create(
-  user_id: (1..10).to_a.sample,
+  user_id: 7,
   title: "Chicken Fried Rice",
   category: "Main Dishes",
   description: "Chicken, rice, soy sauce and shredded egg stir fried together. This is a very simple recipe. It is easy, but tasty! Note: Never use rice that you have just cooked.",
@@ -599,7 +599,7 @@ Recipe.create(
 )
 
 Recipe.create(
-  user_id: (1..10).to_a.sample,
+  user_id: 8,
   title: "Baby Back Ribs",
   category: "Main Dishes",
   description: "These are tender and the meat falls right off the bone. Generally, people think of baby back ribs as a meal they would only order when at a restaurant, but they are so easy to make at home. This recipe could not be any more simple.",
@@ -612,7 +612,7 @@ Recipe.create(
 )
 
 Recipe.create(
-  user_id: (1..10).to_a.sample,
+  user_id: 9,
   title: "Macaroni and Cheese",
   category: "Main Dishes",
   description: "The cheesiest and easiest recipe I know.",
@@ -633,7 +633,7 @@ Recipe.create(
 )
 
 Recipe.create(
-  user_id: (1..10).to_a.sample,
+  user_id: 10,
   title: "Honey Glazed Ham",
   category: "Main Dishes",
   description: "This ham tastes very much like the famous honey baked ham but costs much less, and there's no need to fight the crowds at holiday time. You can even buy the ham presliced to make it easier and more like the original. It is very good.",
@@ -649,7 +649,7 @@ Recipe.create(
 )
 
 Recipe.create(
-  user_id: (1..10).to_a.sample,
+  user_id: 2,
   title: "Buffalo Style Chicken Pizza",
   category: "Main Dishes",
   description: "Pizza with a little kick of buffalo wing flavor! Have your pizza and wings together!",
@@ -666,7 +666,7 @@ Recipe.create(
 )
 
 Recipe.create(
-  user_id: (1..10).to_a.sample,
+  user_id: 3,
   title: "Spinach Quiche",
   category: "Breakfast",
   description: "I serve this in the summer for brunch with a side of sausage links and a fresh fruit bowl!",
@@ -706,7 +706,7 @@ Recipe.create(
 )
 
 Recipe.create(
-  user_id: (1..10).to_a.sample,
+  user_id: 4,
   title: "Mexican Breakfast Tacos",
   category: "Breakfast",
   description: "Quick Easy and Delicious! I've grown to LOVE this breakfast. If you like spicy food, you will love this.",
@@ -727,7 +727,7 @@ Recipe.create(
 )
 
 Recipe.create(
-  user_id: (1..10).to_a.sample,
+  user_id: 5,
   title: "French Toast",
   category: "Breakfast",
   description: "This French toast recipe is different because it uses flour. I have given it to some friends and they've all liked it better than the French toast they usually make!",
@@ -746,7 +746,7 @@ Recipe.create(
 )
 
 Recipe.create(
-  user_id: (1..10).to_a.sample,
+  user_id: 6,
   title: "Strawberry Oatmeal Breakfast Smoothie",
   category: "Breakfast",
   description: "This is a fast vegan smoothie with a deep pink color and a rich, creamy texture. VERY filling, and perfect for people in a rush in the morning. You don't have to give up a good breakfast when it's this fast to make!",
@@ -761,7 +761,7 @@ Recipe.create(
 )
 
 Recipe.create(
-  user_id: (1..10).to_a.sample,
+  user_id: 7,
   title: "Banana Bread",
   category: "Breakfast",
   description: "My family lives for banana bread, and they all say this recipe is heaven!",
@@ -780,7 +780,7 @@ Recipe.create(
 )
 
 Recipe.create(
-  user_id: (1..10).to_a.sample,
+  user_id: 8,
   title: "Scrambled Eggs Done Right",
   category: "Breakfast",
   description: "The right way to scramble eggs. There is more to just mixing eggs and cooking! This will make a believer out of you.",
@@ -794,7 +794,7 @@ Recipe.create(
 )
 
 Recipe.create(
-  user_id: (1..10).to_a.sample,
+  user_id: 9,
   title: "Classic Waffles",
   category: "Breakfast",
   description: "A lovely, crispy waffle perfect for the morning.",
@@ -813,7 +813,7 @@ Recipe.create(
 )
 
 Recipe.create(
-  user_id: (1..10).to_a.sample,
+  user_id: 10,
   title: "Breakfast Sausage Casserole",
   category: "Breakfast",
   description: "It is so delicious, and everyone enjoys it! When I double the recipe I ",
@@ -832,7 +832,7 @@ Recipe.create(
 )
 
 Recipe.create(
-  user_id: (1..10).to_a.sample,
+  user_id: 2,
   title: "Antipasto Kabobs",
   category: "Appetizers",
   description: "These do-ahead appetizers are always a hit.",
@@ -849,7 +849,7 @@ Recipe.create(
 )
 
 Recipe.create(
-  user_id: (1..10).to_a.sample,
+  user_id: 3,
   title: "Chocolate Chip Cheese Balls",
   category: "Appetizers",
   description: "Your guests are in for a sweet surprise when they try this unusual cheese ball…it tastes just like cookie dough! Rolled in chopped pecans, the chip-studded spread is wonderful on regular or chocolate graham crackers. I especially like it because it can be assembled in a wink. ",
@@ -868,7 +868,7 @@ Recipe.create(
 )
 
 Recipe.create(
-  user_id: (1..10).to_a.sample,
+  user_id: 4,
   title: "Sweet & Spicy Jalapeno Poppers",
   category: "Appetizers",
   description: "There’s no faster way to get a party started than with these bacon-wrapped poppers. Make them ahead and bake just before serving. Even the hot pepper intolerant will love them.",
@@ -885,7 +885,7 @@ Recipe.create(
 )
 
 Recipe.create(
-  user_id: (1..10).to_a.sample,
+  user_id: 5,
   title: "Appetizer Tortilla Pinwheels",
   category: "Appetizers",
   description: "A friend gave me this recipe, and whenever I serve these pretty and delicious appetizers, people ask me for the recipe, too! Besides being attractive and tasty, the pinwheels can be made ahead of time and sliced just before serving, leaving you time for other last-minute party preparations. ",
@@ -906,7 +906,7 @@ Recipe.create(
 )
 
 Recipe.create(
-  user_id: (1..10).to_a.sample,
+  user_id: 6,
   title: "BLT Bites",
   category: "Appetizers",
   description: "These quick hors d'oeuvres may be mini, but their bacon and tomato flavor is full size. I serve them at parties, brunches and picnics, and they're always a hit...even my kids love them. ",
@@ -937,7 +937,7 @@ Recipe.create(
 )
 
 Recipe.create(
-  user_id: (1..10).to_a.sample,
+  user_id: 7,
   title: "Cranberry Chili Meatballs",
   category: "Appetizers",
   description: "Using packaged meatballs helps save time in the kitchen and they are just as tasty as homemade. My friends look forward to enjoying these meatballs at our holiday gatherings and there are never any leftovers! ",
@@ -953,7 +953,7 @@ Recipe.create(
 )
 
 Recipe.create(
-  user_id: (1..10).to_a.sample,
+  user_id: 8,
   title: "Cheesesteak Egg Rolls",
   category: "Appetizers",
   description: "I tried this recipe at a nearby restaurant and fell in love! The first attempt to make them at home was a success! Such an easy and delicious appetizer.",
@@ -972,7 +972,7 @@ Recipe.create(
 )
 
 Recipe.create(
-  user_id: (1..10).to_a.sample,
+  user_id: 9,
   title: "Mexican Shrimp Cocktail",
   category: "Appetizers",
   description: "I first tried something similar to this in San Antonio and could never find a recipe that really recaptured what I had there. I experimented and finally came up with this. Anyone who has tried it has begged for the recipe. Try it with tortilla chips!",
@@ -992,7 +992,7 @@ Recipe.create(
 )
 
 Recipe.create(
-  user_id: (1..10).to_a.sample,
+  user_id: 1,
   title: "Toasted Garlic Bread",
   category: "Appetizers",
   description: "Quick and scrumptious garlic bread that will complement any Italian meal. Melted mozzarella is optional, but delicious!",
@@ -1011,7 +1011,7 @@ Recipe.create(
 )
 
 Recipe.create(
-  user_id: (1..10).to_a.sample,
+  user_id: 10,
   title: "Crab Cakes",
   category: "Appetizers",
   description: "These are the fastest, easiest crab cakes I have ever made and some of the best I have ever eaten! Serve with coarse mustard on the plate or your favorite mustard sauce.",
@@ -1030,7 +1030,7 @@ Recipe.create(
 )
 
 Recipe.create(
-  user_id: (1..10).to_a.sample,
+  user_id: 2,
   title: "Au Gratin Potatoes",
   category: "Sides",
   description: "These cheesy potatoes are always welcome at our dinner table, and they're so simple to make. A perfect complement to ham, this homey side dish also goes well with pork, chicken and other entrees.",
@@ -1048,7 +1048,7 @@ Recipe.create(
 )
 
 Recipe.create(
-  user_id: (1..10).to_a.sample,
+  user_id: 3,
   title: "Garlic Mashed Potatoes ",
   category: "Sides",
   description: "These creamy garlic mashed potatoes are so good, you can serve them plain—no butter or gravy is needed. This is the only way we prepare mashed potatoes. ",
@@ -1064,7 +1064,7 @@ Recipe.create(
 )
 
 Recipe.create(
-  user_id: (1..10).to_a.sample,
+  user_id: 4,
   title: "Cheesy Cheddar Broccoli Casserole",
   category: "Sides",
   description: "Everybody who has tried this side dish absolutely raves about it.",
@@ -1079,7 +1079,7 @@ Recipe.create(
 )
 
 Recipe.create(
-  user_id: (1..10).to_a.sample,
+  user_id: 5,
   title: "Roasted Asparagus",
   category: "Sides",
   description: "This is especially wonderful when locally grown asparagus is in season and so easy for celebrations because you can serve it hot or cold. ",
@@ -1099,7 +1099,7 @@ Recipe.create(
 )
 
 Recipe.create(
-  user_id: (1..10).to_a.sample,
+  user_id: 6,
   title: "Grilled Mushrooms",
   category: "Sides",
   description: "Mushrooms cooked over hot coals always taste good, but this easy recipe makes the mushrooms taste fantastic.",
@@ -1137,7 +1137,7 @@ Recipe.create(
 )
 
 Recipe.create(
-  user_id: (1..10).to_a.sample,
+  user_id: 7,
   title: "Glazed Carrot Coins",
   category: "Sides",
   description: "These glossy carrots, flavored with orange juice, cinnamon and ginger, are pretty enough for a special meal. ",
@@ -1153,7 +1153,7 @@ Recipe.create(
 )
 
 Recipe.create(
-  user_id: (1..10).to_a.sample,
+  user_id: 8,
   title: "Sweet Potato Fries",
   category: "Sides",
   description: "A local restaurant got me hooked on sweet potato fries. I started making them at home with different seasonings to match the taste. I'm thrilled with the results! ",
@@ -1170,7 +1170,7 @@ Recipe.create(
 )
 
 Recipe.create(
-  user_id: (1..10).to_a.sample,
+  user_id: 9,
   title: "Creamed Corn",
   category: "Sides",
   description: "Five ingredients are all you'll need for my popular dinner accompaniment. It's wonderful no matter what the occasion is. Try it on a barbecue buffet or holiday menu.",

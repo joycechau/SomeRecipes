@@ -20,7 +20,8 @@ class EditRecipeForm extends React.Component {
   }
 
   componentWillMount() {
-    this.props.fetchRecipe(this.props.params.recipeId);
+    debugger
+    this.props.fetchRecipe(parseInt(this.props.params.recipeId));
   }
 
   handleSubmit(e) {
