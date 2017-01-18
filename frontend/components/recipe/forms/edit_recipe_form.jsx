@@ -19,6 +19,10 @@ class EditRecipeForm extends React.Component {
     };
   }
 
+  componentWillMount() {
+    this.props.fetchRecipe(this.props.params.recipeId);
+  }
+
   handleSubmit(e) {
     e.preventDefault();
     const recipe = Object.assign({}, this.state);
@@ -57,19 +61,19 @@ class EditRecipeForm extends React.Component {
   selectedOption() {
     switch(this.state.category) {
       case "Appetizers":
-        return "true";
+        return "Appetizers";
       case "Main Dishes":
-        return "true";
+        return "Main Dishes";
       case "Desserts":
-        return "true";
+        return "Desserts";
       case "Breakast":
-        return "true";
+        return "Breakast";
       case "Sides":
-        return "true";
+        return "Sides";
       case "Other":
-        return "true";
+        return "Other";
       default:
-        return "false";
+        return;
     }
   }
 
@@ -98,7 +102,6 @@ class EditRecipeForm extends React.Component {
   }
 
   render() {
-    console.log(this.props.recipe);
     return (
       <div className="recipe-form-container">
         <h2 className="recipe-form-header">
@@ -121,39 +124,33 @@ class EditRecipeForm extends React.Component {
             </h2>
             <select onChange={this.update('category')}
                     className="recipe-form-select"
-                    value={"Appetizers"}>
+                    value={this.state.category}>
               <option value="--Select Category--"
                       disabled="true"
                       className="recipe-form-disabed-option">
                       --Select Category --
               </option>
               <option value="Appetizers"
-                      selected={this.selectedOption()}
                       className="recipe-form-option">
                       Appetizers
               </option>
               <option value="Main Dishes"
-                      selected={this.selectedOption()}
                       className="recipe-form-option">
                       Main Dishes
               </option>
               <option value="Desserts"
-                      selected={this.selectedOption()}
                       className="recipe-form-option">
                       Desserts
               </option>
               <option value="Breakfast"
-                      selected={this.selectedOption()}
                       className="recipe-form-option">
                       Breakfast
               </option>
               <option value="Sides"
-                      selected={this.selectedOption()}
                       className="recipe-form-option">
                       Sides
               </option>
               <option value="Other"
-                      selected={this.selectedOption()}
                       className="recipe-form-option">
                       Other
               </option>

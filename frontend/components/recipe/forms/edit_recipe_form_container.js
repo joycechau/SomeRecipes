@@ -16,6 +16,7 @@ const mapStateToProps = (state, ownProps) => {
 const mapDispatchToProps = dispatch => {
   return {
     updateRecipe: (recipe) => dispatch(updateRecipe(recipe)),
+    fetchRecipe: (id) => dispatch(fetchRecipe(id)),
     clearErrors: () => dispatch(clearErrors())
   };
 };
