@@ -43,9 +43,15 @@ class EditRecipeForm extends React.Component {
       function (error, image) {
         if (error === null) {
           that.setState({ image_url: image[0].secure_url });
+        } else {
+          that.setState({
+            image_errors: "Invalid format",
+            image_url: "https://res.cloudinary.com/joycechau/image/upload/v1484519242/default_recipe_detail_pic.gif"
+          });
         }
       }
     );
+    this.setState({ image_errors: "" });
   }
 
   selectedOption() {
@@ -77,6 +83,16 @@ class EditRecipeForm extends React.Component {
                 {err}</li>
           ))}
         </ul>
+      );
+    }
+  }
+
+  imageErrors() {
+    if (this.state.image_errors) {
+      return (
+        <div className="recipe-image-upload-error-message">
+          <h2 className="error-message">{this.state.image_errors}</h2>
+        </div>
       );
     }
   }
@@ -178,8 +194,12 @@ class EditRecipeForm extends React.Component {
           <label className="recipe-form-label">
             <button className="recipe-form-label-description-image-button"
                     onClick={this.handleCloudinary}>
-                    Add Image
+                    Update Image
             </button>
+            {this.imageErrors()}
+          </label>
+          <label className="recipe-form-label">
+            <img className="recipe-form-default-image" src={this.state.image_url}/>
           </label>
           <label className="recipe-form-label">
             <input type="submit"
