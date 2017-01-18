@@ -23,6 +23,7 @@ class Api::RecipesController < ApplicationController
     @recipe.user_id = current_user.id
     @recipe.ingredients = params[:recipe][:ingredients].split("\n")
     @recipe.directions = params[:recipe][:directions].split("\n")
+    @recipe.image_url = "https://res.cloudinary.com/joycechau/image/upload/v1484519242/default_recipe_detail_pic.gif" if @recipe.image_url == ""
     if @recipe.save
       render :show
     else
@@ -32,7 +33,6 @@ class Api::RecipesController < ApplicationController
 
   def update
     @recipe = current_user.recipes.find(params[:id])
-    @recipe.user_id = current_user.id
     @recipe.ingredients = params[:recipe][:ingredients].split("\n")
     @recipe.directions = params[:recipe][:directions].split("\n")
     if @recipe.update(recipe_params)

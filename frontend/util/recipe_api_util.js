@@ -12,21 +12,27 @@ export const fetchRecipe = (id) => (
   })
 );
 
-export const createRecipe = (recipe) => (
-  $.ajax({
-    method: 'POST',
-    url: 'api/recipes',
-    data: { recipe }
-  })
-);
+export const createRecipe = (recipe) => {
+  return (
+    $.ajax({
+      method: 'POST',
+      url: 'api/recipes',
+      data: { recipe }
+    })
+  );
+};
 
-export const updateRecipe = (recipe) => (
-  $.ajax({
-    method: 'PATCH',
-    url: `api/recipes/${recipe.id}`,
-    data: { recipe }
-  })
-);
+
+export const updateRecipe = (recipe) => {
+  debugger
+  return (
+    $.ajax({
+      method: 'PATCH',
+      url: `api/recipes/${recipe.id}`,
+      data: { recipe }
+    })
+  );
+};
 
 export const deleteRecipe = (id) => (
   $.ajax({

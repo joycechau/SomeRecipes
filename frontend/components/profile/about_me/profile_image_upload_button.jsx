@@ -17,10 +17,20 @@ class ProfileImageUploadButton extends React.Component {
           that.props.updateProfile({ user: {
             id: that.props.currentUser.id,
             profile_url: image[0].secure_url
-          }
-        });
+          }})
+          .then(that.setState({
+            profile_url: image[0].secure_url
+          }));
+        } else {
+          that.props.updateProfile({ user: {
+            id: that.props.currentUser.id,
+            profile_url: "https://res.cloudinary.com/joycechau/image/upload/v1484519058/default_profile_pic.jpg"
+        }}).then(that.setState({
+          profile_url: "https://res.cloudinary.com/joycechau/image/upload/v1484519058/default_profile_pic.jpg"
+        }));
       }
-      that.setState({ profile_url: image[0].secure_url});
+      // const profileURL = image[0].secure_url ? image[0].secure_url : "https://res.cloudinary.com/joycechau/image/upload/v1484519058/default_profile_pic.jpg"
+      // that.setState({ profile_url: profileURL});
     });
   }
 

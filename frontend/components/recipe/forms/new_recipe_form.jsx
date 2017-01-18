@@ -41,6 +41,10 @@ class NewRecipeForm extends React.Component {
       function (error, image) {
         if (error === null) {
           that.setState({ image_url: image[0].secure_url });
+        } else {
+          that.setState({
+            image_url: "https://res.cloudinary.com/joycechau/image/upload/v1484519242/default_recipe_detail_pic.gif"
+          });
         }
       }
     );
