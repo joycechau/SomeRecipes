@@ -11,7 +11,6 @@ const mapStateToProps = (state, ownProps) => {
     recipe: state.recipeDetail,
     errors: state.errors['recipe']
   };
-  console.log(recipe);
 };
 
 const mapDispatchToProps = dispatch => {

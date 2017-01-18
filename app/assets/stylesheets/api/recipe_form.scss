@@ -103,6 +103,13 @@
   color: white;
   border-radius: 3px;
   font-size: 15px;
+  display: block;
+}
+
+.recipe-form-default-image {
+  padding: 10px;
+  max-width: 125px;
+  max-height: 125px;
 }
 
 .recipe-form-submit-button {
@@ -123,4 +130,9 @@
 
 .recipe-form-errors {
   text-align: center;
+}
+
+.recipe-image-upload-error-message {
+  padding: 5px;
+  margin-left: 5px;
 }

@@ -143,3 +143,18 @@
 
 .upload-form {
 }
+
+.image-upload-error-message {
+  display: flex;
+  float: right;
+  font-size: 11px;
+  font-style: italic;
+  color: red;
+  opacity: 50;
+  margin-top: 8px;
+}
+
+.error-message {
+  display: block;
+  align-self: center;
+}

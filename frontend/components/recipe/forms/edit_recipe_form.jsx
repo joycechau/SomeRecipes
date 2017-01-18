@@ -11,10 +11,11 @@ class EditRecipeForm extends React.Component {
       title: props.recipe.title,
       category: props.recipe.category,
       description: props.recipe.description,
-      ingredients: props.recipe.ingredients,
-      directions: props.recipe.directions,
+      ingredients: props.recipe.ingredients.join("\n"),
+      directions: props.recipe.directions.join("\n"),
       image_url: props.recipe.image_url,
-      errors: props.errors
+      errors: props.errors,
+      image_errors: ""
     };
   }
 
@@ -64,8 +65,8 @@ class EditRecipeForm extends React.Component {
       default:
         return "false";
     }
-
   }
+
   errorText() {
     if (this.props.errors) {
       return (
@@ -103,7 +104,8 @@ class EditRecipeForm extends React.Component {
               Category
             </h2>
             <select onChange={this.update('category')}
-                    className="recipe-form-select">
+                    className="recipe-form-select"
+                    value={"Appetizers"}>
               <option value="--Select Category--"
                       disabled="true"
                       className="recipe-form-disabed-option">
@@ -156,7 +158,7 @@ class EditRecipeForm extends React.Component {
               Ingredients
             </h2>
             <textarea
-                   value={this.state.ingredients.join("\n")}
+                   value={this.state.ingredients}
                    placeholder="Put each ingredient on its own line."
                    className="recipe-form-input-ingredients"
                    onChange={this.update('ingredients')}>

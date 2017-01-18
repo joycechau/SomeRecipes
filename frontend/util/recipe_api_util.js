@@ -24,7 +24,6 @@ export const createRecipe = (recipe) => {
 
 
 export const updateRecipe = (recipe) => {
-  debugger
   return (
     $.ajax({
       method: 'PATCH',

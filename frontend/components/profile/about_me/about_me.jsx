@@ -16,22 +16,15 @@ class AboutMe extends React.Component {
   }
 
   componentWillMount() {
-    // this.props.clearProfile();
-    // debugger
     this.props.fetchProfile(this.props.params.username);
   }
 
   componentWillUnmount() {
     this.props.clearProfile();
-    // debugger
   }
-
-
 
   componentWillReceiveProps(nextProps) {
     if (this.props.params.username !== nextProps.params.username) {
-      // this.props.clearProfile();
-      // debugger
       this.props.fetchProfile(nextProps.params.username);
     }
   }

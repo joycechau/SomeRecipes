@@ -12,8 +12,9 @@ class NewRecipeForm extends React.Component {
       description: "",
       ingredients: "",
       directions: "",
-      image_url: "",
-      errors: props.errors
+      image_url: "https://res.cloudinary.com/joycechau/image/upload/v1484772034/recipe_image_url_default_pic.jpg",
+      errors: props.errors,
+      image_errors: ""
     };
   }
 
@@ -43,11 +44,13 @@ class NewRecipeForm extends React.Component {
           that.setState({ image_url: image[0].secure_url });
         } else {
           that.setState({
+            image_errors: "Invalid format",
             image_url: "https://res.cloudinary.com/joycechau/image/upload/v1484519242/default_recipe_detail_pic.gif"
           });
         }
       }
     );
+    this.setState({ image_errors: "" });
   }
 
   errorText() {
@@ -60,6 +63,16 @@ class NewRecipeForm extends React.Component {
                 {err}</li>
           ))}
         </ul>
+      );
+    }
+  }
+
+  imageErrors() {
+    if (this.state.image_errors) {
+      return (
+        <div className="recipe-image-upload-error-message">
+          <h2 className="error-message">{this.state.image_errors}</h2>
+        </div>
       );
     }
   }
@@ -135,10 +148,14 @@ class NewRecipeForm extends React.Component {
             </textarea>
           </label>
           <label className="recipe-form-label">
-            <button className="recipe-form-label-description-image-button"
+            <button className="recipe-form-label-description-image-button clearfix"
                     onClick={this.handleCloudinary}>
                     Add Image
             </button>
+            {this.imageErrors()}
+          </label>
+          <label className="recipe-form-label">
+            <img className="recipe-form-default-image" src={this.state.image_url}/>
           </label>
           <label className="recipe-form-label">
             <input type="submit"
