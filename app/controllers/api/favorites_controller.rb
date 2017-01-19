@@ -2,7 +2,6 @@ class Api::FavoritesController < ApplicationController
 
   def create
     @favorite = Favorite.new(favorite_params)
-    @favorite.user_id = current_user.id
     if @favorite.save
       render 'api/recipes/show'
     else

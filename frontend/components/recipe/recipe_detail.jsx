@@ -10,7 +10,7 @@ class RecipeDetail extends React.Component {
     this.handleFavoriteClick = this.handleFavoriteClick.bind(this);
   }
 
-  componentWillMount() {
+  componentWillMount() { 
     this.props.fetchRecipe(this.props.params.recipeId);
   }
 

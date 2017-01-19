@@ -21,7 +21,7 @@ const RecipeDetailReducer = (state = defaultRecipeDetail, action) => {
     case RECEIVE_RECIPE:
       return action.recipe;
     case REMOVE_RECIPE:
-      return {};
+      return defaultRecipeDetail;
     default:
       return state;
   }
