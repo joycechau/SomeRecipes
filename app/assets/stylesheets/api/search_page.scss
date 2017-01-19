@@ -1,0 +1,37 @@
+@import "../base/colors.scss";
+
+.search-results-index-masonry-container {
+  width: 960px;
+  margin: auto;
+}
+
+@media (min-width: 300px) and (max-width: 1024px) {
+  .search-results-index-masonry-container {
+    width: 650px;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 650px) {
+  .search-results-index-masonry-container {
+    width: 340px;
+  }
+}
+
+.search-page-container {
+}
+
+.search-page-background-image {
+  height: 10px;
+  background-color: $red-orange
+}
+
+.search-page-header {
+}
+
+.search-results-title {
+  margin-top: 20px;
+  font-size: 18px;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 10px;
+}

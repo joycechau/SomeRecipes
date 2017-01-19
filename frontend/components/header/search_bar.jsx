@@ -10,7 +10,6 @@ class SearchBar extends React.Component {
 
   handleSearch(e) {
     e.preventDefault();
-    alert(this.state.searchParams)
     hashHistory.push(`search-results/${this.state.searchParams}`);
   }
 

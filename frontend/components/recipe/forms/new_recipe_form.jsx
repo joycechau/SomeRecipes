@@ -99,19 +99,36 @@ class NewRecipeForm extends React.Component {
               Category
             </h2>
             <select onChange={this.update('category')}
-                    className="recipe-form-select">
+                    className="recipe-form-select"
+                    value="--Select Category--">
               <option value="--Select Category--"
                       disabled="true"
-                      selected="true"
                       className="recipe-form-disabed-option">
                       --Select Category --
               </option>
-              <option value="Appetizers" className="recipe-form-option">Appetizers</option>
-              <option value="Main Dishes" className="recipe-form-option">Main Dishes</option>
-              <option value="Desserts" className="recipe-form-option">Desserts</option>
-              <option value="Breakfast" className="recipe-form-option">Breakfast</option>
-              <option value="Sides" className="recipe-form-option">Sides</option>
-              <option value="Other" className="recipe-form-option">Other
+              <option value="Appetizers"
+                      className="recipe-form-option">
+                      Appetizers
+              </option>
+              <option value="Main Dishes"
+                      className="recipe-form-option">
+                      Main Dishes
+              </option>
+              <option value="Desserts"
+                      className="recipe-form-option">
+                      Desserts
+              </option>
+              <option value="Breakfast"
+                      className="recipe-form-option">
+                      Breakfast
+              </option>
+              <option value="Sides"
+                      className="recipe-form-option">
+                      Sides
+              </option>
+              <option value="Other"
+                      className="recipe-form-option">
+                      Other
               </option>
             </select>
           </label>
