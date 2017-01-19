@@ -30,9 +30,9 @@ class MyRecipesIndexItem extends React.Component {
         <h2 className="recipe-index-item-author">
           <img src={profile.profile_url}
                className="recipe-index-item-author-image"/>
-             <h2 className="recipe-index-item-author-username">
+          <div className="recipe-index-item-author-username">
             Recipe by { author }
-          </h2>
+          </div>
         </h2>
       </button>
     );

@@ -20,7 +20,7 @@ class OtherRecipesIndexItem extends React.Component {
               onClick={this.showRecipe}>
         <img src={recipe.image_url}
              className="recipe-index-item-image"></img>
-           <h2 className="recipe-index-item-title">
+        <h2 className="recipe-index-item-title">
           {recipe.title}
         </h2>
         <p className="recipe-index-item-description">
@@ -29,9 +29,9 @@ class OtherRecipesIndexItem extends React.Component {
         <h2 className="recipe-index-item-author">
           <img src={this.props.authorImage}
               className="recipe-index-item-author-image"/>
-          <h2 className="recipe-index-item-author-username">
+          <div className="recipe-index-item-author-username">
             Recipe by { author }
-          </h2>
+          </div>
         </h2>
       </button>
     );

@@ -7,7 +7,7 @@ Rails.application.routes.draw do
     resources :recipes, only: [:index, :show, :create, :update, :destroy]
     resources :favorites, only: [:create, :destroy]
     get 'profile/:username' => "users#profile"
-    get '/favorite_recipes' => "recipes#favorites"
+    get '/favorite_recipes' => "recipes#favorite_recipes"
     get '/own_recipes' => "recipes#own_recipes"
   end
 end
