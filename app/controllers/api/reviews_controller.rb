@@ -45,3 +45,13 @@ class Api::ReviewsController < ApplicationController
     params.require(:review).permit(:rating, :body, :user_id, :recipe_id)
   end
 end
+
+def create
+  @favorite = Favorite.new(favorite_params)
+  if @favorite.save
+    @recipe = Recipe.find(@favorite.recipe_id)
+    render 'api/recipes/show'
+  else
+    render json: @favorite.errors.full_messages, status: 422
+  end
+end

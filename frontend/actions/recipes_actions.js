@@ -1,6 +1,8 @@
 import * as APIUtil from '../util/recipe_api_util';
-import { receiveErrorsRecipe } from './errors_actions';
-import { hashHistory } from 'react-router';
+import {
+  receiveErrorsRecipe,
+  receiveErrorsReview
+ } from './errors_actions';
 
 export const RECEIVE_ALL_RECIPES = "RECEIVE_ALL_RECIPES";
 export const RECEIVE_RECIPE = "RECEIVE_RECIPE";
@@ -51,6 +53,28 @@ export const createFavorite = (data) => (dispatch) => (
 
 export const deleteFavorite = (data) => (dispatch) => (
   APIUtil.deleteFavorite(data)
+    .then(recipe => dispatch(receiveRecipe(recipe)))
+);
+
+export const createReview = (data) => (dispatch) => (
+  APIUtil.createReview(data)
+    .then(recipe => dispatch(receiveRecipe(recipe)))
+    .fail(errors => dispatch(receiveErrorsReview(errors.responseJSON)))
+);
+
+export const fetchReview = (data) => (dispatch) => (
+  APIUtil.fetchReview(data)
+    .then(recipe => dispatch(receiveRecipe(recipe)))
+);
+
+export const updateReview = (data) => (dispatch) => (
+  APIUtil.updateReview(data)
+    .then(recipe => dispatch(receiveRecipe(recipe)))
+    .fail(errors => dispatch(receiveErrorsReview(errors.responseJSON)))
+);
+
+export const deleteReview = (data) => (dispatch) => (
+  APIUtil.deleteReview(data)
     .then(recipe => dispatch(receiveRecipe(recipe)))
 );
 
