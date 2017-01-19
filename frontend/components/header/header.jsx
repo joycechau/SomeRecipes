@@ -13,6 +13,7 @@ class Header extends React.Component {
     this.handleSignUpButtonClick = this.handleSignUpButtonClick.bind(this);
     this.handleLogOutButtonClick = this.handleLogOutButtonClick.bind(this);
     this.handleProfileButtonClick = this.handleProfileButtonClick.bind(this);
+    this.handleAddRecipeButtonClick = this.handleAddRecipeButtonClick.bind(this);
     this.closeModal = this.closeModal.bind(this);
     this.openModal = this.openModal.bind(this);
   }
@@ -43,6 +44,11 @@ class Header extends React.Component {
   handleProfileButtonClick(e) {
     e.preventDefault();
     hashHistory.push(`/profile/${this.props.currentUser.username}`);
+  }
+
+  handleAddRecipeButtonClick(e) {
+    e.preventDefault();
+    hashHistory.push(`/profile/${this.props.currentUser.username}/new-recipe`);
   }
 
   closeModal() {
@@ -77,6 +83,10 @@ class Header extends React.Component {
             <button onClick={this.handleProfileButtonClick}
               className="header-profile-button">
               My Profile
+            </button>
+            <button onClick={this.handleAddRecipeButtonClick}
+              className="header-add-recipe-button">
+              Add Recipe
             </button>
             <button onClick={this.handleLogOutButtonClick}
               className="header-logout-button">

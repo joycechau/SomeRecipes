@@ -43,7 +43,8 @@
 .header-signup-link,
 .header-login-link,
 .header-demo-link,
-.header-logout-button {
+.header-logout-button,
+.header-add-recipe-button {
   text-decoration: none;
   float: left;
   display: inline-block;
@@ -58,7 +59,8 @@
 .header-login-link:hover,
 .header-demo-link:hover,
 .header-logout-button:hover,
-.header-profile-button:hover {
+.header-profile-button:hover,
+.header-add-recipe-button:hover {
   background-color: $hover-background
 }
 
