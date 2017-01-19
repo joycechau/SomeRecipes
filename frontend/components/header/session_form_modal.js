@@ -12,15 +12,12 @@ export const style = {
     position        : 'fixed',
     top             : '50%',
     left            : '50%',
-    right           : '150px',
-    bottom          : '100px',
+    transform       : 'translate(-50%, -50%)',
     border          : '2px solid #E52F00',
     padding         : '30px',
     zIndex          : 11,
     width           : '250px',
-    height          : '350px',
-    'margin-left'   : '-150px',
-    'margin-top'    : '-150px'
+    height          : '350px'
     // 'background-image' : 'url(/assets/session_form.jpg)'
   }
 };

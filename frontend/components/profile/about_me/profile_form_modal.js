@@ -12,15 +12,12 @@ export const style = {
     position        : 'fixed',
     top             : '50%',
     left            : '50%',
-    right           : '150px',
-    bottom          : '100px',
+    transform       : 'translate(-50%, -50%)',
     border          : '2px solid black',
     padding         : '30px',
     zIndex          : 11,
     width           : '350px',
     height          : '375px',
-    'margin-left'   : '-150px',
-    'margin-top'    : '-150px',
-    'background-color': 'light-gray'
+    backgroundColor : 'light-gray'
   }
 };

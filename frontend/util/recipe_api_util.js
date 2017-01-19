@@ -67,7 +67,7 @@ export const deleteFavorite = (favorite) => {
   return (
     $.ajax({
       method: 'DELETE',
-      url: `api/favorites`,
+      url: `api/favorites/${favorite.recipe_id}`,
       data: { favorite }
     })
   );
