@@ -33,6 +33,7 @@ const Root = ({ store }) => {
   const _redirectIfNotLoggedIn = (nextState, replace) => {
     const currentUser = store.getState().currentUser;
     if (!currentUser) {
+      alert("Log in or use demo account to view profiles!");
       replace('/');
     }
   };

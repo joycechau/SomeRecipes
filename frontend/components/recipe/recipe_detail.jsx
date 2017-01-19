@@ -83,6 +83,9 @@ class RecipeDetail extends React.Component {
     const currentUserUsername = currentUser ? currentUser.username: "";
     const recipeUserUsername = recipe.user ? recipe.user.username: "";
     const text = recipe.favorited ? "Remove Favorite" : "Add Favorite";
+    if ( currentUser === null ) {
+      return;
+    }
     if (currentUserUsername !== recipeUserUsername ) {
       return (
         <div className="favorite-recipe-button-div">
