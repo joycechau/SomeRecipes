@@ -8,7 +8,12 @@ class SearchResultsIndex extends React.Component {
   }
 
   componentWillMount() {
-    this.props.fetchAllRecipes();
+    this.props.fetchAllRecipes(this.props.params.searchParams);
+  }
+
+  componentWillReceiveProps(newProps) {
+    //add conditional
+    // this.props.fetchAllRecipes(this.props.params.searchParams);
   }
 
   render() {

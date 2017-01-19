@@ -1,13 +1,13 @@
 export const fetchAllRecipes = (searchParams) => {
-  debugger
   return (
     $.ajax({
       method: 'GET',
       url: 'api/recipes',
-      data: { searchParams: searchParams }
+      data: { searchParams },
+      headers: { 'Access-Control-Allow-Origin':'*' }
     })
   );
-}
+};
 
 export const fetchRecipe = (id) => (
   $.ajax({

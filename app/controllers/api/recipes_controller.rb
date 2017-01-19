@@ -3,8 +3,8 @@ class Api::RecipesController < ApplicationController
     @recipes = Recipe.all
     if params[:searchParams]
       @recipes = Recipe.where(
-        "title LIKE ? OR category LIKE ?",
-        "%#{searchParams}%", "%#{searchParams}%"
+        "lower(title) LIKE ? OR lower(category) LIKE ?",
+        "%#{params[:searchParams].downcase}%", "%#{params[:searchParams].downcase}%"
       )
     end
   end

@@ -58,7 +58,7 @@ const Root = ({ store }) => {
         <Route path="/" component={ App } >
           <IndexRoute component={ HomeContainer } />
           <Route path="recipes/:recipeId" component={ RecipeDetailContainer } />
-          <Route path="search-results/:search-params" component={ SearchResultsContainer }/>
+          <Route path="search-results/:searchParams" component={ SearchResultsContainer } />
           <Route path="profile" component={ ProfileContainer } >
             <Route path=":username"
                    component={ AboutMeContainer }

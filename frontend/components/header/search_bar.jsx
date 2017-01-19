@@ -10,6 +10,7 @@ class SearchBar extends React.Component {
 
   handleSearch(e) {
     e.preventDefault();
+    alert(this.state.searchParams)
     hashHistory.push(`search-results/${this.state.searchParams}`);
   }
 
@@ -26,7 +27,7 @@ class SearchBar extends React.Component {
         <input className="search-bar-input"
                type="text"
                placeholder="Find recipes"
-               onChange={this.update('search')}/>
+               onChange={this.update('searchParams')}/>
         <button className="search-bar-button"
                 onClick={this.handleSearch}>
           <img className="search-bar-image"
