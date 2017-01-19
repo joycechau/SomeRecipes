@@ -1192,3 +1192,66 @@ Favorite.create(user_id: 2, recipe_id: 2)
 Favorite.create(user_id: 2, recipe_id: 12)
 Favorite.create(user_id: 2, recipe_id: 13)
 Favorite.create(user_id: 2, recipe_id: 14)
+
+Review.create(
+  user_id: 1,
+  recipe_id: 1,
+  rating: 5,
+  body: "I made this and it was a hit. I substituted a few things in the recipe that I didn't have and it still came out amazing!!! I also paired with with some homemade Spanish Quinoa. YUM!"
+)
+
+Review.create(
+  user_id: 2,
+  recipe_id: 1,
+  rating: 5,
+  body: "I actually cooked the shrimp with the marinade in a shallow pan. That way the onions and garlic were able to be eaten as well. it was easy and wonderful!"
+)
+
+Review.create(
+  user_id: 5,
+  recipe_id: 1,
+  rating: 4,
+  body: "maybe better as a salad than a lettuce wrap because the shrimp just fell out of the lettuce, but the shrimp was bursting with flavor!"
+)
+
+Review.create(
+  user_id: 2,
+  recipe_id: 2,
+  rating: 5,
+  body: "These are the best cupcakes I've ever made! They are extremely rich in flavor and so moist. They taste like they came from a fancy bakery. The recipe is so easy and people will be very impressed and go nuts for them. I wouldn't change a thing!"
+)
+
+Review.create(
+  user_id: 3,
+  recipe_id: 2,
+  rating: 5,
+  body: "These were a hit with the children in my daughters class. Soft moist melt in the mouth. Yum!"
+)
+
+Review.create(
+  user_id: 4,
+  recipe_id: 2,
+  rating: 4,
+  body: "This was great! I haven't made many cakes from scratch and found this to be very easy and delicious. I will be making this again for Christmas! Everyone loved it."
+)
+
+Review.create(
+  user_id: 1,
+  recipe_id: 3,
+  rating: 5,
+  body: "Very good. I was worried that the onion wouldn't be cooked, so I used canned pearl onions, which worked well. I will definitely make this again, although next time I will marinate longer, I didn't think the marinade imparted much of its flavor in only 30 minutes. Even so, I was very happy with the results."
+)
+
+Review.create(
+  user_id: 2,
+  recipe_id: 3,
+  rating: 4,
+  body: "This was pretty tasty. I made this as a stir fry, adding broccoli, and used the marinade as a sauce. I had to do a chicken version for my husband as he doesn't eat salmon, and he thought it was good too."
+)
+
+Review.create(
+  user_id: 10,
+  recipe_id: 3,
+  rating: 5,
+  body: "I would give this more stars if I could! WOW! We are from Miami and liken this to our favorite dish at our very favorite seafood restaurant- Captain's Tavern. We made this with grilled (frozen) yellowtail (from a catch 2 weeks ago) and served with reduced marinade on top of the fish. We accompanied it with black beans and rice (just like our favorite restaurant) and- voila!- we had one of the most GOURMET meals we've ever made at home!"
+)

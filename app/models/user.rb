@@ -27,6 +27,12 @@ class User < ApplicationRecord
             through: :favorites,
             source: :recipe
 
+  has_many :reviews
+  has_many :reviewed_recipes,
+            through: :reviews,
+            source: :recipe
+
+
   def self.find_by_credentials(username, password)
     @user = User.find_by(username: username)
     return nil if @user.nil?

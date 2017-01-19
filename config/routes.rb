@@ -6,6 +6,7 @@ Rails.application.routes.draw do
     resource :session, only: [:create, :destroy]
     resources :recipes, only: [:index, :show, :create, :update, :destroy]
     resources :favorites, only: [:create, :destroy]
+    resources :reviews, only: [:create, :show, :update, :destroy]
     get 'profile/:username' => "users#profile"
     get '/favorite_recipes' => "recipes#favorite_recipes"
     get '/own_recipes' => "recipes#own_recipes"
