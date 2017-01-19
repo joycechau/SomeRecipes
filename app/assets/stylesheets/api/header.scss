@@ -61,3 +61,36 @@
 .header-profile-button:hover {
   background-color: $hover-background
 }
+
+.search-bar-section {
+  // border: 1px solid red;
+  display: flex;
+  align-items: center;
+}
+
+.search-bar-input {
+  border: 1px solid $red-orange;
+  height: 38px;
+  border-radius: 2px;
+  font-size: 14px;
+  padding-left: 10px;
+  margin-right: 2px;
+  width: 225px;
+  display: flex
+}
+
+.search-bar-button {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar-button:hover {
+}
+
+.search-bar-image {
+  align-self: center;
+}
+
+.search-bar-image:hover{
+  background-color: #F8F8F8;
+}

@@ -1,6 +1,12 @@
 class Api::RecipesController < ApplicationController
   def index
     @recipes = Recipe.all
+    if params[:searchParams]
+      @recipes = Recipe.where(
+        "title LIKE ? OR category LIKE ?",
+        "%#{searchParams}%", "%#{searchParams}%"
+      )
+    end
   end
 
   def favorite_recipes
@@ -55,7 +61,8 @@ class Api::RecipesController < ApplicationController
       :title,
       :image_url,
       :category,
-      :description
+      :description,
+      :searchParams
     )
   end
 end

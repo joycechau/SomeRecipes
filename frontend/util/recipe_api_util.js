@@ -1,9 +1,13 @@
-export const fetchAllRecipes = () => (
-  $.ajax({
-    method: 'GET',
-    url: 'api/recipes'
-  })
-);
+export const fetchAllRecipes = (searchParams) => {
+  debugger
+  return (
+    $.ajax({
+      method: 'GET',
+      url: 'api/recipes',
+      data: { searchParams: searchParams }
+    })
+  );
+}
 
 export const fetchRecipe = (id) => (
   $.ajax({

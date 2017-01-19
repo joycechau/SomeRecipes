@@ -7,8 +7,8 @@ export const RECEIVE_RECIPE = "RECEIVE_RECIPE";
 export const REMOVE_RECIPE = "REMOVE_RECIPE";
 export const CLEAR_ALL_RECIPES = "CLEAR_ALL_RECIPES";
 
-export const fetchAllRecipes = () => dispatch => (
-  APIUtil.fetchAllRecipes()
+export const fetchAllRecipes = (searchParams) => dispatch => (
+  APIUtil.fetchAllRecipes(searchParams)
     .then(recipes => dispatch(receiveAllRecipes(recipes)))
 );
 

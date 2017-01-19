@@ -1,8 +1,9 @@
 import React from 'react';
 import Modal from 'react-modal';
 import { Link, hashHistory } from 'react-router';
-import SessionFormContainer from '../session_form/session_form_container';
 import { style } from './session_form_modal';
+import SessionFormContainer from '../session_form/session_form_container';
+import SearchBarContainer from './search_bar_container';
 
 class Header extends React.Component {
   constructor(props) {
@@ -71,6 +72,7 @@ class Header extends React.Component {
       <div className="header-container">
         <div className="header">
           <h1>{this.headerLogo()}</h1>
+          <SearchBarContainer />
           <div>
             <button onClick={this.handleProfileButtonClick}
               className="header-profile-button">
@@ -90,6 +92,7 @@ class Header extends React.Component {
       <div className="header-container">
         <div className="header">
           {this.headerLogo()}
+          <SearchBarContainer />
           <div>
             <button onClick={this.handleSignUpButtonClick}
               className="header-signup-link"
