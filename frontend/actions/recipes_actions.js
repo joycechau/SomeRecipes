@@ -44,6 +44,16 @@ export const deleteRecipe = (data) => (dispatch) => (
     .then(recipe => dispatch(removeRecipe(recipe)))
 );
 
+export const createFavorite = (data) => (dispatch) => (
+  APIUtil.createFavorite(data)
+    .then(recipe => dispatch(receiveRecipe(recipe)))
+);
+
+export const deleteFavorite = (data) => (dispatch) => (
+  APIUtil.deleteFavorite(data)
+    .then(recipe => dispatch(receiveRecipe(recipe)))
+);
+
 const receiveAllRecipes = recipes => ({
   type: RECEIVE_ALL_RECIPES,
   recipes

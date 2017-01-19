@@ -10,7 +10,7 @@ class RecipeDetail extends React.Component {
     this.handleFavoriteClick = this.handleFavoriteClick.bind(this);
   }
 
-  componentWillMount() { 
+  componentWillMount() {
     this.props.fetchRecipe(this.props.params.recipeId);
   }
 
@@ -45,7 +45,17 @@ class RecipeDetail extends React.Component {
 
   handleFavoriteClick(e) {
     e.preventDefault();
-    alert("Favorite button clicked!");
+    if (this.props.recipe.favorited) {
+      this.props.deleteFavorite({
+        recipe_id: this.props.recipe.id,
+        user_id: this.props.currentUser.id
+      });
+    } else {
+      this.props.createFavorite({
+        recipe_id: this.props.recipe.id,
+        user_id: this.props.currentUser.id
+      });
+    }
   }
 
   editAndDeleteButtons() {
@@ -72,12 +82,13 @@ class RecipeDetail extends React.Component {
     const { currentUser, recipe } = this.props;
     const currentUserUsername = currentUser ? currentUser.username: "";
     const recipeUserUsername = recipe.user ? recipe.user.username: "";
+    const text = recipe.favorited ? "Remove Favorite" : "Add Favorite";
     if (currentUserUsername !== recipeUserUsername ) {
       return (
         <div className="favorite-recipe-button-div">
           <button onClick={this.handleFavoriteClick}
                   className="favorite-recipe-button">
-                  Favorite Button
+                  {text}
           </button>
         </div>
       );

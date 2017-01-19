@@ -22,7 +22,6 @@ export const createRecipe = (recipe) => {
   );
 };
 
-
 export const updateRecipe = (recipe) => {
   return (
     $.ajax({
@@ -53,3 +52,23 @@ export const fetchFavoriteRecipes = () => (
     url: 'api/favorite_recipes'
   })
 );
+
+export const createFavorite = (favorite) => {
+  return (
+    $.ajax({
+      method: 'POST',
+      url: 'api/favorites',
+      data: { favorite }
+    })
+  );
+};
+
+export const deleteFavorite = (favorite) => {
+  return (
+    $.ajax({
+      method: 'DELETE',
+      url: `api/favorites`,
+      data: { favorite }
+    })
+  );
+}
