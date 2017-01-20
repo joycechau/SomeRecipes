@@ -13,7 +13,7 @@
 
 class Review < ApplicationRecord
   validates :rating, presence: true, inclusion: { in: (1..5) }
-  validates :recipe, :user, presence: true
+  # validates :recipe, :user, presence: true
   validates :body, length: { maximum: 500 }
   validates :user_id, uniqueness: { scope: :recipe_id }
 

@@ -29,7 +29,7 @@ ActiveRecord::Schema.define(version: 20170119215223) do
     t.integer  "user_id",                                                                                                                null: false
     t.string   "title",                                                                                                                  null: false
     t.string   "image_url",      default: "https://res.cloudinary.com/joycechau/image/upload/v1484519242/default_recipe_detail_pic.gif"
-    t.integer  "average_rating"
+    t.integer  "average_rating", default: 5
     t.string   "category",                                                                                                               null: false
     t.text     "description",                                                                                                            null: false
     t.string   "ingredients",    default: [],                                                                                            null: false, array: true

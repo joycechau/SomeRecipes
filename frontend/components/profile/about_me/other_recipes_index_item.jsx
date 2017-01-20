@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, hashHistory } from 'react-router';
+import StarRatingComponent from 'react-star-rating-component';
 
 class OtherRecipesIndexItem extends React.Component {
   constructor(props) {
@@ -23,6 +24,15 @@ class OtherRecipesIndexItem extends React.Component {
         <h2 className="recipe-index-item-title">
           {recipe.title}
         </h2>
+        <div className="star-rating">
+          <StarRatingComponent
+            name="user-rating"
+            value={recipe.average_rating}
+            emptyStarColor="#E0E0E0"
+            starColor="#E5572B"
+            editing={false}
+            />
+        </div>
         <p className="recipe-index-item-description">
           {recipe.description}
         </p>

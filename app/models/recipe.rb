@@ -32,4 +32,9 @@ class Recipe < ApplicationRecord
   has_many :reviewed_users,
             through: :reviews,
             source: :user
+
+  def average_rating
+    return 5 if self.reviews.length == 0
+    self.reviews.average(:rating).round
+  end
 end

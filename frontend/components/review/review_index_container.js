@@ -7,6 +7,7 @@ import {
   updateReview,
   deleteReview
 } from '../../actions/recipes_actions';
+import { clearErrors } from '../../actions/errors_actions';
 
 const mapStateToProps = state => {
   if (state.recipeDetail.reviews) {
@@ -31,7 +32,8 @@ const mapDispatchToProps = dispatch => ({
   createReview: (data) => dispatch(createReview(data)),
   fetchReview: (data) => dispatch(fetchReview(data)),
   updateReview: (data) => dispatch(updateReview(data)),
-  deleteReview: (data) => dispatch(deleteReview(data))
+  deleteReview: (data) => dispatch(deleteReview(data)),
+  clearErrors: () => dispatch(clearErrors())
 });
 
 export default connect(

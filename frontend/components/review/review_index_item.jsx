@@ -28,7 +28,7 @@ class ReviewIndexItem extends React.Component {
             className="review-author-button-image"/>
           Reviewed by { author }
         </button>
-        <div className="star-rating">
+        <div className="review-star-rating">
           <StarRatingComponent
             name="user-rating"
             value={review.rating}

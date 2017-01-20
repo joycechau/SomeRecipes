@@ -13,6 +13,22 @@
   margin-right: 25px;
 }
 
+.new-review-button {
+  font-size: 14px;
+  margin-left: 39px;
+  padding: 5px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 3px;
+  background-color: #E5572B;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.new-review-button:hover {
+  background-color: #CB4E27;
+}
+
 .review-index-container {
 }
 
@@ -42,7 +58,7 @@
   border-radius: 5px;
 }
 
-.star-rating {
+.review-star-rating {
   margin-left: 20px;
 }
 

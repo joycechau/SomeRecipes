@@ -1,0 +1,64 @@
+@import "../base/colors.scss";
+@import "../base/fonts.scss";
+
+.review-form {
+  padding-left: 2px;
+  color: $red-orange;
+}
+
+.review-form-header {
+  color: $red-orange;
+  font-size: 20px;
+  border-bottom: 1px solid $red-orange;
+  margin-bottom: 15px;
+}
+
+.review-form-star-rating-label {
+  color: $red-orange;
+}
+
+.review-form-star-rating-component {
+  font-size: 40px;
+  margin-bottom: -10px;
+}
+
+.review-form-label {
+  color: $red-orange;
+  margin-bottom: 10px;
+}
+
+.review-form-your-review-label {
+  margin-bottom: 5px;
+}
+
+.review-form-input-body {
+  font-size: 14px;
+  height: 100px;
+  width: 226px;
+  max-width: 226px;
+  font-family: $muli;
+  padding: 10px;
+  background-color: #F8F8F8;
+  border: 1px solid $red-orange;
+}
+
+.review-form-submit-button {
+  padding: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #E5572B;
+  color: white;
+  border-radius: 3px;
+  margin: auto;
+  display: flex;
+  margin-top: 10px;
+}
+
+.review-form-submit-button:hover {
+  background-color: #CB4E27;
+}
+
+.review-form-errors {
+  margin-top: 10px;
+  text-align: center;
+}
