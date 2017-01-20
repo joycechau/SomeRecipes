@@ -6,27 +6,14 @@ class EditReviewForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      rating: props.rating,
-      body: props.body,
+      rating: props.review.rating,
+      body: props.review.body,
       errors: props.errors,
       recipe_id: props.recipe.id,
       user_id: props.currentUser.id
     };
     this.handleSubmit = this.handleSubmit.bind(this);
     this.onStarClick = this.onStarClick.bind(this);
-  }
-
-  componentWillMount() {
-    const review = Object.assign({}, this.state);
-    debugger
-    this.props.fetchReview(review);
-  }
-
-  componentWillReceiveProps(newProps) {
-    debugger
-    this.setState({
-
-    });
   }
 
   handleSubmit(e) {

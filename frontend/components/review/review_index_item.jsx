@@ -107,7 +107,7 @@ class ReviewIndexItem extends React.Component {
             <EditReviewFormContainer
               closeModal={this.closeModal}
               className="edit-review-form-container"
-              
+              review={review}
             />
           </Modal>
         </div>
