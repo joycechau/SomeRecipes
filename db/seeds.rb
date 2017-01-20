@@ -1255,3 +1255,801 @@ Review.create(
   rating: 5,
   body: "I would give this more stars if I could! WOW! We are from Miami and liken this to our favorite dish at our very favorite seafood restaurant- Captain's Tavern. We made this with grilled (frozen) yellowtail (from a catch 2 weeks ago) and served with reduced marinade on top of the fish. We accompanied it with black beans and rice (just like our favorite restaurant) and- voila!- we had one of the most GOURMET meals we've ever made at home!"
 )
+
+Review.create(
+  user_id: 6,
+  recipe_id: 4,
+  rating: 3,
+  body: "My husband made the recipe prior to reading the reviews. I agree that it's bland and needed some spicing up. If he makes it again I'm sure he'll be adding some roasted garlic, salt, pepper and Italian seasoning."
+)
+
+Review.create(
+  user_id: 7,
+  recipe_id: 4,
+  rating: 4,
+  body: "Really yummy and the kids gobbled it up. I did change it a bit to make it a tad healthier. I cooked the chicken with garlic and onions. I used 8oz light cream cheese and almost one whole can of chicken broth and 3/4 finely shredded cheddar cheese for the sauce, It was super yum. You omit the milk, water, and cream of chicken soup. It was GREAT"
+)
+
+Review.create(
+  user_id: 10,
+  recipe_id: 5,
+  rating: 4,
+  body: "Way too much filling for a 9 inch crust but a tasty recipe nonetheless."
+)
+
+Review.create(
+  user_id: 9,
+  recipe_id: 5,
+  rating: 2,
+  body: "Bland and lacked flavor"
+)
+
+Review.create(
+  user_id: 8,
+  recipe_id: 6,
+  rating: 5,
+  body: "YUMMY! This will be the only recipe I will use for vanilla ice cream. It is very rich and creamy! When you scoop it out the ice cream clings to the spoon! I can't wait to try it with other flavors of pudding. I had to scale down the recipe to half and then only 3/4 of it would fit my cuisinart ice cream maker. I used one carton of egg beaters (2 eggs worth) instead of the fresh eggs and I still put in a whole teaspoon of vanilla. It was perfect!"
+)
+
+Review.create(
+  user_id: 1,
+  recipe_id: 6,
+  rating: 2,
+  body: "This tastes like frozen store-bought pudding, not ice cream. The consistancy after being in the freezer is weirdly stiff yet gooey, like cold playdough. But if you like frozen pudding, you may like it."
+)
+
+Review.create(
+  user_id: 3,
+  recipe_id: 7,
+  rating: 4,
+  body: "Great complement to any proteins."
+)
+
+Review.create(
+  user_id: 4,
+  recipe_id: 7,
+  rating: 3,
+  body: "Easy to make but lacked some flavor."
+)
+
+Review.create(
+  user_id: 3,
+  recipe_id: 8,
+  rating: 4,
+  body: "I liked it and it was easy to make."
+)
+
+Review.create(
+  user_id: 2,
+  recipe_id: 8,
+  rating: 5,
+  body: "LOVED it!  Will make again!"
+)
+
+Review.create(
+  user_id: 4,
+  recipe_id: 9,
+  rating: 4,
+  body: "Good but could use some more flavor."
+)
+
+Review.create(
+  user_id: 5,
+  recipe_id: 9,
+  rating: 3,
+  body: "Just okay."
+)
+
+Review.create(
+  user_id: 6,
+  recipe_id: 10,
+  rating: 4,
+  body: ""
+)
+
+Review.create(
+  user_id: 7,
+  recipe_id: 10,
+  rating: 5,
+  body: ""
+)
+
+Review.create(
+  user_id: 8,
+  recipe_id: 11,
+  rating: 3,
+  body: ""
+)
+
+Review.create(
+  user_id: 9,
+  recipe_id: 11,
+  rating: 2,
+  body: ""
+)
+
+Review.create(
+  user_id: 10,
+  recipe_id: 12,
+  rating: 3,
+  body: ""
+)
+
+Review.create(
+  user_id: 7,
+  recipe_id: 12,
+  rating: 4,
+  body: ""
+)
+
+Review.create(
+  user_id: 9,
+  recipe_id: 13,
+  rating: 5,
+  body: ""
+)
+
+Review.create(
+  user_id: 1,
+  recipe_id: 13,
+  rating: 4,
+  body: ""
+)
+
+Review.create(
+  user_id: 2,
+  recipe_id: 14,
+  rating: 3,
+  body: ""
+)
+
+Review.create(
+  user_id: 3,
+  recipe_id: 14,
+  rating: 4,
+  body: ""
+)
+
+Review.create(
+  user_id: 5,
+  recipe_id: 15,
+  rating: 5,
+  body: ""
+)
+
+Review.create(
+  user_id: 4,
+  recipe_id: 15,
+  rating: 4,
+  body: ""
+)
+
+Review.create(
+  user_id: 7,
+  recipe_id: 16,
+  rating: 5,
+  body: ""
+)
+
+Review.create(
+  user_id: 8,
+  recipe_id: 16,
+  rating: 3,
+  body: ""
+)
+
+Review.create(
+  user_id: 7,
+  recipe_id: 17,
+  rating: 5,
+  body: ""
+)
+
+Review.create(
+  user_id: 8,
+  recipe_id: 17,
+  rating: 3,
+  body: ""
+)
+
+Review.create(
+  user_id: 4,
+  recipe_id: 18,
+  rating: 5,
+  body: ""
+)
+
+Review.create(
+  user_id: 10,
+  recipe_id: 18,
+  rating: 5,
+  body: ""
+)
+
+Review.create(
+  user_id: 3,
+  recipe_id: 19,
+  rating: 4,
+  body: ""
+)
+
+Review.create(
+  user_id: 6,
+  recipe_id: 19,
+  rating: 5,
+  body: ""
+)
+
+Review.create(
+  user_id: 5,
+  recipe_id: 20,
+  rating: 4,
+  body: ""
+)
+
+Review.create(
+  user_id: 6,
+  recipe_id: 20,
+  rating: 5,
+  body: ""
+)
+
+Review.create(
+  user_id: 2,
+  recipe_id: 21,
+  rating: 4,
+  body: ""
+)
+
+Review.create(
+  user_id: 3,
+  recipe_id: 21,
+  rating: 5,
+  body: ""
+)
+
+Review.create(
+  user_id: 7,
+  recipe_id: 22,
+  rating: 3,
+  body: ""
+)
+
+Review.create(
+  user_id: 5,
+  recipe_id: 22,
+  rating: 4,
+  body: ""
+)
+
+Review.create(
+  user_id: 8,
+  recipe_id: 23,
+  rating: 4,
+  body: ""
+)
+
+Review.create(
+  user_id: 6,
+  recipe_id: 23,
+  rating: 4,
+  body: ""
+)
+
+Review.create(
+  user_id: 9,
+  recipe_id: 24,
+  rating: 4,
+  body: ""
+)
+
+Review.create(
+  user_id: 3,
+  recipe_id: 24,
+  rating: 5,
+  body: ""
+)
+
+Review.create(
+  user_id: 10,
+  recipe_id: 25,
+  rating: 4,
+  body: ""
+)
+
+Review.create(
+  user_id: 8,
+  recipe_id: 25,
+  rating: 3,
+  body: ""
+)
+
+Review.create(
+  user_id: 2,
+  recipe_id: 26,
+  rating: 2,
+  body: ""
+)
+
+Review.create(
+  user_id: 7,
+  recipe_id: 26,
+  rating: 3,
+  body: ""
+)
+
+Review.create(
+  user_id: 5,
+  recipe_id: 27,
+  rating: 2,
+  body: ""
+)
+
+Review.create(
+  user_id: 4,
+  recipe_id: 27,
+  rating: 5,
+  body: ""
+)
+
+Review.create(
+  user_id: 10,
+  recipe_id: 28,
+  rating: 3,
+  body: ""
+)
+
+Review.create(
+  user_id: 9,
+  recipe_id: 28,
+  rating: 5,
+  body: ""
+)
+
+Review.create(
+  user_id: 6,
+  recipe_id: 29,
+  rating: 4,
+  body: ""
+)
+
+Review.create(
+  user_id: 1,
+  recipe_id: 29,
+  rating: 5,
+  body: ""
+)
+
+Review.create(
+  user_id: 3,
+  recipe_id: 30,
+  rating: 5,
+  body: ""
+)
+
+Review.create(
+  user_id: 4,
+  recipe_id: 30,
+  rating: 5,
+  body: ""
+)
+
+Review.create(
+  user_id: 6,
+  recipe_id: 31,
+  rating: 3,
+  body: ""
+)
+
+Review.create(
+  user_id: 5,
+  recipe_id: 31,
+  rating: 5,
+  body: ""
+)
+
+Review.create(
+  user_id: 8,
+  recipe_id: 32,
+  rating: 4,
+  body: ""
+)
+
+Review.create(
+  user_id: 7,
+  recipe_id: 32,
+  rating: 5,
+  body: ""
+)
+
+Review.create(
+  user_id: 9,
+  recipe_id: 33,
+  rating: 2,
+  body: ""
+)
+
+Review.create(
+  user_id: 4,
+  recipe_id: 33,
+  rating: 5,
+  body: ""
+)
+
+Review.create(
+  user_id: 1,
+  recipe_id: 34,
+  rating: 4,
+  body: ""
+)
+
+Review.create(
+  user_id: 8,
+  recipe_id: 34,
+  rating: 5,
+  body: ""
+)
+
+Review.create(
+  user_id: 2,
+  recipe_id: 35,
+  rating: 5,
+  body: ""
+)
+
+Review.create(
+  user_id: 10,
+  recipe_id: 35,
+  rating: 5,
+  body: ""
+)
+
+Review.create(
+  user_id: 3,
+  recipe_id: 36,
+  rating: 3,
+  body: ""
+)
+
+Review.create(
+  user_id: 2,
+  recipe_id: 36,
+  rating: 5,
+  body: ""
+)
+
+Review.create(
+  user_id: 4,
+  recipe_id: 37,
+  rating: 4,
+  body: ""
+)
+
+Review.create(
+  user_id: 5,
+  recipe_id: 37,
+  rating: 5,
+  body: ""
+)
+
+Review.create(
+  user_id: 10,
+  recipe_id: 38,
+  rating: 5,
+  body: ""
+)
+
+Review.create(
+  user_id: 6,
+  recipe_id: 38,
+  rating: 5,
+  body: ""
+)
+
+Review.create(
+  user_id: 8,
+  recipe_id: 39,
+  rating: 5,
+  body: ""
+)
+
+Review.create(
+  user_id: 4,
+  recipe_id: 39,
+  rating: 3,
+  body: ""
+)
+
+Review.create(
+  user_id: 6,
+  recipe_id: 40,
+  rating: 4,
+  body: ""
+)
+
+Review.create(
+  user_id: 7,
+  recipe_id: 40,
+  rating: 4,
+  body: ""
+)
+
+Review.create(
+  user_id: 8,
+  recipe_id: 41,
+  rating: 5,
+  body: ""
+)
+
+Review.create(
+  user_id: 9,
+  recipe_id: 41,
+  rating: 4,
+  body: ""
+)
+
+Review.create(
+  user_id: 4,
+  recipe_id: 42,
+  rating: 5,
+  body: ""
+)
+
+Review.create(
+  user_id: 10,
+  recipe_id: 42,
+  rating: 5,
+  body: ""
+)
+
+Review.create(
+  user_id: 8,
+  recipe_id: 43,
+  rating: 5,
+  body: ""
+)
+
+Review.create(
+  user_id: 1,
+  recipe_id: 43,
+  rating: 5,
+  body: ""
+)
+
+Review.create(
+  user_id: 8,
+  recipe_id: 44,
+  rating: 5,
+  body: ""
+)
+
+Review.create(
+  user_id: 7,
+  recipe_id: 44,
+  rating: 5,
+  body: ""
+)
+
+Review.create(
+  user_id: 10,
+  recipe_id: 45,
+  rating: 5,
+  body: ""
+)
+
+Review.create(
+  user_id: 9,
+  recipe_id: 45,
+  rating: 2,
+  body: ""
+)
+
+Review.create(
+  user_id: 5,
+  recipe_id: 46,
+  rating: 5,
+  body: ""
+)
+
+Review.create(
+  user_id: 6,
+  recipe_id: 46,
+  rating: 3,
+  body: ""
+)
+
+Review.create(
+  user_id: 10,
+  recipe_id: 47,
+  rating: 4,
+  body: ""
+)
+
+Review.create(
+  user_id: 9,
+  recipe_id: 47,
+  rating: 3,
+  body: ""
+)
+
+Review.create(
+  user_id: 2,
+  recipe_id: 48,
+  rating: 5,
+  body: ""
+)
+
+Review.create(
+  user_id: 4,
+  recipe_id: 48,
+  rating: 5,
+  body: ""
+)
+
+Review.create(
+  user_id: 4,
+  recipe_id: 49,
+  rating: 5,
+  body: ""
+)
+
+Review.create(
+  user_id: 1,
+  recipe_id: 49,
+  rating: 5,
+  body: ""
+)
+
+Review.create(
+  user_id: 7,
+  recipe_id: 50,
+  rating: 5,
+  body: ""
+)
+
+Review.create(
+  user_id: 6,
+  recipe_id: 50,
+  rating: 5,
+  body: ""
+)
+
+Review.create(
+  user_id: 8,
+  recipe_id: 51,
+  rating: 5,
+  body: ""
+)
+
+Review.create(
+  user_id: 3,
+  recipe_id: 51,
+  rating: 5,
+  body: ""
+)
+
+Review.create(
+  user_id: 4,
+  recipe_id: 52,
+  rating: 5,
+  body: ""
+)
+
+Review.create(
+  user_id: 5,
+  recipe_id: 52,
+  rating: 3,
+  body: ""
+)
+
+Review.create(
+  user_id: 7,
+  recipe_id: 53,
+  rating: 4,
+  body: ""
+)
+
+Review.create(
+  user_id: 6,
+  recipe_id: 53,
+  rating: 3,
+  body: ""
+)
+
+Review.create(
+  user_id: 8,
+  recipe_id: 54,
+  rating: 5,
+  body: ""
+)
+
+Review.create(
+  user_id: 9,
+  recipe_id: 54,
+  rating: 5,
+  body: ""
+)
+
+Review.create(
+  user_id: 9,
+  recipe_id: 55,
+  rating: 5,
+  body: ""
+)
+
+Review.create(
+  user_id: 10,
+  recipe_id: 55,
+  rating: 5,
+  body: ""
+)
+
+Review.create(
+  user_id: 7,
+  recipe_id: 56,
+  rating: 3,
+  body: ""
+)
+
+Review.create(
+  user_id: 8,
+  recipe_id: 56,
+  rating: 5,
+  body: ""
+)
+
+Review.create(
+  user_id: 2,
+  recipe_id: 57,
+  rating: 4,
+  body: ""
+)
+
+Review.create(
+  user_id: 3,
+  recipe_id: 57,
+  rating: 5,
+  body: ""
+)
+
+Review.create(
+  user_id: 5,
+  recipe_id: 58,
+  rating: 5,
+  body: ""
+)
+
+Review.create(
+  user_id: 4,
+  recipe_id: 58,
+  rating: 5,
+  body: ""
+)
+
+Review.create(
+  user_id: 6,
+  recipe_id: 59,
+  rating: 3,
+  body: ""
+)
+
+Review.create(
+  user_id: 7,
+  recipe_id: 59,
+  rating: 5,
+  body: ""
+)
+
+Review.create(
+  user_id: 1,
+  recipe_id: 60,
+  rating: 5,
+  body: ""
+)
+
+Review.create(
+  user_id: 5,
+  recipe_id: 60,
+  rating: 5,
+  body: ""
+)
