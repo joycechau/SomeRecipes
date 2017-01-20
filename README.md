@@ -7,7 +7,7 @@ SomeRecipes is a personal project by Joyce Chau built using Rails on the backend
 ![alt text](https://res.cloudinary.com/joycechau/image/upload/v1484953334/Screen_Shot_2017-01-20_at_2.57.02_PM_bv7xqf.png "Home Page")
 
 
-### Features
+## Features
 * User accounts with secure authentication
 * Viewing, creating, editing, and deleting recipes
 * Profile page
@@ -15,26 +15,26 @@ SomeRecipes is a personal project by Joyce Chau built using Rails on the backend
 * Favoriting and searching recipes
 * Reviewing recipes
 
-#### Examples
+### Example Features
 
-##### Viewing Recipes
+#### Viewing Recipes
 
 ![alt text](https://res.cloudinary.com/joycechau/image/upload/v1484954529/recipe_detail.png "Recipe Detail Page")
 
 
-##### Viewing My Recipes
+#### Viewing My Recipes
 
 ![alt text](https://res.cloudinary.com/joycechau/image/upload/v1484954290/my_recipes_page.png "My Recipes Page")
 
-##### Creating Recipes
+#### Creating Recipes
 
 ![alt text](https://res.cloudinary.com/joycechau/image/upload/v1484954434/recipe_form.png "New Recipe Page")
 
-##### Writing Reviews
+#### Writing Reviews
 
 ![alt text](https://res.cloudinary.com/joycechau/image/upload/v1484954616/new_review.png "New Review Form")
 
-### Project Design
+## Project Design
 
 SomeRecipes was built in 10 days.  
 
@@ -42,7 +42,7 @@ A [proposal](https://github.com/joycechau/SomeRecipes/tree/master/docs) was draf
 
 A [database schema](https://github.com/joycechau/SomeRecipes/blob/master/docs/schema.md) was prepared alongside the design proposal.
 
-### Future Implementations
+## Future Implementations
 
 Additional features to add include:
 * Allowing users to specify public and private recipes
