@@ -20,7 +20,10 @@ class Api::ReviewsController < ApplicationController
   end
 
   def update
-    @review = current_user.reviews.find(params[:id])
+    @review = Review.find_by({
+      recipe_id: params[:id],
+      user_id: current_user.id
+      })
     if @review.update(review_params)
       @recipe = Recipe.find(@review.recipe_id)
       render 'api/recipes/show'
@@ -43,15 +46,5 @@ class Api::ReviewsController < ApplicationController
 
   def review_params
     params.require(:review).permit(:rating, :body, :user_id, :recipe_id)
-  end
-end
-
-def create
-  @favorite = Favorite.new(favorite_params)
-  if @favorite.save
-    @recipe = Recipe.find(@favorite.recipe_id)
-    render 'api/recipes/show'
-  else
-    render json: @favorite.errors.full_messages, status: 422
   end
 end

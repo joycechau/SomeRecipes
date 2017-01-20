@@ -8,7 +8,9 @@ class NewReviewForm extends React.Component {
     this.state = {
       rating: 0,
       body: "",
-      errors: props.errors,
+      recipe_id: props.recipe.id,
+      user_id: props.currentUser.id,
+      errors: props.errors
     };
     this.handleSubmit = this.handleSubmit.bind(this);
     this.onStarClick = this.onStarClick.bind(this);

@@ -11,7 +11,9 @@ class ReviewIndexItem extends React.Component {
     this.state = {
       modalOpen: false,
       rating: props.review.rating,
-      body: props.review.body
+      body: props.review.body,
+      recipe_id: props.review.recipe_id,
+      user_id: props.review.user_id
     };
     this.handleProfileClick = this.handleProfileClick.bind(this);
     this.handleEditClick = this.handleEditClick.bind(this);
@@ -34,7 +36,8 @@ class ReviewIndexItem extends React.Component {
 
   handleDeleteClick(e) {
     e.preventDefault();
-    this.props.deleteReview(this.props.review.recipe_id);
+    const review = Object.assign({}, this.state);
+    this.props.deleteReview(review);
   }
 
   closeModal() {
@@ -104,6 +107,7 @@ class ReviewIndexItem extends React.Component {
             <EditReviewFormContainer
               closeModal={this.closeModal}
               className="edit-review-form-container"
+              
             />
           </Modal>
         </div>

@@ -8,7 +8,9 @@ import EditReviewForm from './edit_review_form.jsx';
 
 const mapStateToProps = (state, ownProps) => {
   return {
-    errors: state.errors['review']
+    errors: state.errors['review'],
+    currentUser: state.currentUser,
+    recipe: state.recipeDetail
   };
 };
 

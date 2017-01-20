@@ -9,9 +9,24 @@ class EditReviewForm extends React.Component {
       rating: props.rating,
       body: props.body,
       errors: props.errors,
+      recipe_id: props.recipe.id,
+      user_id: props.currentUser.id
     };
     this.handleSubmit = this.handleSubmit.bind(this);
     this.onStarClick = this.onStarClick.bind(this);
+  }
+
+  componentWillMount() {
+    const review = Object.assign({}, this.state);
+    debugger
+    this.props.fetchReview(review);
+  }
+
+  componentWillReceiveProps(newProps) {
+    debugger
+    this.setState({
+
+    });
   }
 
   handleSubmit(e) {
@@ -50,7 +65,7 @@ class EditReviewForm extends React.Component {
     return (
       <div className="review-form-container">
         <h2 className="review-form-header">
-          Rate and Review
+          Update Review
         </h2>
         <form onSubmit={this.handleSubmit}
               className="review-form">
