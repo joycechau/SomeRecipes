@@ -62,7 +62,7 @@
   margin-left: 20px;
 }
 
-.review-body {
+.review-body-and-buttons {
   margin-top: 5px;
   width: 250px;
   font-size: 14px;
@@ -70,4 +70,35 @@
   margin-left: 20px;
   padding-bottom: 40px;
   border-bottom: 1px solid $gray;
+}
+
+.review-body {
+
+}
+
+.review-buttons {
+}
+
+.review-edit-and-delete-buttons-div {
+  margin-top: 5px;
+}
+
+.edit-review-button,
+.delete-review-button {
+  font-size: 11px;
+  padding: 5px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 3px;
+  background-color: #E5572B;
+  color: white;
+}
+
+.edit-review-button:hover,
+.delete-review-button:hover {
+  background-color: #CB4E27;
+}
+
+.delete-review-button {
+  margin-left: 10px;
 }

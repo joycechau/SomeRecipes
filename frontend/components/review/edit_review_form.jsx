@@ -2,12 +2,12 @@ import React from 'react';
 import StarRatingComponent from 'react-star-rating-component';
 
 
-class NewReviewForm extends React.Component {
+class EditReviewForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      rating: 0,
-      body: "",
+      rating: props.rating,
+      body: props.body,
       errors: props.errors,
     };
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -17,7 +17,7 @@ class NewReviewForm extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     const review = Object.assign({}, this.state);
-    this.props.createReview(review);
+    this.props.updateReview(review);
     this.props.clearErrors();
     this.props.closeModal();
   }
@@ -88,4 +88,4 @@ class NewReviewForm extends React.Component {
   }
 }
 
-export default NewReviewForm;
+export default EditReviewForm;

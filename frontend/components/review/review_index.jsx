@@ -56,6 +56,7 @@ class ReviewIndex extends React.Component {
             contentLabel="Modal"
             style={style}>
             <NewReviewFormContainer
+              closeModal={this.closeModal}
               className="new-review-form-container"
             />
           </Modal>
@@ -69,6 +70,7 @@ class ReviewIndex extends React.Component {
               fetchReview={this.props.fetchReview}
               updateReview={this.props.updateReview}
               deleteReview={this.props.deleteReview}
+              clearErrors={this.props.clearErrors}
               />
           ))}
         </div>
