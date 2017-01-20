@@ -29,57 +29,20 @@ SomeRecipes is a web application inspired by AllRecipes built using Ruby on Rail
 
 
 ### Phase 1: Backend setup and Frontend User Authentication (2 days)
-
 **Objective**: Functioning rails project with frontend Auth
-* Setup backend auth (user model, users controller, sessions controller)
-* Setup frontend auth
-  * Create Session util, actions, reducer, store
-  * Create React router and session components
-  * Create SessionForm components and session routes
-  * Bootstrap currentUser
-* Add HeaderContainer
 
-### Phase 2: Recipes Model, API, and components (2 days)
-
+### Phase 2: Recipes Model, API, and components (3 days)
 **Objective**: Recipes can be created, read, edited, and destroyed through the API
-* Create recipes model and controller, add appropriate associations
-* Seed database with ~50 recipes and validate that associations work
-* Create Recipe util, actions, and reducer
-* Create RecipeIndexContainer and RecipeIndexItem
-* Create RecipeDetailContainer and RecipeDetail
-* Create RecipeFormContainer and RecipeForm  
 
 ### Phase 3: Profile Page (1 day)
-**Objective**: Users can view their profile page
-* Create ProfileContainer storing Header, SideBar, and SideBarSection
+**Objective**: Users can view and edit their profile page and view other profiles.
 
 ### Phase 4: Favorites and Searching (1 day)
-
-**Objective**: Users can add recipes to their favorites list and favorited recipes can be displayed on profile page.  Users can also search for specific results.  
-* Favorites
-  * Create favorites model and controller, add appropriate associations
-  * Seed database with ~25 favorites and validate that associations work
-  * Add favorites button to RecipeIndexItem and allow users to view favorites on profile page
-* Search
-  * Add Home logo to HeaderContainer
-  * Add SearchContainer, SearchBar, and SearchButton to Header
-  * Adjust Util to allow search params
-  * Create SearchResultsContainer
+**Objective**: Users can bookmark favorite recipes.  Users can also search for specific results.  
 
 ### Phase 5: Reviews Model, API, and components (2 days)
 
 **Objective**:  Reviews can be created, edited, and destroyed through the API
-* Create reviews model and controller, add appropriate associations
-* Seed database with ~15 reviews and validate that associations work
-* Create Review util, actions, and reducer
-* Create ReviewIndexContainer and ReviewIndexItem
-* Create ReviewForm
-
-### Phase 6: Advanced Styling (1 day)
-
-**Objective**: Improve styling and add category backdrop to home page
-* Add homepage background with recipe category modals linked to search results
-* Add review form modal
 
 ### Bonus Features (TBD)
 - [ ] Infinite scrolling
