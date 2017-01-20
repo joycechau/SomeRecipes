@@ -91,10 +91,6 @@
 }
 
 .recipe-form-label-description-image-button {
-  margin-left: 10px;
-}
-
-.recipe-form-label-description-image-button {
   padding: 3px;
   padding-left: 6px;
   padding-right: 6px;
@@ -103,6 +99,8 @@
   border-radius: 3px;
   font-size: 15px;
   display: block;
+  margin-left: 20px;
+  margin-top: 10px;
 }
 
 .recipe-form-default-image {
@@ -120,6 +118,8 @@
   border-radius: 3px;
   align-self: center;
   margin: auto;
+  display: flex;
+  margin-bottom: 10px;
 }
 
 .recipe-form-submit-button:hover,
@@ -133,5 +133,5 @@
 
 .recipe-image-upload-error-message {
   padding: 5px;
-  margin-left: 5px;
+  margin-left: 15px;
 }

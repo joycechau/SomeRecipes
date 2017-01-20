@@ -84,11 +84,10 @@ class NewReviewForm extends React.Component {
                    className="review-form-input-body">
             </textarea>
           </label>
-          <label className="review-form-label">
-            <input type="submit"
-              value="Submit"
-              className="review-form-submit-button"/>
-          </label>
+          <input type="submit"
+            value="Submit"
+            className="review-form-submit-button"/>
+
           <h2 className="review-form-errors">{this.errorText()}</h2>
         </form>
       </div>

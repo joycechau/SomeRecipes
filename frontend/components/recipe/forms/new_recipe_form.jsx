@@ -164,21 +164,17 @@ class NewRecipeForm extends React.Component {
                    onChange={this.update('directions')}>
             </textarea>
           </label>
-          <label className="recipe-form-label">
-            <button className="recipe-form-label-description-image-button clearfix"
-                    onClick={this.handleCloudinary}>
-                    Add Image
-            </button>
-            {this.imageErrors()}
-          </label>
+          <button className="recipe-form-label-description-image-button clearfix"
+                  onClick={this.handleCloudinary}>
+                  Add Image
+          </button>
+          {this.imageErrors()}
           <label className="recipe-form-label">
             <img className="recipe-form-default-image" src={this.state.image_url}/>
           </label>
-          <label className="recipe-form-label">
-            <input type="submit"
-              value="Submit"
-              className="recipe-form-submit-button"/>
-          </label>
+          <input type="submit"
+            value="Submit"
+            className="recipe-form-submit-button"/>
           <h2 className="recipe-form-errors">{this.errorText()}</h2>
         </form>
       </div>
