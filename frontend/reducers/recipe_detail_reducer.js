@@ -12,7 +12,8 @@ const defaultRecipeDetail = {
   category: "",
   image_url: "",
   ingredients: [],
-  directions: []
+  directions: [],
+  reviews: {}
 };
 
 const RecipeDetailReducer = (state = defaultRecipeDetail, action) => {

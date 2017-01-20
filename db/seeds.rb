@@ -1201,7 +1201,7 @@ Review.create(
 )
 
 Review.create(
-  user_id: 2,
+  user_id: 6,
   recipe_id: 1,
   rating: 5,
   body: "I actually cooked the shrimp with the marinade in a shallow pan. That way the onions and garlic were able to be eaten as well. it was easy and wonderful!"
@@ -1243,7 +1243,7 @@ Review.create(
 )
 
 Review.create(
-  user_id: 2,
+  user_id: 8,
   recipe_id: 3,
   rating: 4,
   body: "This was pretty tasty. I made this as a stir fry, adding broccoli, and used the marinade as a sauce. I had to do a chicken version for my husband as he doesn't eat salmon, and he thought it was good too."

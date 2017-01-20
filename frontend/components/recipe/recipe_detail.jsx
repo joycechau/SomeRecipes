@@ -1,4 +1,5 @@
 import React from 'react';
+import ReviewIndexContainer from '../review/review_index_container';
 import { Link, hashHistory } from 'react-router';
 
 class RecipeDetail extends React.Component {
@@ -167,6 +168,7 @@ class RecipeDetail extends React.Component {
             {this.editAndDeleteButtons()}
             {this.favoriteButton()}
           </div>
+          <ReviewIndexContainer />
         </section>
       </section>
     );

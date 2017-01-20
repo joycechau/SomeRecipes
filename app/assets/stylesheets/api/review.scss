@@ -1,0 +1,57 @@
+@import "../base/colors.scss";
+
+.review-index-title {
+  margin-left: 20px;
+  font-size: 20px;
+  margin-top: 50px;
+  padding: 20px;
+  padding-bottom: 0px;
+}
+
+.review-hr {
+  margin-left: 35px;
+  margin-right: 25px;
+}
+
+.review-index-container {
+}
+
+.review {
+  padding: 20px;
+}
+
+.review-author-button {
+  color: $gray;
+  font-size: 12px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+.review-author-button-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.review-author-button:hover {
+  background-color: $hover-background;
+  border-radius: 5px;
+}
+
+.star-rating {
+  margin-left: 20px;
+}
+
+.review-body {
+  margin-top: 5px;
+  width: 250px;
+  font-size: 14px;
+  padding: 5px;
+  margin-left: 20px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid $gray;
+}

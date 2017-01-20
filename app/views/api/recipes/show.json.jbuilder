@@ -16,6 +16,7 @@ json.set! :reviews do
       json.user_id review.user_id
       json.rating review.rating
       json.body review.body
+      json.user review.user
     end
   end
 end
