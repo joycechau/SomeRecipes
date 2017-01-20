@@ -28,8 +28,17 @@ class ReviewIndex extends React.Component {
   }
 
   newReview() {
-    
-    if (this.props.recipe.user_id === this.props.currentUser.id ) {
+    const { currentUser, recipe } = this.props;
+    let alreadyReviewed = false;
+    if ( currentUser ) {
+      for (let i = 0; i < this.props.reviews.length; i++) {
+        if (this.props.reviews[i].user_id === currentUser.id) {
+          alreadyReviewed = true;
+          break;
+        }
+      }
+    }
+    if ( !currentUser || recipe.user_id === currentUser.id || alreadyReviewed ) {
       return;
     } else {
       return (

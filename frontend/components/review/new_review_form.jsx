@@ -16,7 +16,9 @@ class NewReviewForm extends React.Component {
   }
 
   componentWillReceiveProps(newProps) {
-    if (Object.values(this.props.recipe.reviews).length !== Object.values(newProps.recipe.reviews).length) {
+    const oldReviews = Object.values(this.props.recipe.reviews).length;
+    const newReviews = Object.values(newProps.recipe.reviews).length;
+    if (oldReviews !== newReviews ) {
       this.props.closeModal();
     }
   }
