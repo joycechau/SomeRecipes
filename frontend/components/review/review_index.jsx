@@ -28,7 +28,7 @@ class ReviewIndex extends React.Component {
   }
 
   newReview() {
-
+    
     if (this.props.recipe.user_id === this.props.currentUser.id ) {
       return;
     } else {

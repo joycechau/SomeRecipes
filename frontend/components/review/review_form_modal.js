@@ -17,6 +17,6 @@ export const style = {
     padding         : '30px',
     zIndex          : 11,
     width           : '250px',
-    height          : '350px'
+    height          : '360px'
   }
 };

@@ -9,23 +9,27 @@ class NewReviewForm extends React.Component {
       rating: 0,
       body: "",
       recipe_id: props.recipe.id,
-      user_id: props.currentUser.id,
-      errors: props.errors
+      user_id: props.currentUser.id
     };
     this.handleSubmit = this.handleSubmit.bind(this);
     this.onStarClick = this.onStarClick.bind(this);
+  }
+
+  componentWillReceiveProps(newProps) {
+    if (Object.values(this.props.recipe.reviews).length !== Object.values(newProps.recipe.reviews).length) {
+      this.props.closeModal();
+    }
   }
 
   handleSubmit(e) {
     e.preventDefault();
     const review = Object.assign({}, this.state);
     this.props.createReview(review);
-    this.props.clearErrors();
-    this.props.closeModal();
   }
 
   onStarClick(nextValue, prevValue, name) {
     this.setState({ rating: nextValue });
+    this.props.clearErrors();
   }
 
   update(field) {
