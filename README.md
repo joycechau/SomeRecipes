@@ -1,10 +1,10 @@
 # SomeRecipes
 
-[SomeRecipes](https://somerecipes.herokuapp.com/) is a web application for users to view and share recipes.  Inspired by AllRecipes, SomeRecipes allows users to create and review recipes, search for recipes, bookmark favorite recipes, and discover recipes by other users.  
+[SomeRecipes](http://www.somerecipes.site/#/) is a web application for users to view and share recipes.  Inspired by AllRecipes, SomeRecipes allows users to create and review recipes, search for recipes, bookmark favorite recipes, and discover recipes by other users.  
 
 SomeRecipes is a personal project by Joyce Chau built using Rails on the backend and React/Redux on the frontend.  
 
-![alt text](https://res.cloudinary.com/joycechau/image/upload/v1484953334/Screen_Shot_2017-01-20_at_2.57.02_PM_bv7xqf.png "Home Page")
+![alt text](https://res.cloudinary.com/joycechau/image/upload/v1484956309/home_page.png "Home Page")
 
 
 ## Features
