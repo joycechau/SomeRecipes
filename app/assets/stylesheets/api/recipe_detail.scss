@@ -43,8 +43,9 @@
   width: 100%;
   height: 55%;
   margin: 20px;
-  max-height: 400px;
-  max-width: 400px;
+  max-height: 300px;
+  max-width: 300px;
+  margin-left: 125px;
 }
 
 @media (min-width: 1024px) {
@@ -119,6 +120,7 @@
 .recipe-detail-direction-line {
   padding: 5px;
   margin-left: 60px;
+  padding-right: 20px;
 }
 
 .recipe-detail-directions {
