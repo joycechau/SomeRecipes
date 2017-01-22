@@ -4,7 +4,7 @@
 
 SomeRecipes is a personal project by Joyce Chau built using Rails on the backend and React/Redux on the frontend.  
 
-![alt text](https://res.cloudinary.com/joycechau/image/upload/v1484956309/home_page.png "Home Page")
+![alt text](https://res.cloudinary.com/joycechau/image/upload/v1485074287/home_page_screenshot.png "Home Page")
 
 
 ## Features
@@ -19,20 +19,20 @@ SomeRecipes is a personal project by Joyce Chau built using Rails on the backend
 
 #### Viewing Recipes
 
-![alt text](https://res.cloudinary.com/joycechau/image/upload/v1484954529/recipe_detail.png "Recipe Detail Page")
+![alt text](https://res.cloudinary.com/joycechau/image/upload/v1485074375/recipe_detail_screenshot.png "Recipe Detail Page")
 
 
 #### Viewing My Recipes
 
-![alt text](https://res.cloudinary.com/joycechau/image/upload/v1484954290/my_recipes_page.png "My Recipes Page")
+![alt text](https://res.cloudinary.com/joycechau/image/upload/v1485074414/my_recipes_screenshot.png "My Recipes Page")
 
 #### Creating Recipes
 
-![alt text](https://res.cloudinary.com/joycechau/image/upload/v1484954434/recipe_form.png "New Recipe Page")
+![alt text](https://res.cloudinary.com/joycechau/image/upload/v1485074461/recipe_form_screenshot.png "Recipe Form")
 
 #### Writing Reviews
 
-![alt text](https://res.cloudinary.com/joycechau/image/upload/v1484954616/new_review.png "New Review Form")
+![alt text](https://res.cloudinary.com/joycechau/image/upload/v1485074510/review_form_screenshot.png "Review Form")
 
 ## Project Design
 
