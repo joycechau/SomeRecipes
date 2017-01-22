@@ -10,7 +10,7 @@
 | session_token        | string         | not null, indexed, unique      |
 | fname                | string         |                                |
 | lname                | string         |                                |
-| profile_url          | string         |                                |
+| profile_url          | string         | default: (some picture)        |
 | interests            | text           |                                |
 
 
@@ -21,7 +21,7 @@
 | id                   | integer        | not null, primary key                                |
 | user_id              | integer        | not null, indexed, foreign key (references users)    |
 | title                | string         | not null                                             |
-| image_url            | string         | default: (some pic)                                  |
+| image_url            | string         | default: (some picture)                              |
 | average_rating       | integer        |                                                      |
 | category             | string         | not null                                             |
 | description          | text           | not null                                             |
@@ -37,7 +37,7 @@
 | user_id              | integer        | not null, indexed, foreign key (references users)    |
 | recipe_id            | integer        | not null, indexed, foreign key (references recipes)  |
 | rating               | integer        | not null                       					             |
-| review               |                |                               					             |
+| review               | text           |                               					             |
 
 ### favorites
 
