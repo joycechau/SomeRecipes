@@ -3,7 +3,7 @@
 .recipe-index-item {
   width: 300px;
   height: auto;
-  padding: 18px;
+  padding: 20px;
   border: 1px solid $gray;
   margin: 10px;
   float: left;
@@ -15,7 +15,8 @@
 }
 
 .recipe-index-item-image {
-  max-height: 250px
+  width: 260px;
+  height: 260px;
 }
 
 .recipe-index-item-title {

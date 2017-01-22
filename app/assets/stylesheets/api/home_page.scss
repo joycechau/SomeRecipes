@@ -9,9 +9,10 @@
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(https://res.cloudinary.com/joycechau/image/upload/c_crop,w_2048/v1484446401/home-background_4_e08du4.jpg);
+  background-image: url(https://res.cloudinary.com/joycechau/image/upload/c_crop,h_400,w_3000,y_1375/v1485060481/home_page_pic_4.jpg);
   margin-bottom: 10px;
   background-position: center center;
+  display: flex;
 }
 
 .home-splash-text {
@@ -19,6 +20,7 @@
   font-size: 20px;
   text-align: center;
   padding: 30px;
+  margin: auto;
 }
 
 .home-recipe-index-container {

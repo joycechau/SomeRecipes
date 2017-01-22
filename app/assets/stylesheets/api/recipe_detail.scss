@@ -7,7 +7,10 @@
 .recipe-detail-break-section {
   display: block;
   height: 100px;
-  background-image: url(https://res.cloudinary.com/joycechau/image/upload/c_crop,h_150,w_2400,x_526,y_1780/v1484551597/recipe_detail_background_1.jpg)
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(https://res.cloudinary.com/joycechau/image/upload/c_crop,h_100,w_3000,y_24/v1485047837/raw-food-1_pypqko.jpg)
 }
 
 .recipe-detail-section {
