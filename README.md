@@ -52,6 +52,7 @@ SomeRecipes was built using the following technologies:
   * Star Rating
 * Redux
 * Babel
+* Cloudinary
 * Webpack
 
 ## Future Implementations
