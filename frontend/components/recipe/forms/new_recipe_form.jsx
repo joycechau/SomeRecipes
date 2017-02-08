@@ -8,7 +8,7 @@ class NewRecipeForm extends React.Component {
     this.handleCloudinary = this.handleCloudinary.bind(this);
     this.state = {
       title: "",
-      category: "",
+      category: "--Select Category--",
       description: "",
       ingredients: "",
       directions: "",
@@ -100,7 +100,7 @@ class NewRecipeForm extends React.Component {
             </h2>
             <select onChange={this.update('category')}
                     className="recipe-form-select"
-                    value="--Select Category--">
+                    value={this.state.category}>
               <option value="--Select Category--"
                       disabled="true"
                       className="recipe-form-disabed-option">
