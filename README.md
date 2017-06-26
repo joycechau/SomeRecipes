@@ -38,7 +38,7 @@ SomeRecipes is a personal project by Joyce Chau built using Rails on the backend
 
 SomeRecipes was built in 10 days.  
 
-A [proposal](https://github.com/joycechau/CorgiChomp/blob/master/docs/js-proposal.md) was drafted to help provide an implementation timeline during the development process.
+A [proposal](https://github.com/joycechau/SomeRecipes/tree/master/docs) was drafted to help provide an implementation timeline during the development process.
 
 A [database schema](https://github.com/joycechau/SomeRecipes/blob/master/docs/schema.md) was prepared alongside the design proposal.
 
