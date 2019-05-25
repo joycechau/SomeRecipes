@@ -1,6 +1,6 @@
 # SomeRecipes
 
-[SomeRecipes](http://www.somerecipes.site/#/) is a web application for users to view and share recipes.  Inspired by AllRecipes, SomeRecipes allows users to create and review recipes, search for recipes, bookmark favorite recipes, and discover recipes by other users.  
+[SomeRecipes](http://www.somerecipes.net) is a web application for users to view and share recipes.  Inspired by AllRecipes, SomeRecipes allows users to create and review recipes, search for recipes, bookmark favorite recipes, and discover recipes by other users.  
 
 SomeRecipes is a personal project by Joyce Chau built using Rails on the backend and React/Redux on the frontend.  
 
